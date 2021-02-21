@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it">
+	<category name="gallery.acp.menu">
+		<item name="gallery.acp.menu.link.gallery"><![CDATA[Galleria]]></item>
+		<item name="gallery.acp.menu.link.gallery.category.add"><![CDATA[Aggiungi galleria]]></item>
+		<item name="gallery.acp.menu.link.gallery.category.list"><![CDATA[Lista categorie]]></item>
+	</category>
+
+	<category name="gallery.album">
+		<item name="gallery.album.add"><![CDATA[Crea un Album]]></item>
+		<item name="gallery.album.button.add"><![CDATA[Crea un nuovo Album]]></item>
+		<item name="gallery.album.delete"><![CDATA[Elimina]]></item>
+		<item name="gallery.album.delete.confirmMessage"><![CDATA[Vuoi realmente eliminare questo album?]]></item>
+		<item name="gallery.album.delete.success"><![CDATA[L´Album è stato eliminato.]]></item>
+		<item name="gallery.album.edit"><![CDATA[Modifica Album]]></item>
+		<item name="gallery.album.info"><![CDATA[Ultimo aggiornamento: {@$album->lastUpdateTime|time} - {#$album->images} {if $album->images != 1}immagini{else}immagine{/if}{if $album->hasRegisteredAccessLevel()} - Accessibile solo agli utenti registrati{elseif $album->hasFollowingAccessLevel()} - Accessibile solo agli utenti che mi seguono{elseif $album->hasOwnerAccessLevel()} - Album privato{/if}]]></item>
+		<item name="gallery.album.lastUpdateTime"><![CDATA[Ultimo aggiornamento]]></item>
+		<item name="gallery.album.userAlbums"><![CDATA[Gli album di {$user->username}]]></item>
+		<item name="gallery.album.moreAlbums"><![CDATA[Altri album]]></item>
+		<item name="gallery.album.moreAlbums.images"><![CDATA[{#$albumItem->images} {if $albumItem->images != 1}immagini{else}immagine{/if}]]></item>
+		<item name="gallery.album.albums"><![CDATA[Gli album]]></item>
+		<item name="gallery.album.accessLevel"><![CDATA[Può vedere gli album]]></item>
+		<item name="gallery.album.accessLevel.description"><![CDATA[Questo album e le immagini in questo album possono essere visualizzate solo dal gruppo selezionato.{if $album|isset} Si prega di essere consapevoli del fatto che le modifiche vengono immediatamente applicate a tutte le immagini del album.{/if}]]></item>
+		<item name="gallery.album.accessLevel.everyone"><![CDATA[Chiunque]]></item>
+		<item name="gallery.album.accessLevel.registered"><![CDATA[Utenti registrati]]></item>
+		<item name="gallery.album.accessLevel.following"><![CDATA[Utenti che mi seguono]]></item>
+		<item name="gallery.album.accessLevel.owner"><![CDATA[Solo io]]></item>
+		<item name="gallery.album.accessLevel.info"><![CDATA[{if $album->hasRegisteredAccessLevel()}Accesso solo agli utenti registrati{elseif $album->hasFollowingAccessLevel()}Accesso solo agli utenti che mi seguono{elseif $album->hasOwnerAccessLevel()}Album privato{/if}]]></item>
+		<item name="gallery.album.ownerImageModerationWarning"><![CDATA[Dal momento che le nuove immagini caricate dall'utente richiedono l'approvazione, non è possibile caricar altre immagini in questo album privato.]]></item>
+		<item name="gallery.album.sortImages"><![CDATA[Ordine delle immagini]]></item>
+		<item name="gallery.album.sortImages.loadMoreImages"><![CDATA[Altre immagini]]></item>
+		<item name="gallery.album.search"><![CDATA[Cerca album]]></item>
+		<item name="gallery.album.search.results"><![CDATA[Risultati della ricerca]]></item>
+		<item name="gallery.album.displayOptions"><![CDATA[Opzioni di visualizzazione]]></item>
+		<item name="gallery.album.sortBy"><![CDATA[Ordinato per]]></item>
+		<item name="gallery.album.showAll"><![CDATA[Mostra tutti gli album]]></item>
+		<item name="gallery.album.map"><![CDATA[Mappa]]></item>
+	</category>
+
+	<category name="gallery.category">
+		<item name="gallery.category.delete.sure"><![CDATA[Vuoi realmente eliminare questa categoria? Tutte le sottocategorie verranno spostate nella categoria sopra questa. Verrò eliminata solamente questa selezionata.]]></item>
+	</category>
+
+	<category name="gallery.header">
+		<item name="gallery.header.menu.albums"><![CDATA[Album]]></item>
+		<item name="gallery.header.menu.images"><![CDATA[Immagini]]></item>
+		<item name="gallery.header.menu.gallery"><![CDATA[Galleria]]></item>
+		<item name="gallery.header.menu.map"><![CDATA[Mappa]]></item>
+		<item name="gallery.header.menu.myImages"><![CDATA[Mie immagini]]></item>
+		<item name="gallery.header.menu.myAlbums"><![CDATA[Mie album]]></item>
+		<item name="gallery.header.menu.unreadImages"><![CDATA[Nuove immagini]]></item>
+		<item name="gallery.header.menu.watchedImages"><![CDATA[Immagini visualizzate]]></item>
+	</category>
+
+	<category name="gallery.image">
+		<item name="gallery.image.albumID"><![CDATA[Album]]></item>
+		<item name="gallery.image.albumID.overwrite.confirmMessage"><![CDATA[Vuoi davvero assegnare tutte le altre immagini caricate in questo album?]]></item>
+		<item name="gallery.image.albumImage"><![CDATA[Immagine {#$albumImage} di {#$image->getAlbum()->images}]]></item>
+		<item name="gallery.image.browser"><![CDATA[Galleria]]></item>
+		<item name="gallery.image.browser.insert"><![CDATA[Inserisci nel messaggio]]></item>
+		<item name="gallery.image.browser.insert.tiny"><![CDATA[Piccolo ({$dimensions[width]} × {$dimensions[height]})]]></item>
+		<item name="gallery.image.browser.insert.small"><![CDATA[Piccolo ({$dimensions[width]} × {$dimensions[height]})]]></item>
+		<item name="gallery.image.browser.insert.medium"><![CDATA[Medio ({$dimensions[width]} × {$dimensions[height]})]]></item>
+		<item name="gallery.image.browser.insert.large"><![CDATA[Grande ({$dimensions[width]} × {$dimensions[height]})]]></item>
+		<item name="gallery.image.browser.insert.original"><![CDATA[Originale ({$dimensions[width]} × {$dimensions[height]})]]></item>
+		<item name="gallery.image.browser.image.list"><![CDATA[Tutte le immagini]]></item>
+		<item name="gallery.image.browser.image.search"><![CDATA[Cerca immagini]]></item>
+		<item name="gallery.image.browser.image.search.description"><![CDATA[Digita almeno 3 caratteri per avviare la ricerca.]]></item>
+		<item name="gallery.image.browser.noAlbums"><![CDATA[Al momento non hai album con immagini visibili.]]></item>
+		<item name="gallery.image.browser.noImages"><![CDATA[Al momento non hai immagini visibili.]]></item>
+		<item name="gallery.image.button.markAll"><![CDATA[Seleziona tutto]]></item>
+		<item name="gallery.image.button.overwrite"><![CDATA[Applica per le altre immagini]]></item>
+		<item name="gallery.image.button.upload"><![CDATA[Carica immagini]]></item>
+		<item name="gallery.image.button.sort"><![CDATA[Ordine]]></item>
+		<item name="gallery.image.categories"><![CDATA[Categorie]]></item>
+		<item name="gallery.image.categorizedImages"><![CDATA[Immagini nella categoria “{$category->getTitle()}”]]></item>
+		<item name="gallery.image.categoryIDs.overwrite.confirmMessage"><![CDATA[Vuoi davvero assegnare tutte le altre immagini caricate alle categorie selezionate?]]></item>
+		<item name="gallery.image.comment"><![CDATA[Commento (Galleria immagini)]]></item>
+		<item name="gallery.image.comments"><![CDATA[Commento]]></item>
+		<item name="gallery.image.comments.count"><![CDATA[{#$image->comments} {if $image->comments != 1}commenti {else} commento{/if}]]></item>
+		<item name="gallery.image.coordinates"><![CDATA[Coordinate]]></item>
+		<item name="gallery.image.coordinates.description"><![CDATA[Specifica il luogo in cui è stata scattata la foto.]]></item>
+		<item name="gallery.image.coordinates.location"><![CDATA[Posizione]]></item>
+		<item name="gallery.image.coordinates.locationSearch"><![CDATA[Cerca posizione]]></item>
+		<item name="gallery.image.coordinates.location.description"><![CDATA[Digitare il percorso e scegliere uno risultato dai suggerimenti.]]></item>
+		<item name="gallery.image.coordinates.overwrite.confirmMessage"><![CDATA[Vuoi assegnare la stessa pozione alle altre foto caricate?]]></item>
+		<item name="gallery.image.coordinates.useCoordinates"><![CDATA[Posizione specifica]]></item>
+		<item name="gallery.image.delete"><![CDATA[Elimina]]></item>
+		<item name="gallery.image.delete.confirmMessage"><![CDATA[Vuoi veramente eliminare questa immagine?]]></item>
+		<item name="gallery.image.delete.success"><![CDATA[L'immagine è stata eliminata.]]></item>
+		<item name="gallery.image.description"><![CDATA[Descrizione]]></item>
+		<item name="gallery.image.description.error.tooLong"><![CDATA[La descrizione è troppo lunga.]]></item>
+		<item name="gallery.image.description.overwrite.confirmMessage"><![CDATA[Vuoi davvero assegnare la descrizione di tutte le altre immagini caricate?]]></item>
+		<item name="gallery.image.disable"><![CDATA[Disattiva]]></item>
+		<item name="gallery.image.edit"><![CDATA[Modifica immagine]]></item>
+		<item name="gallery.image.edit.multiple"><![CDATA[Modifica immagini]]></item>
+		<item name="gallery.image.enable"><![CDATA[Approva]]></item>
+		<item name="gallery.image.filename"><![CDATA[Nome file]]></item>
+		<item name="gallery.image.filesize"><![CDATA[Grandezza file]]></item>
+		<item name="gallery.image.images"><![CDATA[Immagini]]></item>
+		<item name="gallery.image.imagesInfoWindow"><![CDATA[Altre immagini]]></item>
+		<item name="gallery.image.isDeleted"><![CDATA[Eliminato]]></item>
+		<item name="gallery.image.isDisabled"><![CDATA[Disabilitato]]></item>
+		<item name="gallery.image.map"><![CDATA[Posizione]]></item>
+		<item name="gallery.image.moderation.info"><![CDATA[Le immagini appena caricate devono essere approvate manualmente prima della pubblicazione. È non possono né vedere, né modificare queste immagini fino a che non sono state approvate.]]></item>
+		<item name="gallery.image.moveToAlbum"><![CDATA[Sposta immagini nell´album]]></item>
+		<item name="gallery.image.noImages"><![CDATA[Nessun immagine trovata con i tuoi criteri.]]></item>
+		<item name="gallery.image.pendingImages"><![CDATA[{if $pendingImageList|count > 1}Ci sono {#$pendingImageList|count} immagini che sono state caricate, ma non sono state salvate{else}C'è un immagine che è stata caricata ma che non è stata salvata{/if}]]></item>
+		<item name="gallery.image.pendingImages.delete"><![CDATA[Elimina immagini in sospeso]]></item>
+		<item name="gallery.image.pendingImages.delete.confirmMessage"><![CDATA[Vuoi realmente eliminare le immagini in sospeso?]]></item>
+		<item name="gallery.image.pendingImages.load"><![CDATA[Carica le immagini in sospeso]]></item>
+		<item name="gallery.image.recentActivity.image"><![CDATA[Caricate le immagini <a href="{link application='gallery' controller='Image' object=$image}{/link}" class="galleryImageLink" data-image-id="{@$image->imageID}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.recentActivity.images"><![CDATA[Aggiorna {#$count} nuove immagini.]]></item>
+		<item name="gallery.image.recentActivity.likedImage"><![CDATA[Mi piace l´immagine <a href="{link application='gallery' controller='Image' object=$image}{/link}" class="galleryImageLink" data-image-id="{@$image->imageID}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.recentActivity.imageComment"><![CDATA[Ha commentato nell´immagine <a href="{link application='gallery' controller='Image' object=$image}#comments{/link}" class="galleryImageLink" data-image-id="{@$image->imageID}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.recentActivity.imageCommentResponse"><![CDATA[Ha risposto al commento di <a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a> nell´immagine <a href="{link application='gallery' controller='Image' object=$image}#comments{/link}" class="galleryImageLink" data-image-id="{@$image->imageID}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.restore"><![CDATA[Ripristina]]></item>
+		<item name="gallery.image.searchImages"><![CDATA[Cerca immagini]]></item>
+		<item name="gallery.image.size"><![CDATA[Dimensioni]]></item>
+		<item name="gallery.image.tags.overwrite.confirmMessage"><![CDATA[Vuoi davvero assegnare i tag selezionati a tutte le altre immagini caricate?]]></item>
+		<item name="gallery.image.thumbnail.chooseSelection"><![CDATA[Applica selezione]]></item>
+		<item name="gallery.image.title.overwrite.confirmMessage"><![CDATA[Vuoi realmente assegnare il titolo a tutte le immagini caricate?]]></item>
+		<item name="gallery.image.trash"><![CDATA[Sposta nel cestino]]></item>
+		<item name="gallery.image.trash.confirmMessage"><![CDATA[Vuoi realmente spostare questa immagine nel cestino?]]></item>
+		<item name="gallery.image.trash.reason"><![CDATA[Motivazione (Opzionale)]]></item>
+		<item name="gallery.image.unreadImages"><![CDATA[Nuove immagini]]></item>
+		<item name="gallery.image.userImages"><![CDATA[Immagini di “{$user->username}”]]></item>
+		<item name="gallery.image.showUserImages"><![CDATA[Mostra le immagini di {$user->username}]]></item>
+		<item name="gallery.image.upload"><![CDATA[Carica immagini]]></item>
+		<item name="gallery.image.upload.albumLimitReached"><![CDATA[L'album è stato creato. Purtroppo hai raggiunto il limite e non è possibile creare più album.]]></item>
+		<item name="gallery.image.upload.archive.success"><![CDATA[L'archivio è stato caricato ed i file contenuti sono attualmente in fase di elaborazione.]]></item>
+		<item name="gallery.image.upload.currentImage"><![CDATA[Immagine attuale]]></item>
+		<item name="gallery.image.upload.info.containsInvalidImages"><![CDATA[L´archivio “{$file->getFilename()}” contiene immagini invalide:]]></item>
+		<item name="gallery.image.upload.info.thumbnailGeneration"><![CDATA[Le miniature sono in fase di creazione, sarai reindirizzato automaticamente al completamento.]]></item>
+		<item name="gallery.image.upload.images"><![CDATA[Immagini caricate]]></item>
+		<item name="gallery.image.upload.error.containsNoImages"><![CDATA[L´archivio “{$file->getFilename()}” non contiene immagini.]]></item>
+		<item name="gallery.image.upload.error.containsNoValidImages"><![CDATA[L´archivio “{$file->getFilename()}” non contiene immagini valide.]]></item>
+		<item name="gallery.image.upload.error.fileExtension"><![CDATA[Il file “{if $file|isset}{$file->getFilename()}{else}{$filename}{/if}” ha un estensione non valida.]]></item>
+		<item name="gallery.image.upload.error.invalidArchive"><![CDATA[Impossibile aprire l´archivio “{$file->getFilename()}”.]]></item>
+		<item name="gallery.image.upload.error.markedImages"><![CDATA[Uno o più campi sono errati, si prega di consultare i campi di input delle immagini evidenziati.]]></item>
+		<item name="gallery.image.upload.error.maxHeight"><![CDATA[L´immagine “{if $file|isset}{$file->getFilename()}{else}{$filename}{/if}” è troppo alta.]]></item>
+		<item name="gallery.image.upload.error.maxParallelFileUpload"><![CDATA[Non è possibile caricare più di {if GALLERY_MAX_PARALLEL_IMAGE_UPLOADS != 1}{#GALLERY_MAX_PARALLEL_IMAGE_UPLOADS} immagini{else}un immagine{/if} contemporaneamente.]]></item>
+		<item name="gallery.image.upload.error.maxWidth"><![CDATA[L´immagine “{if $file|isset}{$file->getFilename()}{else}{$filename}{/if}” è troppo ampia.]]></item>
+		<item name="gallery.image.upload.error.minHeight"><![CDATA[L´immagine “{if $file|isset}{$file->getFilename()}{else}{$filename}{/if}” è troppo corta.]]></item>
+		<item name="gallery.image.upload.error.minWidth"><![CDATA[L´immagine “{if $file|isset}{$file->getFilename()}{else}{$filename}{/if}” è troppo piccola.]]></item>
+		<item name="gallery.image.upload.error.maxSize"><![CDATA[The file “{if $file|isset}{$file->getFilename()}{else}{$filename}{/if}” is too big.]]></item>
+		<item name="gallery.image.upload.error.noImage"><![CDATA[Il file “{$file->getFilename()}” non è un´immagine.]]></item>
+		<item name="gallery.image.upload.error.uploadFailed"><![CDATA[È stato riscontrato un problema mentre veniva caricato il file “{$file->getFilename()}”.]]></item>
+		<item name="gallery.image.upload.error.quotaExceeded"><![CDATA[Hai superato il limite di archiviazione e non è possibile caricare le nuove immagini. È necessario eliminare le immagini esistenti per liberare spazio.]]></item>
+		<item name="gallery.image.upload.error.tooManyImages"><![CDATA[È stato superato il limite massimo di immagine e non è possibile caricare le nuove immagini. È necessario eliminare le immagini esistenti per liberare spazio.]]></item>
+		<item name="gallery.image.upload.description"><![CDATA[Le immagini possono pesare fino a {@$__wcf->session->getPermission('user.gallery.maxSize')|filesize} ognuna con le estensioni  {@$allowedFileExtensions}. Le dimensioni minime sono {#GALLERY_IMAGE_MIN_WIDTH}&times;{#GALLERY_IMAGE_MIN_HEIGHT} pixel fino ad un massimo di {#$__wcf->session->getPermission('user.gallery.maxWidth')}&times;{#$__wcf->session->getPermission('user.gallery.maxHeight')} pixel. Puoi caricare le immagini utilizzando un archivio Zip, Tar or Gzip. Puoi caricare fino a {#($__wcf->session->getPermission('user.gallery.maxImages') - $userImageCount)} immagini con un peso massimo sul disco di {@($__wcf->session->getPermission('user.gallery.quota') - $usedQuota)|filesize}.<br />
+		Se hai caricato più immagini, puoi modificare ogni immagine separatamente cliccando sulle loro miniature.]]></item>
+		<item name="gallery.image.upload.save"><![CDATA[Salva tutte le immagini]]></item>
+		<item name="gallery.image.views"><![CDATA[Visualizzazioni]]></item>
+		<item name="gallery.image.creationTime"><![CDATA[Data creazione]]></item>
+		<item name="gallery.image.uploadTime"><![CDATA[Data caricamento]]></item>
+		<item name="gallery.image.camera"><![CDATA[Fotocamera]]></item>
+		<item name="gallery.image.information"><![CDATA[Dettagli]]></item>
+		<item name="gallery.image.coordinates.value"><![CDATA[{@$latDegrees}° {@$latMinutes}' {@$latSeconds}" {if $latitudeRef == 'S'}S{else}N{/if}, {@$longDegrees}° {@$longMinutes}' {@$longSeconds}" {if $longitudeRef == 'E'}E{else}W{/if}]]></item>
+		<item name="gallery.image.exif.focalLength"><![CDATA[Focale]]></item>
+		<item name="gallery.image.exif.exposureTime"><![CDATA[Tempo esposizione]]></item>
+		<item name="gallery.image.exif.aperture"><![CDATA[Apertura]]></item>
+		<item name="gallery.image.exif.iso"><![CDATA[ISO]]></item>
+		<item name="gallery.image.share.smallImage"><![CDATA[Versione piccola]]></item>
+		<item name="gallery.image.share.largeImage"><![CDATA[Versione grande]]></item>
+		<item name="gallery.image.viewFullSize"><![CDATA[Guarda grandezza reale]]></item>
+		<item name="gallery.image.watchedImages"><![CDATA[Immagini visualizzate]]></item>
+		<item name="gallery.image.watchedImages.noImages"><![CDATA[Non hai visualizzato nessuna immagine.]]></item>
+		<item name="gallery.image.log.trash.summary"><![CDATA[L´immagine è stata eliminata da “{if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-user-id="{@$userID}">{$username}</a>{else}{$username}{/if}”{if $additionalData[reason]}: “{$additionalData[reason]}”{/if} ({@$time|time})]]></item>
+		<item name="gallery.image.notification.title"><![CDATA[Nuova immagine]]></item>
+		<item name="gallery.image.notification.message"><![CDATA[Ha caricato l´immagine “{$image->title}”.]]></item>
+		<item name="gallery.image.notification.mail"><![CDATA[{@$author->username} ha caricato l´immagine  "{@$image->title}":
+{link application='gallery' controller='Image' object=$image isEmail=true}{/link}]]></item>
+		<item name="gallery.image.mention.notification.title"><![CDATA[Sei stato menzionato]]></item>
+		<item name="gallery.image.mention.notification.message"><![CDATA[{@$author->getAnchorTag()} sei stato menzionato nella descrizione dell´immagine <a href="{link application='gallery' controller='Image' object=$image}{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.mention.notification.mail"><![CDATA[{@$author->username} ti ha menzionato nella descrizione della foto "{$image->title}":
+		{link application='gallery' controller='Image' object=$image isEmail=true}{/link}]]></item>
+		<item name="gallery.image.marker.notification.title"><![CDATA[Sei stato menzionato]]></item>
+		<item name="gallery.image.marker.notification.message"><![CDATA[{@$author->getAnchorTag()} ti ha taggo nella foto <a href="{link application='gallery' controller='Image' object=$image}{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.marker.notification.mail"><![CDATA[{@$author->username} tu ha taggato nella foto "{$image->title}":
+		{link application='gallery' controller='Image' object=$image isEmail=true}{/link}]]></item>
+		<item name="gallery.image.comment.notification.title"><![CDATA[Nuovo commento (Immagine)]]></item>
+		<item name="gallery.image.comment.notification.title.stacked"><![CDATA[{#$timesTriggered} nuovi commenti (Immagine)]]></item>
+		<item name="gallery.image.comment.notification.message"><![CDATA[{if $author->userID}{@$author->getAnchorTag()}{else}Un ospite{/if} ha commentato in una foto <a href="{link application='gallery' controller='Image' object=$image}#comments{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.comment.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} e {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3}{if !$guestTimesTriggered} e {else}, {/if} {@$authors[2]->getAnchorTag()}{/if}{/if}{if $guestTimesTriggered} e {if $guestTimesTriggered == 1}un ospite{else}degli ospiti{/if}{/if}{else}{@$authors[0]->getAnchorTag()}{if $guestTimesTriggered},{else} e{/if} {#$others} altri utenti {if $guestTimesTriggered}e {if $guestTimesTriggered == 1}un ospite{else}degli ospiti{/if}{/if}{/if} hanno commentato una tua foto <a href="{link application='gallery' controller='Image' object=$image}#comments{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.comment.notification.mail"><![CDATA[{if $author->userID}{@$author->username}{else}un ospite{/if} ha commentato la tua foto "{@$image->title}":
+		{if $notificationType == 'instant'}
+		---------------------------------
+		{@$comment->message}
+		---------------------------------
+		{/if}{link application='gallery' controller='Image' object=$image isEmail=true}#comments{/link}]]></item>
+		<item name="gallery.image.comment.notification.mail.stacked"><![CDATA[{if $count < 4}{@$authors[0]->username}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} e {else}, {/if}{@$authors[1]->username}{if $count == 3}{if !$guestTimesTriggered} e {else}, {/if} {@$authors[2]->username}{/if}{/if}{if $guestTimesTriggered} e {if $guestTimesTriggered == 1}un ospite{else}degli ospiti{/if}{/if}{else}{@$authors[0]->username}{if $guestTimesTriggered},{else} e{/if} {#$others} altri utenti {if $guestTimesTriggered}e {if $guestTimesTriggered == 1}un ospite{else}degli ospiti{/if}{/if}{/if} hanno commentato una tua foto "{@$image->title}":
+		{link application='gallery' controller='Image' object=$image isEmail=true}#comments{/link}]]></item>
+		<item name="gallery.image.comment.like.notification.title"><![CDATA[Piace un commento (Immagini)]]></item>
+		<item name="gallery.image.comment.like.notification.title.stacked"><![CDATA[{#$count} piace il tuo commento (Immagine)]]></item>
+		<item name="gallery.image.comment.like.notification.message"><![CDATA[{@$author->getAnchorTag()} piace il tuo commento nell´immagine <a href="{link application='gallery' controller='Image' object=$image}#comments{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.comment.like.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} e {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} e {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} e {#$others} altri{/if} piace il tuo commento nell´immmagine <a href="{link application='gallery' controller='Image' object=$image}#comments{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.commentResponse.notification.title"><![CDATA[Nuova risposta (Immagine)]]></item>
+		<item name="gallery.image.commentResponse.notification.title.stacked"><![CDATA[{#$timesTriggered} nuove risposte (Immagine)]]></item>
+		<item name="gallery.image.commentResponse.notification.message"><![CDATA[{if $author->userID}{@$author->getAnchorTag()}{else}Un ospite{/if} ha risposto al tuo commento nell´immagine <a href="{link application='gallery' controller='Image' object=$image}#comments{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.commentResponse.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} e {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3}{if !$guestTimesTriggered} e {else}, {/if} {@$authors[2]->getAnchorTag()}{/if}{/if}{if $guestTimesTriggered} e {if $guestTimesTriggered == 1}un ospite{else}degli ospiti{/if}{/if}{else}{@$authors[0]->getAnchorTag()}{if $guestTimesTriggered},{else} e{/if} {#$others} altri utenti {if $guestTimesTriggered}e {if $guestTimesTriggered == 1}un ospite{else}degli ospiti{/if}{/if}{/if} ha risposto al tuo commento nell´immagine <a href="{link application='gallery' controller='Image' object=$image}#comments{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.commentResponse.notification.mail"><![CDATA[{if $author->userID}{@$author->username}{else}un ospite{/if} ha risposto al tuo commento nell´immagine "{@$image->title}":
+		{if $notificationType == 'instant'}
+		---------------------------------
+		{@$response->message}
+		---------------------------------
+		{/if}{link application='gallery' controller='Image' object=$image isEmail=true}#comments{/link}]]></item>
+		<item name="gallery.image.commentResponse.notification.mail.stacked"><![CDATA[{if $count < 4}{@$authors[0]->username}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} e {else}, {/if}{@$authors[1]->username}{if $count == 3}{if !$guestTimesTriggered} e {else}, {/if} {@$authors[2]->username}{/if}{/if}{if $guestTimesTriggered} e {if $guestTimesTriggered == 1}un ospite{else}degli ospiti{/if}{/if}{else}{@$authors[0]->username}{if $guestTimesTriggered},{else} e{/if} {#$others} altri utenti {if $guestTimesTriggered}e {if $guestTimesTriggered == 1}un ospite{else}degli ospiti{/if}{/if}{/if} hanno risposto al commento di "{@$commentAuthor->username}" nell´immagine "{@$image->title}":
+		{link application='gallery' controller='Image' object=$image isEmail=true}#comments{/link}]]></item>
+		<item name="gallery.image.commentResponse.like.notification.title"><![CDATA[Piace la tua risposta al commento (Immagine)]]></item>
+		<item name="gallery.image.commentResponse.like.notification.title.stacked"><![CDATA[{#$count} piace la tua risposta al commento (Immagine)]]></item>
+		<item name="gallery.image.commentResponse.like.notification.message"><![CDATA[{@$author->getAnchorTag()} piace la tua risposta al commento nell´immagine <a href="{link application='gallery' controller='Image' object=$image}#comments{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.commentResponse.like.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} e {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} e {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} e {#$others} altri{/if} piace la tua risposta al commento nell´immagine <a href="{link application='gallery' controller='Image' object=$image}#comments{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.commentResponseOwner.notification.title"><![CDATA[Nuova risposta (Immagine)]]></item>
+		<item name="gallery.image.commentResponseOwner.notification.title.stacked"><![CDATA[{#$timesTriggered} nuove risposte (Immagine)]]></item>
+		<item name="gallery.image.commentResponseOwner.notification.message"><![CDATA[{if $author->userID}{@$author->getAnchorTag()}{else}Un ospite{/if} ha risposto al commento di {$commentAuthor->username} nella tua immagine <a href="{link application='gallery' controller='Image' object=$image}#comments{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.commentResponseOwner.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} e {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3}{if !$guestTimesTriggered} e {else}, {/if} {@$authors[2]->getAnchorTag()}{/if}{/if}{if $guestTimesTriggered} e {if $guestTimesTriggered == 1}un ospite{else}degli ospiti{/if}{/if}{else}{@$authors[0]->getAnchorTag()}{if $guestTimesTriggered},{else} e{/if} {#$others} altri utenti {if $guestTimesTriggered}e {if $guestTimesTriggered == 1}un ospite{else}degli ospiti{/if}{/if}{/if} hanno risposto al commento di {if $author->userID}<a href="{link controller='User' object=$author}{/link}" class="userLink" data-user-id="{@$author->userID}">{$author->username}</a>{else}{$author->username}{/if} nella tua immagine <a href="{link application='gallery' controller='Image' object=$image}#comments{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.commentResponseOwner.notification.mail"><![CDATA[{if $author->userID}{@$author->username}{else}un ospite{/if} ha risposto al commento di "{@$commentAuthor->username}" nella tua immagine "{@$image->title}":
+		{if $notificationType == 'instant'}
+		---------------------------------
+		{@$response->message}
+		---------------------------------
+		{/if}{link application='gallery' controller='Image' object=$image isEmail=true}#comments{/link}]]></item>
+		<item name="gallery.image.commentResponseOwner.notification.mail.stacked"><![CDATA[{if $count < 4}{@$authors[0]->username}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} e {else}, {/if}{@$authors[1]->username}{if $count == 3}{if !$guestTimesTriggered} e {else}, {/if} {@$authors[2]->username}{/if}{/if}{if $guestTimesTriggered} e {if $guestTimesTriggered == 1}un ospite{else}degli ospiti{/if}{/if}{else}{@$authors[0]->username}{if $guestTimesTriggered},{else} e{/if} {#$others} altri utenti {if $guestTimesTriggered}e {if $guestTimesTriggered == 1}un ospite{else}degli ospiti{/if}{/if}{/if} hanno risposto al commento di "{@$commentAuthor->username}" nella tua immagine "{@$image->title}":
+		{link application='gallery' controller='Image' object=$image isEmail=true}#comments{/link}]]></item>
+		<item name="gallery.image.like.notification.title"><![CDATA[Piace la tua immagine]]></item>
+		<item name="gallery.image.like.notification.title.stacked"><![CDATA[A {#$count} utenti piace la tua immagine]]></item>
+		<item name="gallery.image.like.notification.message"><![CDATA[{@$author->getAnchorTag()} piace la tua immagine <a href="{link application='gallery' controller='Image' object=$image}{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.like.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} e {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} e {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} e {#$others} others{/if} piace la tua immagine <a href="{link application='gallery' controller='Image' object=$image}{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.enableComments"><![CDATA[Abilita commenti]]></item>
+		<item name="gallery.image.enableComments.description"><![CDATA[Permetti agli altri di commentare la tua immagine.]]></item>
+		<item name="gallery.image.enableComments.overwrite.confirmMessage"><![CDATA[Vuoi realmente abilitare sotto tutte le foto la possibilità di commentarle?]]></item>
+		<item name="gallery.image.markAllAsRead"><![CDATA[Segna tutte le foto come viste]]></item>
+		<item name="gallery.image.moreImages"><![CDATA[Altre immagini]]></item>
+		<item name="gallery.image.overwriteData.confirmMessage"><![CDATA[Vuoi davvero applicare i dettagli delle immagini correnti a tutte le altre immagini?]]></item>
+		<item name="gallery.image.button.overwriteAll"><![CDATA[Applica a tutte le altre foto]]></item>
+		<item name="gallery.image.useFilenameAsTitle"><![CDATA[Usa il nome del file come titolo]]></item>
+		<item name="gallery.image.button.selectThumbnailArea"><![CDATA[Seleziona area per l´anteprima]]></item>
+		<item name="gallery.image.marker.add"><![CDATA[Aggiungi segnalibro]]></item>
+		<item name="gallery.image.marker.delete.confirmMessage"><![CDATA[Vuoi realmente eliminare questo segnolibro?]]></item>
+		<item name="gallery.image.marker.description"><![CDATA[Clicca sull´immagine per aggiungere un segnalibro.]]></item>
+		<item name="gallery.image.marker.edit"><![CDATA[Modifca segnalibro]]></item>
+		<item name="gallery.image.marker.text"><![CDATA[Testo]]></item>
+		<item name="gallery.image.marker.text.description"><![CDATA[Link e smilies sono rilevati automaticamente.]]></item>
+		<item name="gallery.image.marker.type"><![CDATA[Tipo di segnalibro]]></item>
+		<item name="gallery.image.marker.type.text"><![CDATA[Testo]]></item>
+		<item name="gallery.image.marker.type.user"><![CDATA[Utente]]></item>
+		<item name="gallery.image.marker.user"><![CDATA[Tagga utente]]></item>
+		<item name="gallery.image.marker.user.description"><![CDATA[L'utente taggato ottiene una notifica su questa immagine.]]></item>
+		<item name="gallery.image.markedUsers"><![CDATA[Tagga gli utenti]]></item>
+		<item name="gallery.image.markedUsers.description"><![CDATA[Quando passi sopra al nome dell´utente taggato verranno visualizzate le informazioni.]]></item>
+		<item name="gallery.image.nextImage"><![CDATA[Prossima immagine]]></item>
+		<item name="gallery.image.previousImage"><![CDATA[Immagine precedente]]></item>
+		<item name="gallery.image.rotate"><![CDATA[Ruota immagine]]></item>
+		<item name="gallery.image.rotate.90"><![CDATA[Ruota di 90°]]></item>
+		<item name="gallery.image.rotate.180"><![CDATA[Ruota di 180°]]></item>
+		<item name="gallery.image.rotate.270"><![CDATA[Ruota di 270°]]></item>
+		<item name="gallery.image.rotate.confirmMessage"><![CDATA[Vuoi realmente ruotare l´immagine? Durante il procedimento verrà modificata anche l´anteprima dell´immagine.]]></item>
+		<item name="gallery.image.categoryIDs.error.tooMany"><![CDATA[Hai selezionato troppe categorie. Puoi selezionare {@GALLERY_IMAGE_MAX_CATEGORIES} {if GALLERY_IMAGE_MAX_CATEGORIES == 1}categoria{else}categorie{/if}.]]></item>
+		</category>
+
+	<category name="gallery.index">
+		<item name="gallery.index.stats"><![CDATA[Statistiche]]></item>
+		<item name="gallery.index.stats.detail"><![CDATA[{#$stats[authors]} {if $stats[authors] != 1}Autori{else}Autore{/if} - {#$stats[albums]} Album{if $stats[albums] != 1}s{/if} - {#$stats[images]} {if $stats[images] != 1}Immagini {else} Immagine{/if} ({#$stats[imagesPerDay]} {if $stats[imagesPerDay] != 1}Immagini {else}Immagine{/if} per giorno) - {@$stats[size]|filesize} Dimensione totale dei file - {#$stats[comments]} {if $stats[comments] != 1}Commenti {else} Commento{/if}]]></item>
+		<item name="gallery.index.copyright"><![CDATA[<a href="http://www.woltlab.com/"{if EXTERNAL_LINK_TARGET_BLANK} target="_blank"{/if}>Galleria immagini: <strong>WoltLab Community Gallery&reg;{if SHOW_VERSION_NUMBER} {@PACKAGE_VERSION}{/if}</strong>, sviluppato da <strong>WoltLab&reg; GmbH</strong></a><br/><a href="http://www.woltlab.it/">Tradotto in Italiano da <strong>WoltLab Italia</strong></a> V2.0.1]]></item>
+		<item name="gallery.index.evaluation"><![CDATA[Questo software è una versione beta. È consentito utilizzarlo fino al <strong>{@GALLERY_EVALUATION_END|plainTime}</strong>{if GALLERY_EVALUATION_END > TIME_NOW} ({@GALLERY_EVALUATION_END|dateDiff:TIME_NOW:true}){/if}.
+		Per un utilizzo legale del software sei pregato di <a href="http://www.woltlab.com">comprare una licenza</a>, oppure elimina immediatamente il software.]]></item>
+	</category>
+
+	<category name="gallery.search">
+		<item name="gallery.search.categories"><![CDATA[Cerca nelle categorie]]></item>
+		<item name="gallery.search.findMarkedUser"><![CDATA[Utenti taggati]]></item>
+		<item name="gallery.search.findMarkedUser.description"><![CDATA[Tutti gli utenti devono essere taggati nelle immagini cercate.]]></item>
+	</category>
+
+	<category name="gallery.user">
+		<item name="gallery.user.usersOnline.location.GalleryPage"><![CDATA[Pagina iniziale Galleria]]></item>
+		<item name="gallery.user.usersOnline.location.ImagePage"><![CDATA[<a href="{link controller='Image' application='gallery' object=$image}{/link}">Immagine “{$image->title}”</a>]]></item>
+		<item name="gallery.user.usersOnline.location.ImageEditPage"><![CDATA[Modifica le immagini <a href="{link controller='Image' application='gallery' object=$image}{/link}">{$image->title}</a>]]></item>
+		<item name="gallery.user.usersOnline.location.ImageAddPage"><![CDATA[Carica nuove immagini]]></item>
+		<item name="gallery.user.usersOnline.location.ImageListPage.categorizedImages"><![CDATA[<a href="{link controller='ImageList' application='gallery' object=$category}{/link}">Immagini dalla categoria “{$category->getTitle()}”</a>]]></item>
+		<item name="gallery.user.usersOnline.location.ImageListPage.userImages"><![CDATA[<a href="{link controller='ImageList' application='gallery'}userID={@$user->userID}{/link}">Immagini di “{$user->username}”</a>]]></item>
+		<item name="gallery.user.usersOnline.location.AlbumListPage"><![CDATA[<a href="{link controller='AlbumList' application='gallery' object=$user}{/link}">Album di “{$user->username}”</a>]]></item>
+		<item name="gallery.user.usersOnline.location.AlbumPage"><![CDATA[<a href="{link controller='Album' application='gallery' object=$album}{/link}">Album “{$album->title}”</a>]]></item>
+	</category>
+
+	<category name="wcf.acl.option">
+		<item name="wcf.acl.option.com.woltlab.gallery.category.canUseCategory"><![CDATA[Can assign images to this category]]></item>
+		<item name="wcf.acl.option.com.woltlab.gallery.category.canViewCategory"><![CDATA[Can view category]]></item>
+	</category>
+
+	<category name="wcf.acp.dataImport">
+		<item name="wcf.acp.dataImport.data.com.woltlab.gallery.image"><![CDATA[Immagini (Galleria)]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.gallery.category"><![CDATA[Categorie delle immagini]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.gallery.album"><![CDATA[Album]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.gallery.image.comment"><![CDATA[Commenti delle immagini]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.gallery.image.comment.response"><![CDATA[Risposte ai commenti delle immagini]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.gallery.image.like"><![CDATA[Mi piace alle immagini]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.gallery.image.marker"><![CDATA[Tags]]></item>
+	</category>
+
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.admin.gallery"><![CDATA[Galleria]]></item>
+		<item name="wcf.acp.group.option.category.mod.gallery"><![CDATA[Galleria]]></item>
+		<item name="wcf.acp.group.option.category.user.gallery"><![CDATA[Galleria]]></item>
+
+		<item name="wcf.acp.group.option.admin.gallery.canManageCategory"><![CDATA[Può gestire le gallerie]]></item>
+		<item name="wcf.acp.group.option.mod.gallery.canDeleteAlbum"><![CDATA[Può eliminare gli album]]></item>
+		<item name="wcf.acp.group.option.mod.gallery.canDeleteComment"><![CDATA[Può eliminare i commenti]]></item>
+		<item name="wcf.acp.group.option.mod.gallery.canDeleteImage"><![CDATA[Può spostare le immagini nel cestino]]></item>
+		<item name="wcf.acp.group.option.mod.gallery.canDeleteImageCompletely"><![CDATA[Può eliminare le immagini]]></item>
+		<item name="wcf.acp.group.option.mod.gallery.canEditAlbum"><![CDATA[Può modificare gli album]]></item>
+		<item name="wcf.acp.group.option.mod.gallery.canEditComment"><![CDATA[Può modificare i commenti]]></item>
+		<item name="wcf.acp.group.option.mod.gallery.canEditImage"><![CDATA[Può modificare le immagini]]></item>
+		<item name="wcf.acp.group.option.mod.gallery.canRestoreImage"><![CDATA[Può ripristinare le immagini]]></item>
+		<item name="wcf.acp.group.option.mod.gallery.canModerateImage"><![CDATA[Può moderare le immagini]]></item>
+		<item name="wcf.acp.group.option.mod.gallery.canModerateComment"><![CDATA[Può moderare i commenti]]></item>
+		<item name="wcf.acp.group.option.mod.gallery.canViewDeletedImage"><![CDATA[Può vedere le immagini cancellate]]></item>
+		<item name="wcf.acp.group.option.user.gallery.allowedFileExtensions"><![CDATA[Estensioni ammesse]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canAddComment"><![CDATA[Può creare i commenti]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canAddImage"><![CDATA[Può caricare le immagini]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canAddImageWithoutModeration"><![CDATA[Può caricare le immagini senza approvazione]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canDeleteComment"><![CDATA[Può eliminare i propri commenti]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canDeleteImage"><![CDATA[Può eliminare le proprie immagini]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canDisableCommentFunction"><![CDATA[Può disabilitare i commenti per le proprie immagini]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canEditComment"><![CDATA[Può modificare i propri commenti]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canEditImage"><![CDATA[Può modificare le proprie immagini]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canViewImage"><![CDATA[Può visualizzare le immagini]]></item>
+		<item name="wcf.acp.group.option.user.gallery.maxAlbums"><![CDATA[Numero massimo di album]]></item>
+		<item name="wcf.acp.group.option.user.gallery.maxDescriptionLength"><![CDATA[Lunghezza massima della descrizione]]></item>
+		<item name="wcf.acp.group.option.user.gallery.maxHeight"><![CDATA[Altezza massima dell´immagine]]></item>
+		<item name="wcf.acp.group.option.user.gallery.maxHeight.description"><![CDATA[Il sistema tenterà di ridimensionare le immagini che superano questa altezza.]]></item>
+		<item name="wcf.acp.group.option.user.gallery.maxImages"><![CDATA[Numero massimo delle immagini]]></item>
+		<item name="wcf.acp.group.option.user.gallery.maxSize"><![CDATA[Peso massimo delle immagini]]></item>
+		<item name="wcf.acp.group.option.user.gallery.maxWidth"><![CDATA[Larghezza massima delle immagini]]></item>
+		<item name="wcf.acp.group.option.user.gallery.maxWidth.description"><![CDATA[Il sistema tenterà di ridimensionare le immagini che superano questa grandezza.]]></item>
+		<item name="wcf.acp.group.option.user.gallery.quota"><![CDATA[Filesystem Quota]]></item>
+		<item name="wcf.acp.group.option.user.gallery.quota.description"><![CDATA[Quantità massima di spazio su disco per le immagini (Le miniature <strong>non</strong> sono contate in questo limite)]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canRestrictAlbumAccess"><![CDATA[Può limitare l´accesso all´album]]></item>
+	</category>
+
+	<category name="wcf.acp.index">
+		<item name="wcf.acp.index.system.software.galleryVersion"><![CDATA[WoltLab Gallery&trade;-Versione]]></item>
+	</category>
+
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.gallery"><![CDATA[Galleria]]></item>
+		<item name="wcf.acp.option.category.gallery.image"><![CDATA[Immagini]]></item>
+		<item name="wcf.acp.option.category.gallery.index"><![CDATA[Pagina iniziale]]></item>
+		<item name="wcf.acp.option.category.dashboard.content.imagesInMotion"><![CDATA[Immagini in movimento]]></item>
+		<item name="wcf.acp.option.category.dashboard.content.imageGrid"><![CDATA[Gliglia immagine]]></item>
+		<item name="wcf.acp.option.category.dashboard.sidebar.latestImages"><![CDATA[Ultime immagini]]></item>
+		<item name="wcf.acp.option.category.dashboard.sidebar.mostCommentedImages"><![CDATA[Immagini con pià commenti]]></item>
+		<item name="wcf.acp.option.gallery_dashboard_box_images_in_motion_images"><![CDATA[Numero delle immagini]]></item>
+		<item name="wcf.acp.option.gallery_dashboard_box_images_in_motion_images.description"><![CDATA[Numero delle immagini che devono essere in movimento.]]></item>
+		<item name="wcf.acp.option.gallery_dashboard_box_images_in_motion_period"><![CDATA[Periodo di tempo]]></item>
+		<item name="wcf.acp.option.gallery_dashboard_box_images_in_motion_period.description"><![CDATA[Solo le immagini più recenti rispetto al periodo di tempo determinato sono considerati per il box "Immagini in movimento". [Tempo in giorni, 0 per infinito]]]></item>
+		<item name="wcf.acp.option.gallery_dashboard_box_images_in_motion_categories"><![CDATA[Filtra per categorie]]></item>
+		<item name="wcf.acp.option.gallery_dashboard_box_images_in_motion_categories.description"><![CDATA[Solo immagini assegnate alle categorie selezionate vengono visualizzati in questo box, non selezionare nulla per disattivare la funzione.]]></item>
+		<item name="wcf.acp.option.gallery_dashboard_box_image_grid_images"><![CDATA[Numero delle immagini]]></item>
+		<item name="wcf.acp.option.gallery_dashboard_box_image_grid_images.description"><![CDATA[Number of images that should be cycled.]]></item>
+		<item name="wcf.acp.option.gallery_dashboard_box_image_grid_period"><![CDATA[Periodo di tempo]]></item>
+		<item name="wcf.acp.option.gallery_dashboard_box_image_grid_period.description"><![CDATA[Solo le immagini più recenti rispetto al periodo di tempo determinato sono considerate per il box "griglia immagine". [Tempo in giorni, 0 per infinito]]]></item>
+		<item name="wcf.acp.option.gallery_dashboard_box_image_grid_categories"><![CDATA[Filtra per categorie]]></item>
+		<item name="wcf.acp.option.gallery_dashboard_box_image_grid_categories.description"><![CDATA[Only images assigned to the selected categories are displayed in this box, select none to disable.]]></item>
+		<item name="wcf.acp.option.gallery_dashboard_box_latest_images"><![CDATA[Numero di immagini]]></item>
+		<item name="wcf.acp.option.gallery_dashboard_box_latest_images_period"><![CDATA[Periodo di tempo]]></item>
+		<item name="wcf.acp.option.gallery_dashboard_box_latest_images_period.description"><![CDATA[Solo le immagini che rispettano il periodo di tempo verranno selezionate per il box “Ultime immagini”. [Tempo in giorni, 0 per infinito]]]></item>
+		<item name="wcf.acp.option.gallery_dashboard_box_most_commented_images"><![CDATA[Numero di commenti]]></item>
+		<item name="wcf.acp.option.gallery_dashboard_box_most_commented_images_period"><![CDATA[Periodo di tempo]]></item>
+		<item name="wcf.acp.option.gallery_dashboard_box_most_commented_images_period.description"><![CDATA[Solo le immagini più recenti di un determinato periodo di tempo sono considerate per le immagini con più commenti. [Tempo in giorni]]]></item>
+		<item name="wcf.acp.option.gallery_image_min_height"><![CDATA[Minima altezza dell´immagini]]></item>
+		<item name="wcf.acp.option.gallery_image_min_height.description"><![CDATA[Inserisci l´altezza minima delle immagini [Pixel]]]></item>
+		<item name="wcf.acp.option.gallery_image_min_width"><![CDATA[Larghezza minima delle immagini]]></item>
+		<item name="wcf.acp.option.gallery_image_min_width.description"><![CDATA[Inserisci la grandezza minima delle immagini [Pixel]]]></item>
+		<item name="wcf.acp.option.gallery_images_per_page"><![CDATA[Immagini per pagina]]></item>
+		<item name="wcf.acp.option.gallery_index_enable_stats"><![CDATA[Mostra le statistiche generali]]></item>
+		<item name="wcf.acp.option.gallery_index_enable_online_list"><![CDATA[Mostra la lista degli utenti online]]></item>
+		<item name="wcf.acp.option.gallery_max_parallel_image_uploads"><![CDATA[Caricamneti simultanei]]></item>
+		<item name="wcf.acp.option.gallery_max_parallel_image_uploads.description"><![CDATA[Restrizione per il numero delle immagini che un utente può caricare contemporaneamente.]]></item>
+		<item name="wcf.acp.option.gallery_message_sidebar_enable_user_images"><![CDATA[Mostra il numero delle immagini caricate]]></item>
+		<item name="wcf.acp.option.gallery_user_profile_enable_user_images"><![CDATA[Mostra il numero delle immagini caricate nel profilo utente]]></item>
+		<item name="wcf.acp.option.gallery_image_max_categories"><![CDATA[Numero massimo di categorie selezionate per un immagine]]></item>
+		<item name="wcf.acp.option.category.gallery.watermark"><![CDATA[Filigrana]]></item>
+		<item name="wcf.acp.option.category.gallery.watermark.image"><![CDATA[Immagini]]></item>
+		<item name="wcf.acp.option.category.gallery.watermark.text"><![CDATA[Testo]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_type"><![CDATA[Tipologia di filigrana]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_type.none"><![CDATA[Nessuna filigrana]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_type.image"><![CDATA[Immagine]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_type.text"><![CDATA[Testo]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_position"><![CDATA[Posizione]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_position.topLeft"><![CDATA[In alto a sisnistra]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_position.topCenter"><![CDATA[In alto al centro]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_position.topRight"><![CDATA[In altro a destra]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_position.middleLeft"><![CDATA[Al centro a sinistra]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_position.middleCenter"><![CDATA[Al centro]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_position.middleRight"><![CDATA[Al centro a destra]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_position.bottomLeft"><![CDATA[In basso a sinistra]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_position.bottomCenter"><![CDATA[In basso al centro]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_position.bottomRight"><![CDATA[In basso a destra]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_position_margin"><![CDATA[Margine]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_position_margin.description"><![CDATA[Margine delle immagini in pixel.]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_transparency"><![CDATA[Transparenza]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_transparency.description"><![CDATA[Trasparenza in perecentuale, 0 equale ad una trasparenza nulla.]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_image"><![CDATA[Immagine]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_image.removeFile"><![CDATA[Rimuovi le immagini esistenti]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_text"><![CDATA[Testo]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_text.description"><![CDATA[Il watemark “{literal}{$username}{/literal}” sarà sostituito con l´username dell'autore.]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_original"><![CDATA[Applica il watemark nell´immagine originale]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_original.description"><![CDATA[Ricordati! La filigrana viene applicata all´immagine originale e non può essere tolta successivamente.]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_font_size"><![CDATA[Grandezza font]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_font_size.description"><![CDATA[Gransdeza font in points.]]></item>
+		<item name="wcf.acp.option.gallery_image_empty_recycle_bin_cycle"><![CDATA[Svuota il cestino]]></item>
+		<item name="wcf.acp.option.gallery_image_empty_recycle_bin_cycle.description"><![CDATA[Il cestino viene svuotato nel periodo di tempo indicato. [Periodo in giorni, 0 per disabilitare]]]></item>
+		<item name="wcf.acp.option.gallery_user_profile_enable_latest_user_images"><![CDATA[Mostra le ultime immagini nel profilo utente]]></item>
+	</category>
+
+	<category name="wcf.acp.rebuildData">
+		<item name="wcf.acp.rebuildData.com.woltlab.gallery.thumbnail"><![CDATA[Ricostruisci le anteprime delle immagini]]></item>
+		<item name="wcf.acp.rebuildData.com.woltlab.gallery.thumbnail.description"><![CDATA[Ricostruisce le anteprime delle immagini della galleria]]></item>
+		<item name="wcf.acp.rebuildData.com.woltlab.gallery.album"><![CDATA[Ricostruisci albums]]></item>
+		<item name="wcf.acp.rebuildData.com.woltlab.gallery.album.description"><![CDATA[Ricostruisce gli albums della galleria]]></item>
+		<item name="wcf.acp.rebuildData.com.woltlab.gallery.image"><![CDATA[Ricostruisci immagini della galleria]]></item>
+		<item name="wcf.acp.rebuildData.com.woltlab.gallery.image.description"><![CDATA[Ricostruisce le immagini della galleria]]></item>
+	</category>
+
+	<category name="wcf.acp.stat">
+		<item name="wcf.acp.stat.category.com.woltlab.gallery"><![CDATA[WoltLab Gallery]]></item>
+		<item name="wcf.acp.stat.com.woltlab.gallery.image"><![CDATA[Immagini]]></item>
+		<item name="wcf.acp.stat.com.woltlab.gallery.image.diskUsage"><![CDATA[Spazio occupato dalle immagini (MB)]]></item>
+		<item name="wcf.acp.stat.com.woltlab.gallery.imageComment"><![CDATA[Commenti delle immagini]]></item>
+	</category>
+
+	<category name="wcf.clipboard">
+		<item name="wcf.clipboard.label.com.woltlab.gallery.image.marked"><![CDATA[{if $count == 1}Un immagine selezionata{else}{#$count} immagini selezionate{/if}]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.gallery.image.trash.confirmMessage"><![CDATA[Vuoi realmente spostare {if $count != 1}le immagini selezionate {else}l´immagine selezionata{/if} nel cestino?]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.gallery.image.delete.confirmMessage"><![CDATA[Vuoi realmente eliminare{if $count != 1}le immagini selezionate {else}l´immagine selezionata{/if}?]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.gallery.image.moveToAlbum"><![CDATA[Sposta nell´album ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.gallery.image.trash"><![CDATA[Sposta nel cestino ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.gallery.image.enable"><![CDATA[Approva ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.gallery.image.disable"><![CDATA[Disabilita ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.gallery.image.delete"><![CDATA[Elimina ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.gallery.image.restore"><![CDATA[Ripristina ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.gallery.image.edit"><![CDATA[Modifica ({#$count})]]></item>
+	</category>
+
+	<category name="wcf.dashboard">
+		<item name="wcf.dashboard.box.com.woltlab.gallery.categories"><![CDATA[Categorie]]></item>
+		<item name="wcf.dashboard.box.com.woltlab.gallery.imageGrid"><![CDATA[Griglia immagini]]></item>
+		<item name="wcf.dashboard.box.com.woltlab.gallery.imagesInMotion"><![CDATA[Immagini in movimento]]></item>
+		<item name="wcf.dashboard.box.com.woltlab.gallery.tagCloud"><![CDATA[Tags]]></item>
+		<item name="wcf.dashboard.box.com.woltlab.gallery.latestImages"><![CDATA[Ultime immagini]]></item>
+		<item name="wcf.dashboard.box.com.woltlab.gallery.latestComments"><![CDATA[Ultimi commenti]]></item>
+		<item name="wcf.dashboard.box.com.woltlab.gallery.mostCommentedImages"><![CDATA[Immagini più commentate]]></item>
+		<item name="wcf.dashboard.objectType.com.woltlab.gallery.GalleryPage"><![CDATA[Pagina iniziale galleria]]></item>
+		<item name="wcf.dashboard.objectType.com.woltlab.gallery.ImageListPage"><![CDATA[Lista immagine]]></item>
+		<item name="wcf.dashboard.objectType.com.woltlab.gallery.AlbumListPage"><![CDATA[Lista album]]></item>
+	</category>
+
+	<category name="wcf.like">
+		<item name="wcf.like.objectType.com.woltlab.gallery.likeableImage"><![CDATA[Immagine]]></item>
+		<item name="wcf.like.title.com.woltlab.gallery.imageComment"><![CDATA[{if $like->isDislike()}Non piace{else}Piace{/if} il commento di {if $commentAuthor}<a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}a un ospite{/if} nell´immagine <a href="{link application='gallery' controller='Image' object=$image}#comments{/link}">{$image->getTitle()}</a>.]]></item>
+		<item name="wcf.like.title.com.woltlab.gallery.imageComment.response"><![CDATA[{if $like->isDislike()}Non piace{else}Piace{/if} la risposta di {if $responseAuthor}<a href="{link controller='User' object=$responseAuthor}{/link}">{$responseAuthor->username}</a>{else}un ospite{/if} al commento di {if $commentAuthor}<a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}un ospite{/if} nell´immagine di <a href="{link application='gallery' controller='Image' object=$image}#comments{/link}">{$image->getTitle()}</a>.]]></item>
+		<item name="wcf.like.title.com.woltlab.gallery.likeableImage"><![CDATA[{if $like->isDislike()}Non piace{else}Piace{/if} l´immagine <a href="{link application='gallery' controller='Image' object=$image}#comments{/link}">{$image->getTitle()}</a>.]]></item>
+	</category>
+
+	<category name="wcf.moderation">
+		<item name="wcf.moderation.deletedContent.com.woltlab.gallery.image"><![CDATA[Immagini cestinate]]></item>
+		<item name="wcf.moderation.deletedContent.objectType.com.woltlab.gallery.image"><![CDATA[Immagini]]></item>
+		<item name="wcf.moderation.type.com.woltlab.gallery.image"><![CDATA[Immagine]]></item>
+	</category>
+
+	<category name="wcf.page">
+		<item name="wcf.page.category.com.woltlab.gallery"><![CDATA[WoltLab Gallery]]></item>
+		<item name="wcf.page.com.woltlab.gallery.AlbumListPage"><![CDATA[Albums]]></item>
+		<item name="wcf.page.com.woltlab.gallery.AlbumPage"><![CDATA[Album]]></item>
+		<item name="wcf.page.com.woltlab.gallery.GalleryPage"><![CDATA[Galleria]]></item>
+		<item name="wcf.page.com.woltlab.gallery.ImageAddPage"><![CDATA[Carica immagini]]></item>
+		<item name="wcf.page.com.woltlab.gallery.ImageEditPage"><![CDATA[Modifica immagini]]></item>
+		<item name="wcf.page.com.woltlab.gallery.ImageListPage"><![CDATA[Immagini]]></item>
+		<item name="wcf.page.com.woltlab.gallery.ImagePage"><![CDATA[Immagine]]></item>
+		<item name="wcf.page.com.woltlab.gallery.MapPage"><![CDATA[Mappa]]></item>
+		<item name="wcf.page.com.woltlab.gallery.UnreadImageListPage"><![CDATA[Nuove immagini]]></item>
+		<item name="wcf.page.com.woltlab.gallery.WatchedImageListPage"><![CDATA[Immagini guardate]]></item>
+		<item name="wcf.page.sitemap.gallery"><![CDATA[Galleria]]></item>
+	</category>
+
+	<category name="wcf.search">
+		<item name="wcf.search.object.com.woltlab.gallery.image"><![CDATA[Immagine]]></item>
+		<item name="wcf.search.type.com.woltlab.gallery.image"><![CDATA[Immagini]]></item>
+	</category>
+
+	<category name="wcf.tagging">
+		<item name="wcf.tagging.objectType.com.woltlab.gallery.image"><![CDATA[Immagini]]></item>
+		<item name="wcf.tagging.taggedObjects.com.woltlab.gallery.image"><![CDATA[Immagini con il tag “{$tag->name}”]]></item>
+	</category>
+
+	<category name="wcf.user">
+		<item name="wcf.user.activityPoint.objectType.com.woltlab.gallery.activityPointEvent.image"><![CDATA[Galleria immagini]]></item>
+	</category>
+
+	<category name="wcf.user.condition">
+		<item name="wcf.user.condition.galleryImages"><![CDATA[Immagini]]></item>
+	</category>
+
+	<category name="wcf.user.notification">
+		<item name="wcf.user.notification.com.woltlab.gallery"><![CDATA[Galleria]]></item>
+		<item name="wcf.user.notification.com.woltlab.gallery.image.image"><![CDATA[Nuova immagine nella categoria visualizzato]]></item>
+		<item name="wcf.user.notification.com.woltlab.gallery.image.mention"><![CDATA[Sei stato menzionato]]></item>
+		<item name="wcf.user.notification.com.woltlab.gallery.imageComment.notification.comment"><![CDATA[Nuovo commento nella tua immagine]]></item>
+		<item name="wcf.user.notification.com.woltlab.gallery.imageComment.response.notification.commentResponse"><![CDATA[Nuova risposta al commento nella tua immagine]]></item>
+		<item name="wcf.user.notification.com.woltlab.gallery.imageComment.response.notification.commentResponseOwner"><![CDATA[Nuova risposta al tuo commento]]></item>
+		<item name="wcf.user.notification.com.woltlab.gallery.likeableImage.notification.like"><![CDATA[La tua immagine è piaciuta]]></item>
+		<item name="wcf.user.notification.com.woltlab.gallery.imageComment.like.notification.like"><![CDATA[Il tuo commento è piaciuto]]></item>
+		<item name="wcf.user.notification.com.woltlab.gallery.imageComment.response.like.notification.like"><![CDATA[La tua risposta al commento è piaciuta]]></item>
+		<item name="wcf.user.notification.com.woltlab.gallery.image.marker"><![CDATA[Sei stato taggato in una foto]]></item>
+	</category>
+
+	<category name="wcf.user.objectWatch">
+		<item name="wcf.user.objectWatch.subscribe.com.woltlab.gallery.category"><![CDATA[Categorie visualizzate]]></item>
+		<item name="wcf.user.objectWatch.enableNotification.com.woltlab.gallery.category"><![CDATA[Ricevi notifiche per le nuove immagini]]></item>
+		<item name="wcf.user.objectWatch.unsubscribe.com.woltlab.gallery.category"><![CDATA[Non visualizzare la categoria]]></item>
+	</category>
+
+	<category name="wcf.user.profile">
+		<item name="wcf.user.profile.menu.albums"><![CDATA[Albums]]></item>
+	</category>
+
+	<category name="wcf.user.recentActivity">
+		<item name="wcf.user.recentActivity.com.woltlab.gallery.likeableImage.recentActivityEvent"><![CDATA[Mi piace (Immagine)]]></item>
+		<item name="wcf.user.recentActivity.com.woltlab.gallery.recentActivityEvent.image"><![CDATA[Immagine]]></item>
+		<item name="wcf.user.recentActivity.com.woltlab.gallery.recentActivityEvent.images"><![CDATA[Immagini]]></item>
+		<item name="wcf.user.recentActivity.com.woltlab.gallery.imageComment.recentActivityEvent"><![CDATA[Commento (Immagine)]]></item>
+		<item name="wcf.user.recentActivity.com.woltlab.gallery.imageComment.response.recentActivityEvent"><![CDATA[Risposta (Immagine)]]></item>
+	</category>
+</language>

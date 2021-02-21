@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it" languagename="Italiano" countrycode="it">
+	<!-- ticketsystem -->
+	<category name="ticketsystem.header.menu">
+		<item name="ticketsystem.header.menu.index"><![CDATA[Ticket System]]></item>
+		<item name="ticketsystem.header.menu.myTickets"><![CDATA[I miei ticket]]></item>
+	</category>
+	<category name="ticketsystem.footer.menu">
+		<item name="ticketsystem.footer.menu.index"><![CDATA[Ticket System]]></item>
+	</category>
+	<category name="ticketsystem.global.index">
+		<item name="ticketsystem.global.index.usersOnline.location"><![CDATA[Ticket System]]></item>
+		<item name="ticketsystem.global.index.tickets"><![CDATA[Tickets]]></item>
+		<item name="ticketsystem.global.index.noTickets"><![CDATA[Non sono stati trovati ticket.]]></item>
+		<item name="ticketsystem.global.index.ticketAdd"><![CDATA[Nuovo ticket]]></item>
+		<item name="ticketsystem.global.index.pleaseRegister">
+			<![CDATA[Esegui il login per utilizzare il Ticket System.]]></item>
+		<item name="ticketsystem.global.index.copyright">
+			<![CDATA[<a href="https://pluginstore.woltlab.com/user-file-list/1371406-darkwood-studios/"{if EXTERNAL_LINK_TARGET_BLANK} target="_blank"{/if}><strong>Ticketsystem{if SHOW_VERSION_NUMBER} {@PACKAGE_VERSION}{/if}</strong>, created by <strong>Darkwood-Studios</strong></a>]]></item>
+		<item name="ticketsystem.global.index.ticketsByCategory"><![CDATA[Ticket per categoria]]></item>
+		<item name="ticketsystem.global.index.myTicketsByCategory"><![CDATA[I miei ticket per categorie]]></item>
+	</category>
+	<category name="ticketsystem.global.ticketAdd">
+		<item name="ticketsystem.global.index.ticketAdd.noUser">
+			<![CDATA[Non hai i permessi per creare nuovi ticket.]]></item>
+	</category>
+	<category name="ticketsystem.ticket">
+		<item name="ticketsystem.ticket.information"><![CDATA[Informazione]]></item>
+		<item name="ticketsystem.ticket.subject"><![CDATA[Soggetto]]></item>
+		<item name="ticketsystem.ticket.text"><![CDATA[Messaggio]]></item>
+		<item name="ticketsystem.ticket.ticketID"><![CDATA[Ticket ID]]></item>
+		<item name="ticketsystem.ticket.priority"><![CDATA[Priorità]]></item>
+		<item name="ticketsystem.ticket.category"><![CDATA[Categoria]]></item>
+		<item name="ticketsystem.ticket.lastPost"><![CDATA[Ultima risposta]]></item>
+		<item name="ticketsystem.ticket.edit"><![CDATA[Modifica]]></item>
+		<item name="ticketsystem.ticket.editTicket"><![CDATA[Modifica ticket]]></item>
+		<item name="ticketsystem.ticket.close"><![CDATA[Chiudi]]></item>
+		<item name="ticketsystem.ticket.add"><![CDATA[Aggiungi ticket]]></item>
+		<item name="ticketsystem.ticket.undone"><![CDATA[non risolto]]></item>
+		<item name="ticketsystem.ticket.done"><![CDATA[risolto]]></item>
+		<item name="ticketsystem.ticket.delete"><![CDATA[Eliminato]]></item>
+		<item name="ticketsystem.ticket.closed"><![CDATA[Chiuso]]></item>
+		<item name="ticketsystem.ticket.open"><![CDATA[Aperto]]></item>
+		<item name="ticketsystem.ticket.private"><![CDATA[Nascondi ticket al pubblico]]></item>
+		<item name="ticketsystem.ticket.public"><![CDATA[Mostra ticket al pubblico]]></item>
+		<item name="ticketsystem.ticket.isPrivate"><![CDATA[Privato]]></item>
+		<item name="ticketsystem.ticket.isPublic"><![CDATA[Publico]]></item>
+		<item name="ticketsystem.ticket.gotoAnswer"><![CDATA[Vai all´ultima risposta]]></item>
+		<item name="ticketsystem.ticket.chooseAssignee"><![CDATA[Scegli assegnatario]]></item>
+		<item name="ticketsystem.ticket.assignToMe"><![CDATA[Assegna a me]]></item>
+		<item name="ticketsystem.ticket.assignToUser"><![CDATA[Assegna]]></item>
+		<item name="ticketsystem.ticket.setFree"><![CDATA[Imposta il ticket gratis]]></item>
+		<item name="ticketsystem.ticket.markAsDone"><![CDATA[Segna come risolto]]></item>
+		<item name="ticketsystem.ticket.markAsUndone"><![CDATA[Segna come non risolto]]></item>
+		<item name="ticketsystem.ticket.notification.title"><![CDATA[Nuovo ticket]]></item>
+		<item name="ticketsystem.ticket.notification.message"><![CDATA[È stato aperto un nuoto ticket.]]></item>
+		<item name="ticketsystem.ticket.notification.mail"><![CDATA[È stato aperto un nuoto ticket.]]></item>
+		<item name="ticketsystem.ticket.assign.failure">
+			<![CDATA[Il ticket non ti può essere assegnato.]]></item>
+		<item name="ticketsystem.ticket.markAsUndone.failure">
+			<![CDATA[Il ticket non può essere segnato come non/risolto.]]></item>
+		<item name="ticketsystem.ticket.delete.failure"><![CDATA[Il ticket non può essere eliminato.]]></item>
+		<item name="ticketsystem.ticket.close.failure"><![CDATA[Non puoi chiudere il ticket.]]></item>
+		<item name="ticketsystem.ticket.public.failure"><![CDATA[Non puoi pubblicare il ticket.]]></item>
+		<item name="ticketsystem.ticket.watch.failure"><![CDATA[Non puoi vedere il ticket.]]></item>
+		<item name="ticketsystem.answer.delete.failure"><![CDATA[Non può eliminare il ticket.]]></item>
+		<item name="ticketsystem.ticket.assigneeName"><![CDATA[Assegna: ]]></item>
+		<item name="ticketsystem.ticket.noAssignee"><![CDATA[Il ticket non è assegnato]]></item>
+		<item name="ticketsystem.ticket.guestLink">
+			<![CDATA[Successo. Utilizza il seguente link per visualizzare di nuovo il tuo ticket in qualsiasi momento:]]></item>
+		<item name="ticketsystem.ticket.guestmail.subject"><![CDATA[Grazie per il tuo feedback]]></item>
+		<item name="ticketsystem.ticket.guestmail.subject.answer"><![CDATA[Nuova risposta al tuo ticket]]></item>
+		<item name="ticketsystem.ticket.guestmail.header">
+			<![CDATA[Grazie per il tuo feedback. Utilizza il seguente link per visualizzare il tuo ticket creato:<br />]]></item>
+		<item name="ticketsystem.ticket.guestmail.header.answer">
+			<![CDATA[C´è un aggiornamento al tuio ticket. Utilizza il seguetne link per visualizzare la nuova risposta:<br />]]></item>
+		<item name="ticketsystem.ticket.guestmail.footer"><![CDATA[I migliori saluti,]]></item>
+		<item name="ticketsystem.ticket.attachments"><![CDATA[Allegati]]></item>
+		<item name="ticketsystem.ticket.closedTicket"><![CDATA[Il ticket è chiuso.]]></item>
+		<item name="ticketsystem.ticket.watcher"><![CDATA[Osservatore]]></item>
+		<item name="ticketsystem.ticket.watch"><![CDATA[Guarda problema]]></item>
+		<item name="ticketsystem.ticket.dewatch"><![CDATA[Smetti di guardare il problema]]></item>
+		<item name="ticketsystem.ticket.completedItem"><![CDATA[Oggetto completato]]></item>
+		<item name="ticketsystem.ticket.completedItems"><![CDATA[Oggetti completati]]></item>
+		<item name="ticketsystem.ticket.uncompletedItems"><![CDATA[Oggetti non completati]]></item>
+		<item name="ticketsystem.ticket.mention.notification.title"><![CDATA[Sei stato menzionato]]></item>
+		<item name="ticketsystem.ticket.mention.notification.message">
+			<![CDATA[{@$author->getAnchorTag()} ti ha menzionato nel ticket <a href="{$entry->getLink()}">{$entry->getTitle()}</a>.]]></item>
+		<item name="ticketsystem.ticket.mention.notification.mail"><![CDATA[{@$author->username} ti ha menzionato nell´articolo del blog "{$entry->getTitle()}":
+{$entry->getLink()}]]></item>
+	</category>
+	<category name="ticketsystem.answer">
+		<item name="ticketsystem.answer.add"><![CDATA[Rispondi]]></item>
+		<item name="ticketsystem.answer.edit"><![CDATA[Modifica risposta]]></item>
+		<item name="ticketsystem.answer.message"><![CDATA[Messaggio]]></item>
+	</category>
+	<category name="ticketsystem.priority">
+		<item name="ticketsystem.priority.priorities"><![CDATA[Lista Priorità]]></item>
+		<item name="ticketsystem.priority.new"><![CDATA[Nuova priorità]]></item>
+		<item name="ticketsystem.priority.save"><![CDATA[Voce salvata]]></item>
+		<item name="ticketsystem.priority.generalData"><![CDATA[Informazione]]></item>
+		<item name="ticketsystem.priority.label"><![CDATA[Etichetta]]></item>
+		<item name="ticketsystem.priority.label.critical"><![CDATA[Critico]]></item>
+		<item name="ticketsystem.priority.label.major"><![CDATA[Importante]]></item>
+		<item name="ticketsystem.priority.label.minor"><![CDATA[Bassa]]></item>
+		<item name="ticketsystem.priority.label.trivial"><![CDATA[Banale]]></item>
+		<item name="ticketsystem.priority.label.none"><![CDATA[nessuno]]></item>
+		<item name="ticketsystem.priority.delete"><![CDATA[Vuoi eliminare questa priorità?]]></item>
+	</category>
+	<category name="ticketsystem.acp.category">
+		<item name="ticketsystem.acp.category.user"><![CDATA[Capo gruppo]]></item>
+		<item name="ticketsystem.acp.category.user.assigned"><![CDATA[Assegnatario]]></item>
+		<item name="ticketsystem.acp.category.user.assigned.description">
+			<![CDATA[Inserisci qui il nome dell'utente responsabile. Il ticket sarà automaticamente assegnato a lui.]]></item>
+		<item name="ticketsystem.acp.category.watcher"><![CDATA[Osservatori]]></item>
+		<item name="ticketsystem.acp.category.watcher.label">
+			<![CDATA[L'utente inizia a guardare i ticket in questa categoria]]></item>
+		<item name="ticketsystem.acp.category.watcher.description">
+			<![CDATA[Aggiungi qui alcuni utenti o gruppi di utenti che dovrebbero essere automaticamente avvisati quando un nuovo ticket è stato creato.]]></item>
+	</category>
+
+	<category name="ticketsystem.answer.notification">
+		<item name="ticketsystem.answer.notification.title"><![CDATA[Nuova risposta (ticket)]]></item>
+		<item name="ticketsystem.answer.notification.message">
+			<![CDATA[Ha creato una risposta al tuo ticket.]]></item>
+		<item name="ticketsystem.answer.notification.mail">
+			<![CDATA[Una nuova risposta al tuo ticket è stata creata.]]></item>
+		<item name="wcf.user.notification.de.darkwood-studios.ticketsystem.answer.mention">
+			<![CDATA[Avvisami quando sono menzionato in una risposta]]></item>
+		<item name="wcf.user.notification.de.darkwood-studios.ticketsystem.ticket.mention">
+			<![CDATA[Avvisami quando sono menzionato in un ticket]]></item>
+	</category>
+	<!-- ticketsystem acp -->
+	<category name="ticketsystem.acp.menu">
+		<item name="ticketsystem.acp.menu.link.ticketsystem"><![CDATA[Ticket System]]></item>
+		<item name="ticketsystem.acp.menu.link.ticketsystem.priority"><![CDATA[Priorità]]></item>
+		<item name="ticketsystem.acp.menu.link.ticketsystem.priority.add"><![CDATA[Aggiungi priorità]]></item>
+		<item name="ticketsystem.acp.menu.link.ticketsystem.priority.show"><![CDATA[Mostra priorità]]></item>
+		<item name="ticketsystem.acp.menu.link.ticketsystem.category"><![CDATA[Lista Categorie]]></item>
+		<item name="ticketsystem.acp.menu.link.ticketsystem.category.add"><![CDATA[Aggiungi categoria]]></item>
+		<item name="ticketsystem.acp.menu.link.ticketsystem.category.show"><![CDATA[Mostra categorie]]></item>
+	</category>
+	<!-- wcf acp -->
+	<category name="wcf.acp.box">
+		<item name="wcf.acp.box.boxController.de.darkwood-studios.ticketsystem.category">
+			<![CDATA[Categorie Ticket]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.ticketsystem"><![CDATA[Ticket System]]></item>
+		<item name="wcf.acp.option.category.ticketsystem.tickets"><![CDATA[Tickets]]></item>
+		<item name="wcf.acp.option.category.ticketsystem.answers"><![CDATA[Risposte]]></item>
+		<item name="wcf.acp.option.ticket_id_converter"><![CDATA[Convertire l'ID del ticket al numero del ticket]]></item>
+		<item name="wcf.acp.option.ticket_id_converter.description">
+			<![CDATA[Modificare l'ID del ticket semplice in un numero di ticket con l'anno corrente. (ex: 1900003)]]></item>
+		<item name="wcf.acp.option.ticket_answer_sort_order"><![CDATA[Ordine]]></item>
+		<item name="wcf.acp.option.ticket_answer_sort_order.description">
+			<![CDATA[Ordine delle risposte.]]></item>
+		<item name="wcf.acp.option.ticket_answer_view"><![CDATA[Visuale]]></item>
+		<item name="wcf.acp.option.ticket_answer_view.description">
+			<![CDATA[Template scelto per la risposta.]]></item>
+		<item name="wcf.acp.option.ticket_answer_view.simple"><![CDATA[Semplice]]></item>
+		<item name="wcf.acp.option.ticket_answer_view.extended"><![CDATA[Esteso]]></item>
+		<item name="wcf.acp.option.ticket_admin_user_id"><![CDATA[Admin User-ID]]></item>
+		<item name="wcf.acp.option.ticket_admin_user_id.description">
+			<![CDATA[ID utente dell'utente amministratore che riceve una notifica per ogni nuovo ticket (0 = non attivo)]]></item>
+	</category>
+	<category name="wcf.acl.option">
+		<item name="wcf.acl.option.de.darkwood-studios.ticketsystem.category.canViewCategory">
+			<![CDATA[Può visualizzare le categorie]]></item>
+		<item name="wcf.acl.option.de.darkwood-studios.ticketsystem.category.canUseCategory">
+			<![CDATA[Può aggiungere ticket nelle categorie]]></item>
+		<item name="wcf.acl.option.de.darkwood-studios.ticketsystem.category.canModerateCategory">
+			<![CDATA[Può visualizzare tutti i ticket della categoria (moderare)]]></item>
+	</category>
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.user.ticketsystem"><![CDATA[Ticket System]]></item>
+		<item name="wcf.acp.group.option.user.ticketsystem.canReplyToTicket">
+			<![CDATA[Può rispondere ai ticket]]></item>
+		<item name="wcf.acp.group.option.user.ticketsystem.canViewTicketsystem">
+			<![CDATA[Può visualizzare il ticket system]]></item>
+		<item name="wcf.acp.group.option.user.ticketsystem.canCreateTicket"><![CDATA[Può creare ticket]]></item>
+		<item name="wcf.acp.group.option.user.ticketsystem.canUsePriority">
+			<![CDATA[Può scegliere le proprietà]]></item>
+		<item name="wcf.acp.group.option.user.ticketsystem.canUndoneTicket">
+			<![CDATA[Può di nuovo annullare il suo ticket]]></item>
+		<item name="wcf.acp.group.option.category.mod.ticketsystem"><![CDATA[Ticket System]]></item>
+		<item name="wcf.acp.group.option.mod.ticketsystem.canSeeTickets"><![CDATA[Può gestire i ticket]]></item>
+		<item name="wcf.acp.group.option.mod.ticketsystem.canDeleteTicket"><![CDATA[Può eliminare i ticket]]></item>
+		<item name="wcf.acp.group.option.mod.ticketsystem.canEditTicket"><![CDATA[Può modificare i ticket]]></item>
+		<item name="wcf.acp.group.option.mod.ticketsystem.canPublicTicket">
+			<![CDATA[Può impostare i ticket come pubblici]]></item>
+		<item name="wcf.acp.group.option.mod.ticketsystem.canCloseTicket"><![CDATA[Può chiudere i ticket]]></item>
+		<item name="wcf.acp.group.option.mod.ticketsystem.canWatchTicket"><![CDATA[Può vedere i ticket]]></item>
+		<item name="wcf.acp.group.option.category.admin.ticketsystem"><![CDATA[Ticket System]]></item>
+		<item name="wcf.acp.group.option.admin.ticketsystem.canManageCategory">
+			<![CDATA[Può gestire le categorie]]></item>
+		<item name="wcf.acp.group.option.admin.ticketsystem.canManagePriority">
+			<![CDATA[Può gestire le priorità]]></item>
+	</category>
+	<!-- wcf user -->
+	<category name="wcf.user.notification">
+		<item name="wcf.user.notification.de.darkwood-studios.ticketsystem"><![CDATA[Ticket System]]></item>
+		<item name="wcf.user.notification.de.darkwood-studios.ticketsystem.answer.answer">
+			<![CDATA[Nuova risposta a uno dei tuoi ticket]]></item>
+		<item name="wcf.user.notification.de.darkwood-studios.ticketsystem.ticket.ticket">
+			<![CDATA[Nuovo ticket creato]]></item>
+		<item name="wcf.user.notification.de.darkwood-studios.ticketsystem.answer.mention">
+				<![CDATA[Sei stato menzionato in una risposta]]></item>
+		<item name="wcf.user.notification.de.darkwood-studios.ticketsystem.ticket.mention">
+				<![CDATA[Sei stato menzionato in un ticket]]></item>
+	</category>
+	<!-- Dashboard -->
+	<category name="wcf.dashboard">
+		<item name="wcf.dashboard.objectType.de.darkwood-studios.ticketsystem.IndexPage">
+			<![CDATA[Lista ticket]]></item>
+		<item name="wcf.dashboard.box.de.darkwood-studios.ticketsystem.categories"><![CDATA[Categorie]]></item>
+	</category>
+</language>

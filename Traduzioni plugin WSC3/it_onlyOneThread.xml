@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it">
+	<category name="wbb.acp.board">
+		<item name="wbb.acp.board.onlyOneThread"><![CDATA[Una sola discussione per utente]]></item>
+		<item name="wbb.acp.board.threadSettings"><![CDATA[Impostazioni discussione]]></item>
+		<item name="wbb.acp.board.closedForNextThread"><![CDATA[La discussione deve essere chiusa per poterne aprire una nuova]]></item>
+		<item name="wbb.acp.board.closedForNextThread.description"><![CDATA[Se esiste una discussione chiusa di quell´utente, allora potrà crearne un´altra.]]></item>
+		<item name="wbb.acp.board.daysPruneForNextThread"><![CDATA[Periodo di tempo per un nuova discussione]]></item>
+		<item name="wbb.acp.board.daysPruneForNextThread.description"><![CDATA[Periodo di tempo per una discussione, se l´opzione „Una sola discussione per utente“ è attiva. 0 se non vuoi che ci sia un periodo di tempo tra una discussione e l´altra. [Periodo di tempo in giorni]]]></item>
+		<item name="wbb.acp.board.doneForNextThread"><![CDATA[La discussione deve essere risolta per una nuova discussione]]></item>
+		<item name="wbb.acp.board.doneForNextThread.description"><![CDATA[Se esiste una nuova sua discussione risolta, l´utente potrò aprirne un´altra]]></item>
+	</category>
+
+	<category name="wcf.acl.option">
+		<item name="wcf.acl.option.com.woltlab.wbb.board.canCreateMoreThanOneThread"><![CDATA[Può creare più di una discussione]]></item>
+	</category>
+
+	<category name="wbb.thread">
+		<item name="wbb.thread.onlyOneThread"><![CDATA[{if !$thread|empty}Hai già aperto una discussione sul forum: <a href="{link controller='Thread' application='wbb' object=$thread}{/link}">{$thread->topic|language}</a> rispondi a questo. {else} Hai già una discussione in questo forum. Rispondi alla tua discussione esistente.{/if}]]></item>
+	</category>
+</language>

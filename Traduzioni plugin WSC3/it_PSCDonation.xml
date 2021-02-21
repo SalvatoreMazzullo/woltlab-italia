@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it">
+	<category name="de.wbb-elite.donation">
+		<item name="de.wbb-elite.donation.start.psc"><![CDATA[È stata effettuata una donazione PaySafeCard da {$donation->username} dell´importo di {$donation->money} {$donation->currency}.]]></item>
+		<item name="de.wbb-elite.donation.start.psc.html"><![CDATA[<p>È stata effettuata una donazione PaySafeCard da {if $donation->userID}<a href="{link controller='User' object=$donation->getUser() isEmail=true}{/link}">{$donation->username}</a>{else}un ospite{/if} dell´importo di {$donation->money} {$donation->currency}.</p>]]></item>
+		<item name="de.wbb-elite.donation.start.psc.subject"><![CDATA[Nuova donazione PaySafeCard da {$donation->username}]]></item>
+		<item name="de.wbb-elite.donation.psc.add"><![CDATA[Aggiungi donazione PaySafeCard]]></item>
+		<item name="de.wbb-elite.donation.psc"><![CDATA[Paysafecard]]></item>
+		<item name="de.wbb-elite.donation.psc.code"><![CDATA[Codice Paysafecard]]></item>
+		<item name="de.wbb-elite.donation.psc.code.info"><![CDATA[Inseri il codice PaySafeCard nella forma <b>0000-0000-0000-0000</b>]]></item>
+		<item name="de.wbb-elite.donation.psc.error.falseCode"><![CDATA[Paysafecard non è valida]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.donation.psc"><![CDATA[Donazione Paysafecard]]></item>
+		<item name="wcf.acp.option.donation_psc_active"><![CDATA[Attiva donazione Paysafecard]]></item>
+		<item name="wcf.acp.option.donation_notification_psc"><![CDATA[E-mail di notifica delle donazioni Paysafecard]]></item>
+	</category>
+</language>

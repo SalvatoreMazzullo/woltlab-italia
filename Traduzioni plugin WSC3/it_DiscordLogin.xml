@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it">
+<category name="wcf.user.3rdparty">
+        <item name="wcf.user.3rdparty.discord"><![CDATA[Discord]]></item>
+        <item name="wcf.user.3rdparty.discord.login"><![CDATA[Discord]]></item>
+        <item name="wcf.user.3rdparty.discord.login.error.user_canceled"><![CDATA[L´accesso al tuo account Discord è stato rifiutato.]]></item>
+        <item name="wcf.user.3rdparty.discord.register"><![CDATA[Stai creando il tuo account attraverso Discord. Il tuo username è stato già inserito. Inserisci la tua email e sei pronto!]]></item>
+        <item name="wcf.user.3rdparty.discord.connect"><![CDATA[Collegati al tuo account Discord {if $__wcf->session->getVar('__discordUsername')} („{$__wcf->session->getVar('__discordUsername')}“){/if}]]></item>
+        <item name="wcf.user.3rdparty.discord.connect.success"><![CDATA[Il tuo account è stato collegato a Discord.]]></item>
+        <item name="wcf.user.3rdparty.discord.connect.error.inuse"><![CDATA[Il tuo account Discord è collegato con un altro account.]]></item>
+        <item name="wcf.user.3rdparty.discord.disconnect"><![CDATA[Elimina connessione con Discord]]></item>
+        <item name="wcf.user.3rdparty.discord.disconnect.success"><![CDATA[Il tuo account non è più collegato con Discord.]]></item>
+    </category>
+    <category name="wcf.acp.option">
+        <item name="wcf.acp.option.discord_enable_3rdParty"><![CDATA[Attiva login terze parti]]></item>
+        <item name="wcf.acp.option.discord_enable_3rdParty.description"><![CDATA[Abilita questa opzione per permettere di effettuare il login con Discord.]]></item>
+    </category>
+</language>

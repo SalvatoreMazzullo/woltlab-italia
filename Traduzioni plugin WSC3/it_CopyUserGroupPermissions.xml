@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it" languagename="Italiano">
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.sourceGroupID"><![CDATA[Gruppo utente sorgente]]></item>
+		<item name="wcf.acp.group.targetGroupIDs"><![CDATA[Gruppo utente destinatario]]></item>
+		<item name="wcf.acp.group.rights.copy"><![CDATA[Copia permessi gruppo utente]]></item>
+		<item name="wcf.acp.group.copy"><![CDATA[Copia]]></item>
+		<item name="wcf.acp.group.sourceGroupID.error.noSelection"><![CDATA[Deve essere scelto un gruppo sorgente.]]></item>
+		<item name="wcf.acp.group.targetGroupIDs.error.noSelection"><![CDATA[Deve essere scelto almeno un gruppo destinatario.]]></item>
+	</category>
+
+	<category name="wcf.acp.menu">
+		<item name="wcf.acp.menu.link.group.rights.copy"><![CDATA[Copia permessi gruppo utente]]></item>
+	</category>
+</language>

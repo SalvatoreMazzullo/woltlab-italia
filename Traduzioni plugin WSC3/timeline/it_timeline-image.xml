@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it" languagename="Italiano" countrycode="it">
+	<!-- timeline -->
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.user.timeline.canUseImageType"><![CDATA[Può condividere immagini]]></item>
+	</category>
+	<category name="timeline.type.title">
+		<item name="timeline.type.title.imageType"><![CDATA[Immagine]]></item>
+	</category>
+	<category name="timeline.type.notification">
+		<item name="timeline.type.notification.imageType"><![CDATA[{if $authorUser|isset && $timelineUser|isset}
+        Ha condiviso un immagine {if $authorUser->userID != $timelineUser->userID}nella timeline di {@$timelineUser->getAnchorTag()}{/if}.
+        {else}Ha condiviso un immagine{/if}]]></item>
+	</category>
+	<category name="timeline.general.share">
+		<item name="timeline.general.share.error.uploadFailed"><![CDATA[Il caricamento è fallito.]]></item>
+		<item name="timeline.general.share.error.invalidExtension"><![CDATA[Il file ha un estensione non supportata.]]></item>
+	</category>
+
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.timeline.image"><![CDATA[Immagini]]></item>
+		<item name="wcf.acp.option.timeline_picture_width"><![CDATA[Larghezza max.]]></item>
+		<item name="wcf.acp.option.timeline_picture_width.description"><![CDATA[La dimensione in pixel della larghezza massima di un immagine caricata.]]></item>
+		<item name="wcf.acp.option.timeline_picture_height"><![CDATA[Altezza max.]]></item>
+		<item name="wcf.acp.option.timeline_picture_height.description"><![CDATA[La dimensione in pixel del altezza massima di un immagine caricata.]]></item>
+		<item name="wcf.acp.option.timeline_picture_thumb_width"><![CDATA[Larghezza max. (thumb)]]></item>
+		<item name="wcf.acp.option.timeline_picture_thumb_width.description"><![CDATA[La dimensione in pixel della larghezza massima di una thumb.]]></item>
+		<item name="wcf.acp.option.timeline_picture_thumb_height"><![CDATA[Altezza max. (thumb)]]></item>
+		<item name="wcf.acp.option.timeline_picture_thumb_height.description"><![CDATA[La dimensione in pixel del altezza massima di una thumb.]]></item>
+		<item name="wcf.acp.option.timeline_picture_view_image_on_click"><![CDATA[Visualizza immagine originale al click]]></item>
+		<item name="wcf.acp.option.timeline_picture_view_image_on_click.description"><![CDATA[Mostra l´immagine originale in image viewer.]]></item>
+	</category>
+</language>

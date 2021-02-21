@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="https://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/tornado/language.xsd" languagename="Italiano" languagecode="it" countrycode="it">
+	<category name="wcf.user.menu">
+		<item name="wcf.user.menu.gdpr.dataExport"><![CDATA[Esporta dati personali]]></item>
+	</category>
+
+	<category name="wcf.user.gdpr">
+		<item name="wcf.user.gdpr.newExport"><![CDATA[Crea un nuovo export di dati personali]]></item>
+		<item name="wcf.user.gdpr.newExport.text"><![CDATA[Ai sensi dell'articolo 20 del regolamento generale sulla protezione dei dati (GDPR), siamo tenuti a fornirti i dati personali che ti riguardano, che ci hai fornito, in un formato strutturato, comunemente usato e leggibile da una macchina.
+{if !$__wcf->getUser()->authData|empty}Poiché il tuo account è collegato a un provider di terze parti, al momento non siamo in grado di fornirti questi dati in questa pagina. Puoi contattare l'amministratore{else}Per ricevere una versione attuale di questi dati, inserisci la tua password qui sotto e invia il modulo. Questo avvierà il download del file <kbd>user-export-gdpr-{$__wcf->getUser()->userID}.json</kbd>.{/if}
+
+Si consiglia di conservare questo file in un posto sicuro e impedirne l'accesso da parte di terzi non autorizzati.]]></item>
+		<item name="wcf.user.gdpr.currentPassword"><![CDATA[Sei pregato di inserire la tua password]]></item>
+		<item name="wcf.user.gdpr.exportLog.title"><![CDATA[Ultimo export]]></item>
+		<item name="wcf.user.gdpr.exportLog.time"><![CDATA[Data]]></item>
+	</category>
+</language>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it">
+	<category name="de.wbb-elite.donation">
+		<item name="de.wbb-elite.donation.bank"><![CDATA[Bonifico bancario]]></item>
+		<item name="de.wbb-elite.donation.bank.usage"><![CDATA[Motivazione]]></item>
+		<item name="de.wbb-elite.donation.bank.usage.message"><![CDATA[Inserisci il tuo id utente ({@$__wcf->getUser()->userID}) come motivazione.]]></item>
+		<item name="de.wbb-elite.donation.bank.add"><![CDATA[Aggiungi donazione con bonifico]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.donation.bank"><![CDATA[Donazione Bonifico bancario]]></item>
+		<item name="wcf.acp.option.donation_bank_active"><![CDATA[Abilita donazione attraverso bonifico bancario]]></item>
+		<item name="wcf.acp.option.donation_bank_text"><![CDATA[Testo informativo per donazione bonifico bancario]]></item>
+		<item name="wcf.acp.option.donation_bank_holder"><![CDATA[Intestatario]]></item>
+		<item name="wcf.acp.option.donation_bank_nummber"><![CDATA[Numero]]></item>
+		<item name="wcf.acp.option.donation_bank_blz"><![CDATA[BLZ]]></item>
+		<item name="wcf.acp.option.donation_bank_iban"><![CDATA[IBAN]]></item>
+		<item name="wcf.acp.option.donation_bank_bic"><![CDATA[BIC]]></item>
+	</category>
+</language>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com https://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it">
+    <category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.discord-sync"><![CDATA[Discord-Sync]]></item>
+		<item name="wcf.acp.option.category.discord-sync.general"><![CDATA[API]]></item>
+        <item name="wcf.acp.option.hanashi_discord_api_url"><![CDATA[Discord-API-URL]]></item>
+        <item name="wcf.acp.option.hanashi_discord_api_url.description"><![CDATA[URL alle API di Discord. Non cambiarlo!]]></item>
+        <item name="wcf.acp.option.hanashi_discord_sync_client_id"><![CDATA[Client-ID]]></item>
+        <item name="wcf.acp.option.hanashi_discord_sync_client_id.description"><![CDATA[URL di callback: {link controller='HaDiscordAuth' forceFrontend=true}{/link}]]></item>
+        <item name="wcf.acp.option.hanashi_discord_sync_client_secret"><![CDATA[Client-Secret]]></item>
+        <item name="wcf.acp.option.hanashi_discord_sync_bot_token"><![CDATA[Bot-Token]]></item>
+        <item name="wcf.acp.option.hanashi_discord_sync_bot_token.description"><![CDATA[Il bot ha bisogno dei permessi: "gestisci ruoli".]]></item>
+        <item name="wcf.acp.option.hanashi_discord_sync_guild_id"><![CDATA[ID Server]]></item>
+        <item name="wcf.acp.option.hanashi_discord_sync_bot_name"><![CDATA[Nome Bot]]></item>
+        <item name="wcf.acp.option.hanashi_discord_sync_join_server_after_connect"><![CDATA[Disconnettiti dal server dopo la disconnessione da Discord?]]></item>
+        <item name="wcf.acp.option.hanashi_discord_sync_join_server_after_connect.description"><![CDATA[Il bot ha bisogno dei permessi "Crea invito istantaneo".]]></item>
+        <item name="wcf.acp.option.hanashi_discord_sync_use_avatar"><![CDATA[Gli utenti possono utilizzare l´avatar di discord?]]></item>
+        <item name="wcf.acp.option.hanashi_discord_sync_nicknames"><![CDATA[Sincronizza il nome utente per connettersi con Discord?]]></item>
+        <item name="wcf.acp.option.hanashi_discord_sync_nicknames.description"><![CDATA[Il bot ha bisogno dei permessi "Gestisci Nickname".]]></item>
+        <item name="wcf.acp.option.hanashi_discord_sync_bans"><![CDATA[Sicronizza ban?]]></item>
+        <item name="wcf.acp.option.hanashi_discord_sync_bans.description"><![CDATA[Il bot ha bisogno dei permessi "Ban utenti".]]></item>
+        <item name="wcf.acp.option.hanashi_discord_kick_on_disconnect"><![CDATA[Kicka quando si disconnette da discord?]]></item>
+        <item name="wcf.acp.option.hanashi_discord_kick_on_disconnect.description"><![CDATA[Kicka l´utente dal server Discord se si disconnette da Discord sul forum. Il bot ha bisogno dei permessi "Kicka utente"]]></item>
+        <item name="wcf.acp.option.hanashi_discord_sync_mandatory"><![CDATA[Sincronizzazione discord obbligatoria per tutti gli utenti?]]></item>
+        <item name="wcf.acp.option.hanashi_discord_enable_debug_mode"><![CDATA[Abita debug mode?]]></item>
+        <item name="wcf.acp.option.hanashi_discord_enable_debug_mode.description"><![CDATA[Questa modalità è solo per il debug. Non usarlo in un ambiente di produzione.]]></item>
+	      <item name="wcf.acp.option.hanashi_discord_login"><![CDATA[Attiva login Discord?]]></item>
+        <item name="wcf.acp.option.hanashi_discord_login.description"><![CDATA[Se questa opzione è attiva, gli utenti possono accedere tramite Discord.]]></item>
+
+		<item name="wcf.acp.option.error.discordApiError"><![CDATA[C'è stato un errore con la API discord. {$discordError}]]></item>
+    </category>
+
+    <category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.user.profile.avatar.canUseDiscordAvatar"><![CDATA[Può usare l´avatar discord]]></item>
+		<item name="wcf.acp.group.option.admin.discordBoardSynchronization.canEdit"><![CDATA[Può modificare l'assegnazione della scheda Discord]]></item>
+
+		<item name="wcf.acp.group.discord"><![CDATA[Sincronizzazione Discord]]></item>
+		<item name="wcf.acp.group.discord.discordRoleId"><![CDATA[Gruppi utenti Discord]]></item>
+
+		<item name="wcf.acp.group.discord.syncDirection"><![CDATA[Sincronizzazione inverda Discord?]]></item>
+		<item name="wcf.acp.group.discord.syncDirection.description"><![CDATA[Se lo si imposta su "no", è normale la direzione di sincronizzazione da WSC a Discord. Attenzione: se ci sono più di 1000 membri di discord, non funzionerà correttamente.]]></item>
+
+		<item name="wcf.acp.group.discord.noConnection"><![CDATA[I dati per le API discord sono errati o non possono stabilire una connessione con API discord. Si prega di cheack il token bot.]]></item>
+	</category>
+
+	<category name="wcf.acp.user">
+		<item name="wcf.acp.user.discord.sectionTitle"><![CDATA[Connessione Discord]]></item>
+		<item name="wcf.acp.user.discord.disconnect"><![CDATA[Disconnetti da Discord?]]></item>
+		<item name="wcf.acp.user.discord.disconnect.description"><![CDATA[È già connesso a Discord. Se clicchi su {lang}wcf.acp.option.type.boolean.yes{/lang} e premi su {lang}wcf.global.button.submit{/lang}, l´utente verrà disconnesso da Discord.]]></item>
+		<item name="wcf.acp.user.discord.not_connected"><![CDATA[Questo utente non è connesso con Discord.]]></item>
+	</category>
+
+	<category name="wcf.user.3rdparty">
+		<item name="wcf.user.3rdparty.discord"><![CDATA[Sincronizzazione Discord]]></item>
+		<item name="wcf.user.3rdparty.discord.login"><![CDATA[Connetti con Discord]]></item>
+		<item name="wcf.user.3rdparty.discord.login2"><![CDATA[Login via account Discord]]></item>
+		<item name="wcf.user.3rdparty.discord.register"><![CDATA[Crea un account tramite Discord. Il nome utente e l'e-mail sono compilati.]]></item>
+		<item name="wcf.user.3rdparty.discord.disconnect"><![CDATA[Disconnetti da Discord]]></item>
+		<item name="wcf.user.3rdparty.discord.error"><![CDATA[Si è verificato un errore con l'API Discord. Forse il plugin non è configurato correttamente o l'API Discord non è disponibile. <br> Prova a riconnetterti con Discord API.]]></item>
+		<item name="wcf.user.3rdparty.discord.connect.error.inuse"><![CDATA[Il tuo account Discord è già collegato a un altro account utente.]]></item>
+	</category>
+
+	<category name="wcf.user.avatar">
+		<item name="wcf.user.avatar.type.discord"><![CDATA[Utilizza l´avatar di discord]]></item>
+		<item name="wcf.user.avatar.type.discord.description"><![CDATA[Aggiungi l'avatar di Discord. L'avatar non verrà aggiornato automaticamente.]]></item>
+	</category>
+
+	<category name="wcf.redirect.discord">
+		<item name="wcf.redirect.discord.mandatory"><![CDATA[Devi essere connesso con discord. Verrai reindirizzato per l'autenticazione con discord.]]></item>
+	</category>
+</language>

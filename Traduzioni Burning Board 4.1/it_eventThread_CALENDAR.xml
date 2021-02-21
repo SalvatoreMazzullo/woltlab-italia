@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it">
+	<category name="calendar.event">
+		<item name="calendar.event.button.jumpToEventThread"><![CDATA[Vai alla discussione]]></item>
+		<item name="calendar.event.eventThread.info"><![CDATA[{#$eventThread->replies} {if $eventThread->replies == 1}risposta{else}risposte{/if}{if $eventThread->replies > 0}, ultima: {@$eventThread->lastPostTime|time}{/if}]]></item>
+		<item name="calendar.event.eventThread.subject"><![CDATA[{@$event->subject} ({@$event->getFirstEventDate()->getFormattedTimeFrame()})]]></item>
+		<item name="calendar.event.eventThread.message"><![CDATA[{@$event->username} aggiungi un nuovo evento:
+[url='{link application='calendar' controller='Event' object=$event->getFirstEventDate() encode=false appendSession=false}{/link}']{@$event->subject}[/url]
+
+[quote]{@$event->message}[/quote]]]></item>
+	</category>
+	
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.calendar.event.eventThread"><![CDATA[Discussione]]></item>
+		<item name="wcf.acp.option.category.calendar.event.eventThread.description"><![CDATA[Crea automaticamente una discussione per questo evento nel forum selezionato.]]></item> 
+		<item name="wcf.acp.option.calendar_event_thread_board_id"><![CDATA[Forum]]></item>
+		<item name="wcf.acp.option.calendar_event_thread_board_id.description"><![CDATA[La discussione verrà creata nel forum selezionato.]]></item>
+	</category>
+</language>

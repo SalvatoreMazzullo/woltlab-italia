@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="https://www.woltlab.com" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/vortex/language.xsd" languagecode="it">
+	<category name="wcf.acl.option">
+		<item name="wcf.acl.option.com.woltlab.wbb.board.canStartRaffle"><![CDATA[Può iniziare una lotteria]]></item>
+		<item name="wcf.acl.option.com.woltlab.wbb.board.canParticipantRaffle"><![CDATA[Può partecipare ad una lotteria]]></item>
+	</category>
+	<category name="wcf.acp.box">
+		<item name="wcf.acp.box.boxController.dev.hanashi.wsc.raffleBox"><![CDATA[Lotterie]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.raffle"><![CDATA[Lotteria]]></item>
+		<item name="wcf.acp.option.category.raffle.general"><![CDATA[Generale]]></item>
+		<item name="wcf.acp.option.hanashi_raffle_show_box_always"><![CDATA[Mostra sempre il box della lotteria]]></item>
+		<item name="wcf.acp.option.hanashi_raffle_show_box_always.description"><![CDATA[Mostra il box lotteria anche quando non ci sono.]]></item>
+	</category>
+	<category name="wcf.acp.menu">
+		<item name="wcf.acp.menu.link.content.raffle"><![CDATA[Lotteria]]></item>
+		<item name="wcf.acp.menu.link.content.raffle.raffleList"><![CDATA[Lotteria]]></item>
+		<item name="wcf.acp.menu.link.content.raffle.raffleList.add"><![CDATA[Crea lotteria]]></item>
+		<item name="wcf.acp.menu.link.content.raffle.raffleList.edit"><![CDATA[Modifica lotteria]]></item>
+	</category>
+	<category name="wcf.acp.hanashi">
+		<item name="wcf.acp.hanashi.raffleList.info"><![CDATA[Solamente le lotterie globali sono visualizzate in questa pagina.]]></item>
+		<item name="wcf.acp.hanashi.raffleList.title"><![CDATA[Titolo]]></item>
+		<item name="wcf.acp.hanashi.raffleList.prices"><![CDATA[Prezzi]]></item>
+		<item name="wcf.acp.hanashi.raffleList.endsOn"><![CDATA[Fine]]></item>
+		<item name="wcf.acp.hanashi.raffleList.isEnd"><![CDATA[È già finita]]></item>
+	</category>
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.user.raffle"><![CDATA[Lotteria]]></item>
+		<item name="wcf.acp.group.option.category.user.board.raffle"><![CDATA[Lotteria]]></item>
+		<item name="wcf.acp.group.option.category.admin.raffle"><![CDATA[Lotteria]]></item>
+		<item name="wcf.acp.group.option.user.board.canParticipantRaffle"><![CDATA[Può partecipare ad una lotteria]]></item>
+		<item name="wcf.acp.group.option.user.board.canStartRaffle"><![CDATA[Può iniziare una lotteria]]></item>
+		<item name="wcf.acp.group.option.user.board.canManageTerms"><![CDATA[Può gestire i termini di uso]]></item>
+		<item name="wcf.acp.group.option.user.raffle.canShowGlobalRaffle"><![CDATA[Può vedere le lotterie globali]]></item>
+		<item name="wcf.acp.group.option.user.raffle.canParticipantGlobalRaffle"><![CDATA[Può partecipare ad una lotteria globale]]></item>
+		<item name="wcf.acp.group.option.user.raffle.canShowParticipants"><![CDATA[Può visualizzare i partecipanti]]></item>
+		<item name="wcf.acp.group.option.admin.raffle.canManageRaffle"><![CDATA[Può gestire le lotterie]]></item>
+	</category>
+	<category name="wcf.user.notification">
+		<item name="wcf.user.notification.dev.hanashi.wsc.raffle.won"><![CDATA[Lotteria]]></item>
+		<item name="wcf.user.notification.dev.hanashi.wsc.raffle.won.won"><![CDATA[Lotterie vinte]]></item>
+	</category>
+	<category name="dev.hanashi.js">
+		<item name="dev.hanashi.js.creator.addOption"><![CDATA[Aggiungi un altro prezzo]]></item>
+		<item name="dev.hanashi.js.creator.removeOption"><![CDATA[Rimuovi prezzo]]></item>
+		<item name="dev.hanashi.js.creator.editRaffle"><![CDATA[Modifica lotteria]]></item>
+		<item name="dev.hanashi.js.creator.raffleParticipant"><![CDATA[Ti sei registrato per la lotteria.]]></item>
+	</category>
+	<category name="dev.hanashi.raffleAction">
+		<item name="dev.hanashi.raffleAction.raffleIdIsNotTransfered"><![CDATA[Il "lotteriaID" non è stato trasmesso.]]></item>
+		<item name="dev.hanashi.raffleAction.notLogined"><![CDATA[Devi effettuare l´accesso.]]></item>
+		<item name="dev.hanashi.raffleAction.raffleIsOver"><![CDATA[La lotteria è già finita.]]></item>
+		<item name="dev.hanashi.raffleAction.isParticipant"><![CDATA[Partecipi già alla lotteria.]]></item>
+		<item name="dev.hanashi.raffleAction.minOnePrice"><![CDATA[Deve essere indiciato almeno un prezzo.]]></item>
+		<item name="dev.hanashi.raffleAction.endDateInPast"><![CDATA[La fine della lotteria non può essere impostata nel passatto.]]></item>
+		<item name="dev.hanashi.raffleAction.minOneWinner"><![CDATA[Ci deve essere almeno un vincitore per ogni premio.]]></item>
+		<item name="dev.hanashi.raffleAction.termsOfParticipationUrlEmpty"><![CDATA[L'URL per i termini di utilizzo è vuoto.]]></item>
+		<item name="dev.hanashi.raffleAction.termsOfParticipationEmpty"><![CDATA[Le condizioni di partecipazione devono essere accettate.]]></item>
+	</category>
+	<category name="dev.hanashi.notification">
+		<item name="dev.hanashi.notification.won"><![CDATA[Vincitore]]></item>
+		<item name="dev.hanashi.notification.won.description"><![CDATA[Hai vinto la lotteria <a href="{$postLink}">{$raffleTitle}</a>.]]></item>
+	</category>
+	<category name="dev.hanashi.messageFormRaffle">
+		<item name="dev.hanashi.messageFormRaffle.title"><![CDATA[Titolo]]></item>
+		<item name="dev.hanashi.messageFormRaffle.title.description"><![CDATA[Svuota il titolo se vuoi rimuovere la competizione.]]></item>
+		<item name="dev.hanashi.messageFormRaffle.permissions"><![CDATA[YNon hai i diritti per creare una lotteria in questo forum.]]></item>
+		<item name="dev.hanashi.messageFormRaffle.prices"><![CDATA[Prezzi]]></item>
+		<item name="dev.hanashi.messageFormRaffle.prices.description"><![CDATA[Il numero indica quanti vincitori ci possono essere per vittoria.]]></item>
+		<item name="dev.hanashi.messageFormRaffle.showInBox"><![CDATA[Mostra la lotteria nel box]]></item>
+		<item name="dev.hanashi.messageFormRaffle.showInBox.description"><![CDATA[Quando la lotteria viene visualizzata nel box, diventa una lotteria globale.]]></item>
+		<item name="dev.hanashi.messageFormRaffle.raffleEnds"><![CDATA[L'entrata della lotteria finisce]]></item>
+		<item name="dev.hanashi.messageFormRaffle.maxWinners"><![CDATA[Vincitori massimi per vittoria]]></item>
+		<item name="dev.hanashi.messageFormRaffle.termsOfParticipation"><![CDATA[Attiva le condizioni di partecipazione]]></item>
+		<item name="dev.hanashi.messageFormRaffle.termsOfParticipationUrl"><![CDATA[Collegamento alle condizioni di partecipazione]]></item>
+		<item name="dev.hanashi.messageFormRaffle.addOption"><![CDATA[Aggiungi un´altra risposta]]></item>
+		<item name="dev.hanashi.messageFormRaffle.removeOption"><![CDATA[Rimuovi risposta]]></item>
+	</category>
+	<category name="dev.hanashi.messageFormRaffleTab">
+		<item name="dev.hanashi.messageFormRaffleTab.title"><![CDATA[Lotteria]]></item>
+	</category>
+	<category name="dev.hanashi.raffleThreadPostListButtons">
+		<item name="dev.hanashi.raffleThreadPostListButtons.title"><![CDATA[Modifica lotteria]]></item>
+	</category>
+	<category name="dev.hanashi.rafflePostList">
+		<item name="dev.hanashi.rafflePostList.title"><![CDATA[Participanti]]></item>
+		<item name="dev.hanashi.rafflePostList.winners"><![CDATA[VIncitori:]]></item>
+		<item name="dev.hanashi.rafflePostList.winnersShort"><![CDATA[Vincitori]]></item>
+		<item name="dev.hanashi.rafflePostList.winnersPerPrice"><![CDATA[Vincitori per premio]]></item>
+		<item name="dev.hanashi.rafflePostList.noWinners"><![CDATA[NOn ci sono vincitori.]]></item>
+		<item name="dev.hanashi.rafflePostList.winnerInProgress"><![CDATA[I vincitori devono ancora essere scelti.]]></item>
+		<item name="dev.hanashi.rafflePostList.participantionEnd"><![CDATA[La lotteria è terminata.]]></item>
+		<item name="dev.hanashi.rafflePostList.raffleEndsOn"><![CDATA[La lotteria termina il]]></item>
+		<item name="dev.hanashi.rafflePostList.isParticipant"><![CDATA[Sei registrato a questa lotteria.]]></item>
+		<item name="dev.hanashi.rafflePostList.termsOfParticipation"><![CDATA[Accetto le <a href="{$raffle->termsOfParticipationUrl}">condizioni di partecipazione</a>.]]></item>
+		<item name="dev.hanashi.rafflePostList.participant"><![CDATA[Partecipanti]]></item>
+	</category>
+	<category name="dev.hanashi.raffleuserList">
+		<item name="dev.hanashi.raffleuserList.username"><![CDATA[Username]]></item>
+		<item name="dev.hanashi.raffleuserList.date"><![CDATA[Data]]></item>
+		<item name="dev.hanashi.raffleuserList.empty"><![CDATA[Finora, nessuno partecipa a questa lotteria.]]></item>
+	</category>
+	<category name="dev.hanashi.thread">
+		<item name="dev.hanashi.thread.raffle"><![CDATA[Questa discussione contiene una lotteria.]]></item>
+	</category>
+	<category name="dev.hanashi.box">
+		<item name="dev.hanashi.box.boxRaffleList.empty"><![CDATA[Al momento non ci sono lotterie attive.]]></item>
+	</category>
+	<category name="wcf.copyright">
+		<item name="wcf.copyright.raffle"><![CDATA[Raffle, developed by Hanashi]]></item>
+	</category>
+</language>

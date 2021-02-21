@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it">
+
+
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.user.payPalButton"><![CDATA[Pulsante donazione PayPal]]></item>
+		<item name="wcf.acp.group.option.user.payPalButton.canUse"><![CDATA[Può abilitare il pulsante donazione PayPal]]></item>
+		<item name="wcf.acp.group.option.user.payPalButton.canSee"><![CDATA[Può vedere il pulsante donazione PayPal]]></item>
+	</category>
+	<category name="wcf.user.option">
+		<item name="wcf.user.option.category.settings.payPalButton"><![CDATA[Donazione PayPal]]></item>
+
+		<item name="wcf.user.option.payPalButton_enable"><![CDATA[Abilita il pulsante per le donazioni PayPal]]></item>
+		<item name="wcf.user.option.payPalButton_email"><![CDATA[La tua email Paypal]]></item>
+		<item name="wcf.user.option.payPalButton_currency"><![CDATA[Moneta]]></item>
+		<item name="wcf.user.option.payPalButton_currency_eur"><![CDATA[Euro]]></item>
+		<item name="wcf.user.option.payPalButton_currency_usd"><![CDATA[Dollaro americano]]></item>
+		<item name="wcf.user.option.payPalButton_amount_defined"><![CDATA[Importo fisso]]></item>
+		<item name="wcf.user.option.payPalButton_amount_defined.description"><![CDATA[Se abilita questa opzione gli utenti potranno donare solo quella cifra]]></item>
+		<item name="wcf.user.option.payPalButton_amount_value"><![CDATA[Importo]]></item>
+	</category>
+
+</language>

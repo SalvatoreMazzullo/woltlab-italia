@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it" languagename="italiano" countrycode="it">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.socialLinks"><![CDATA[Link Social]]></item>
+		<item name="wcf.acp.option.category.socialLinks_general"><![CDATA[Generale]]></item>
+		<item name="wcf.acp.option.category.socialLinks_navigation"><![CDATA[Link social nella barra navigazione]]></item>
+		<item name="wcf.acp.option.category.socialLinks_footer"><![CDATA[Link Social nel footer]]></item>
+		<item name="wcf.acp.option.category.socialLinks_usermenu"><![CDATA[Menu utente]]></item>
+
+		<item name="wcf.acp.option.socialLinks_facebook_title"><![CDATA[Facebook]]></item>
+		<item name="wcf.acp.option.socialLinks_twitter_title"><![CDATA[Twitter]]></item>
+		<item name="wcf.acp.option.socialLinks_google_title"><![CDATA[Google +]]></item>
+		<item name="wcf.acp.option.socialLinks_pinterest_title"><![CDATA[Pinterest]]></item>
+		<item name="wcf.acp.option.socialLinks_youtube_title"><![CDATA[Youtube]]></item>
+		<item name="wcf.acp.option.socialLinks_instagram_title"><![CDATA[Instagram]]></item>
+		<item name="wcf.acp.option.socialLinks_dribbble_title"><![CDATA[Dribbble]]></item>
+		<item name="wcf.acp.option.socialLinks_linkedin_title"><![CDATA[LinkedIn]]></item>
+		<item name="wcf.acp.option.socialLinks_github_title"><![CDATA[GitHub]]></item>
+		<item name="wcf.acp.option.socialLinks_reddit_title"><![CDATA[Reddit]]></item>
+		<item name="wcf.acp.option.socialLinks_steam_title"><![CDATA[Steam]]></item>
+		<item name="wcf.acp.option.socialLinks_twitch_title"><![CDATA[Twitch]]></item>
+		<item name="wcf.acp.option.socialLinks_xing_title"><![CDATA[Xing]]></item>
+
+		<item name="wcf.acp.option.socialLinks_facebook_url"><![CDATA[URL]]></item>
+		<item name="wcf.acp.option.socialLinks_twitter_url"><![CDATA[URL]]></item>
+		<item name="wcf.acp.option.socialLinks_google_url"><![CDATA[URL]]></item>
+		<item name="wcf.acp.option.socialLinks_pinterest_url"><![CDATA[URL]]></item>
+		<item name="wcf.acp.option.socialLinks_youtube_url"><![CDATA[URL]]></item>
+		<item name="wcf.acp.option.socialLinks_instagram_url"><![CDATA[URL]]></item>
+		<item name="wcf.acp.option.socialLinks_dribbble_url"><![CDATA[URL]]></item>
+		<item name="wcf.acp.option.socialLinks_linkedin_url"><![CDATA[URL]]></item>
+		<item name="wcf.acp.option.socialLinks_github_url"><![CDATA[URL]]></item>
+		<item name="wcf.acp.option.socialLinks_reddit_url"><![CDATA[URL]]></item>
+		<item name="wcf.acp.option.socialLinks_steam_url"><![CDATA[URL]]></item>
+		<item name="wcf.acp.option.socialLinks_twitch_url"><![CDATA[URL]]></item>
+		<item name="wcf.acp.option.socialLinks_xing_url"><![CDATA[URL]]></item>
+
+		<item name="wcf.acp.option.socialLinks_facebook_url.description"><![CDATA[Inserisci l'URL, lasci vuota per disattivare questo collegamento.]]></item>
+		<item name="wcf.acp.option.socialLinks_twitter_url.description"><![CDATA[Inserisci l'URL, lasci vuota per disattivare questo collegamento.]]></item>
+		<item name="wcf.acp.option.socialLinks_google_url.description"><![CDATA[Inserisci l'URL, lasci vuota per disattivare questo collegamento.]]></item>
+		<item name="wcf.acp.option.socialLinks_pinterest_url.description"><![CDATA[Inserisci l'URL, lasci vuota per disattivare questo collegamento.]]></item>
+		<item name="wcf.acp.option.socialLinks_youtube_url.description"><![CDATA[Inserisci l'URL, lasci vuota per disattivare questo collegamento.]]></item>
+		<item name="wcf.acp.option.socialLinks_instagram_url.description"><![CDATA[Inserisci l'URL, lasci vuota per disattivare questo collegamento.]]></item>
+		<item name="wcf.acp.option.socialLinks_dribbble_url.description"><![CDATA[Inserisci l'URL, lasci vuota per disattivare questo collegamento.]]></item>
+		<item name="wcf.acp.option.socialLinks_linkedin_url.description"><![CDATA[Inserisci l'URL, lasci vuota per disattivare questo collegamento.]]></item>
+		<item name="wcf.acp.option.socialLinks_github_url.description"><![CDATA[Inserisci l'URL, lasci vuota per disattivare questo collegamento.]]></item>
+		<item name="wcf.acp.option.socialLinks_reddit_url.description"><![CDATA[Inserisci l'URL, lasci vuota per disattivare questo collegamento.]]></item>
+		<item name="wcf.acp.option.socialLinks_steam_url.description"><![CDATA[Inserisci l'URL, lasci vuota per disattivare questo collegamento.]]></item>
+		<item name="wcf.acp.option.socialLinks_twitch_url.description"><![CDATA[Inserisci l'URL, lasci vuota per disattivare questo collegamento.]]></item>
+		<item name="wcf.acp.option.socialLinks_xing_url.description"><![CDATA[Inserisci l'URL, lasci vuota per disattivare questo collegamento.]]></item>
+
+		<item name="wcf.acp.option.socialLinks_navigation_enable"><![CDATA[Barra navigazione]]></item>
+		<item name="wcf.acp.option.socialLinks_navigation_enable.description"><![CDATA[Attiva i link social nella barra navigazione.]]></item>
+		<item name="wcf.acp.option.socialLinks_navigation_colored"><![CDATA[Icone colorate]]></item>
+		<item name="wcf.acp.option.socialLinks_navigation_colored.description"><![CDATA[Abilita i colori per i link.]]></item>
+		<item name="wcf.acp.option.socialLinks_footer_enable"><![CDATA[Footer]]></item>
+		<item name="wcf.acp.option.socialLinks_footer_enable.description"><![CDATA[Attiva i link social nel footer.]]></item>
+		<item name="wcf.acp.option.socialLinks_footer_style"><![CDATA[Stile pulsanti]]></item>
+		<item name="wcf.acp.option.socialLinks_footer_style.description"><![CDATA[Scegli lo stile dei pulsanti.]]></item>
+		<item name="wcf.acp.option.socialLinks_footer_style1"><![CDATA[Pulsanti chiari, icone scure]]></item>
+		<item name="wcf.acp.option.socialLinks_footer_style2"><![CDATA[Pulsanti scuri, icone chiare]]></item>
+		<item name="wcf.acp.option.socialLinks_footer_style3"><![CDATA[Pulsanti chiari, icone colorate]]></item>
+		<item name="wcf.acp.option.socialLinks_footer_style4"><![CDATA[Pulsanti colorati, icone chiare]]></item>
+		<item name="wcf.acp.option.socialLinks_usermenu_enable"><![CDATA[Menu utente]]></item>
+		<item name="wcf.acp.option.socialLinks_usermenu_enable.description"><![CDATA[Abilita i link social nel menu utente.]]></item>
+		<item name="wcf.acp.option.socialLinks_usermenu_position"><![CDATA[Posizione]]></item>
+		<item name="wcf.acp.option.socialLinks_usermenu_position.description"><![CDATA[Scegli la posizione dei link social.]]></item>
+		<item name="wcf.acp.option.socialLinks_usermenu_position1"><![CDATA[Posizione Default]]></item>
+		<item name="wcf.acp.option.socialLinks_usermenu_position2"><![CDATA[Alla destra del menu utente]]></item>
+		<item name="wcf.acp.option.socialLinks_usermenu_position3"><![CDATA[Alla sinistra del menu utente]]]></item>
+		<item name="wcf.acp.option.socialLinks_usermenu_title"><![CDATA[Titolo]]></item>
+		<item name="wcf.acp.option.socialLinks_usermenu_title.description"><![CDATA[Immettere il testo che verrà visualizzato nel menu, nella tooltip e nell'intestazione di dialogo.]]></item>
+		<item name="wcf.acp.option.socialLinks_footer_rounded"><![CDATA[Pulsanti rotondi]]></item>
+		<item name="wcf.acp.option.socialLinks_footer_rounded.description"><![CDATA[Abilitare questa opzione per utilizzare pulsanti arrotondati anziché quadrati.]]></item>
+		<item name="wcf.acp.option.socialLinks_footer_size"><![CDATA[Icone grandi]]></item>
+		<item name="wcf.acp.option.socialLinks_footer_size.description"><![CDATA[Usa icone a 32px invece che 16px.]]></item>
+    </category>
+</language>

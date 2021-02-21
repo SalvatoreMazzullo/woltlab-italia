@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it">
+	<category name="wcf.user">
+		<item name="wcf.user.ffFriends.button.requestSend"><![CDATA[Invia richiesta di amicizia]]></item>
+		<item name="wcf.user.ffFriends.button.requestCancel"><![CDATA[Ritira richiesta di amicizia]]></item>
+		<item name="wcf.user.ffFriends.button.requestConfirm"><![CDATA[Accetta richiesta di amicizia]]></item>
+		<item name="wcf.user.ffFriends.button.requestDeny"><![CDATA[Rifiuta richiesta di amicizia]]></item>
+		<item name="wcf.user.ffFriends.button.friendRemove"><![CDATA[Elimina dagli amici]]></item>
+		<item name="wcf.user.ffFriends.title"><![CDATA[Gestisci amici]]]></item>
+		<item name="wcf.user.ffFriends.pending.title"><![CDATA[Richieste di amicizia in sospeso]]></item>
+		<item name="wcf.user.ffFriends.pending.outgoing.cancel"><![CDATA[Ritira richiesta]]></item>
+		<item name="wcf.user.ffFriends.pending.ingoing.confirm"><![CDATA[Accetta]]></item>
+		<item name="wcf.user.ffFriends.pending.ingoing.deny"><![CDATA[Rifiuta]]></item>
+		<item name="wcf.user.ffFriends.friends.title"><![CDATA[Amici]]></item>
+		<item name="wcf.user.ffFriends.noFriends"><![CDATA[Nessun amico]]></item>
+		<item name="wcf.user.ffFriends.panel.title"><![CDATA[Amici]]></item>
+		<item name="wcf.user.ffFriends.panel.noFriends"><![CDATA[Nessun amico]]></item>
+		<item name="wcf.user.ffFriends.blocked"><![CDATA[Questo utente non accetta richieste di amicizia al momento.]]></item>
+		<item name="wcf.user.ffFriends.ignored"><![CDATA[Non puoi mandare una richiesta di amicizia ad un utente bloccato.]]></item>
+		<item name="wcf.user.ffFriends.ignore.pendingRequest"><![CDATA[Hai ancora una richiesta di amicizia in sospeso.]]></item>
+		<item name="wcf.user.ffFriends.ignore.areFriends"><![CDATA[Gli amici non possono essere bloccati.]]></item>
+	</category>
+
+	<category name="wcf.user.profile">
+		<item name="wcf.user.profile.recentActivity.friend"><![CDATA[Adesso è amico con <a href="{link controller='User' object=$user}{/link}">{$user->username}</a>.]]></item>
+		<item name="wcf.user.profile.friends"><![CDATA[Amici]]></item>
+	</category>
+
+	<category name="wcf.user.menu">
+		<item name="wcf.user.menu.community.ffFriends"><![CDATA[Amici]]></item>
+	</category>
+
+	<category name="wcf.user.option">
+		<item name="wcf.user.option.category.settings.ffFriends"><![CDATA[Amici]]></item>
+		<item name="wcf.user.option.category.settings.ffFriends.appearance"><![CDATA[Aspetto]]></item>
+		<item name="wcf.user.option.category.settings.ffFriends.behavior"><![CDATA[Comportamento]]></item>
+		<item name="wcf.user.option.category.settings.privacy.ffFriends"><![CDATA[Amici]]></item>
+
+		<item name="wcf.user.option.settings.ffFriends.appearance.showInPanel"><![CDATA[Mostra lista amici nel pannello]]></item>
+		<item name="wcf.user.option.settings.ffFriends.behavior.blockRequests"><![CDATA[Blocco delle richieste in corso]]></item>
+
+		<item name="wcf.user.option.settings.privacy.content.friendsCanViewProfile"><![CDATA[Gli amici possono vedere il profilo utente]]></item>
+	    <item name="wcf.user.option.settings.privacy.content.friendsCanViewProfile.description"><![CDATA[È rilevante solo se la visualizzazione è ristretta]]></item>
+
+		<item name="wcf.user.option.settings.privacy.ffFriends.friendsCanViewStatus"><![CDATA[Mostra lo status online nella lista amici]]></item>
+	    <item name="wcf.user.option.settings.privacy.ffFriends.friendsCanViewStatus.description"><![CDATA[È rilevante solo se la visualizzazione è ristretta]]></item>
+		<item name="wcf.user.option.settings.privacy.ffFriends.publicFriendActivity"><![CDATA[Pubblicare attività degli amici]]></item>
+		<item name="wcf.user.option.settings.privacy.ffFriends.publicFriendActivity.description"><![CDATA[Il tuo amico deve abilitare questa opzione per pubblicare le attività]]></item>
+		<item name="wcf.user.option.settings.privacy.ffFriends.showFriendsInProfile"><![CDATA[Lista amici nel profilo]]></item>
+		<item name="wcf.user.option.settings.privacy.ffFriends.notifyBirthday"><![CDATA[Notifica gli amici del tuo compleanno]]></item>
+	</category>
+
+    <category name="wcf.user.notification">
+        <item name="wcf.user.notification.ffFriends.request.received.title"><![CDATA[Hai ricevuto una richiesta di amiciza]]></item>
+	    <item name="wcf.user.notification.ffFriends.request.received.title.stacked"><![CDATA[Hai ricevuto {#$count} richieste di amicizia]]></item>
+        <item name="wcf.user.notification.ffFriends.request.received.message"><![CDATA[{@$author->getAnchorTag()} ti ha inviato una richiesta di amicizia]]></item>
+	    <item name="wcf.user.notification.ffFriends.request.received.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} e {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} e {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} e {#$others} altri{/if} ti hanno mandato una richiesta di amicizia.]]></item>
+		<item name="wcf.user.notification.ffFriends.request.received.mail"><![CDATA[{@$author->username} ti ha inviato una richiesta di amicizia.]]></item>
+		<item name="wcf.user.notification.ffFriends.request.received.mail.stacked"><![CDATA[{if $count < 4}{@$authors[0]->username}{if $count == 2} e {else}, {/if}{@$authors[1]->username}{if $count == 3} e {@$authors[2]->username}{/if}{else}{@$authors[0]->username} e {#$others} altri{/if} ti hanno mandato una richiesta di amicizia.]]></item>
+
+        <item name="wcf.user.notification.ffFriends.request.accepted.title"><![CDATA[La richiesta di amiciza è stata accettata]]></item>
+	    <item name="wcf.user.notification.ffFriends.request.accepted.title.stacked"><![CDATA[{#$count} hanno accettato la tua richiesta]]></item>
+        <item name="wcf.user.notification.ffFriends.request.accepted.message"><![CDATA[{@$author->getAnchorTag()} ha accettato la tua richiesta]]></item>
+	    <item name="wcf.user.notification.ffFriends.request.accepted.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} e {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} e {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} e {#$others} altri{/if} hanno accettato la tua richiesta.]]></item>
+		<item name="wcf.user.notification.ffFriends.request.accepted.mail"><![CDATA[{@$author->username} ha accettato la tua richiesta.]]></item>
+		<item name="wcf.user.notification.ffFriends.request.accepted.mail.stacked"><![CDATA[{if $count < 4}{@$authors[0]->username}{if $count == 2} e {else}, {/if}{@$authors[1]->username}{if $count == 3} e {@$authors[2]->username}{/if}{else}{@$authors[0]->username} e {#$others} altri{/if} hanno accettato la tua richiesta.]]></item>
+
+		<item name="wcf.user.notification.ffFriends.request.denied.title"><![CDATA[Richiesta di amicizia rifiutata]]></item>
+		<item name="wcf.user.notification.ffFriends.request.denied.title.stacked"><![CDATA[{#$count} hanno rifiutato la tua richiesta ]]></item>
+		<item name="wcf.user.notification.ffFriends.request.denied.message"><![CDATA[{@$author->getAnchorTag()} ha rifiutato la tua richiesta di amicizia]]></item>
+		<item name="wcf.user.notification.ffFriends.request.denied.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} e {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} e {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} e {#$others} altri{/if} hanno rifiutato la tua richiesta di amicizia.]]></item>
+		<item name="wcf.user.notification.ffFriends.request.denied.mail"><![CDATA[{@$author->username} ha rifiutato la tua richiesta di amicizia]]></item>
+		<item name="wcf.user.notification.ffFriends.request.denied.mail.stacked"><![CDATA[{if $count < 4}{@$authors[0]->username}{if $count == 2} e {else}, {/if}{@$authors[1]->username}{if $count == 3} e {@$authors[2]->username}{/if}{else}{@$authors[0]->username} e {#$others} altri{/if} hanno rifiutato la tua richiesta di amicizia.]]></item>
+
+		<item name="wcf.user.notification.eu.feuerfuchs.wcf.friends"><![CDATA[Amici]]></item>
+		<item name="wcf.user.notification.eu.feuerfuchs.wcf.friends.request.received"><![CDATA[Richieste di amiciza ricevute]]></item>
+		<item name="wcf.user.notification.eu.feuerfuchs.wcf.friends.reaction.accepted"><![CDATA[Richieste di amiciza accettate]]></item>
+		<item name="wcf.user.notification.eu.feuerfuchs.wcf.friends.reaction.denied"><![CDATA[Richieste di amiciza rifiutate]]></item>
+		<item name="wcf.user.notification.eu.feuerfuchs.wcf.friends.birthday.birthday"><![CDATA[Compleanno amici]]></item>
+
+		<item name="wcf.user.notification.ffFriends.birthday.title"><![CDATA[Oggi è il compleanno di uno dei tuoi amici]]></item>
+		<item name="wcf.user.notification.ffFriends.birthday.title.stacked"><![CDATA[Oggi è il compleanno di {#$count} tuoi amici]]></item>
+		<item name="wcf.user.notification.ffFriends.birthday.message"><![CDATA[Oggi è il compleanno di {@$author->getAnchorTag()}]]></item>
+		<item name="wcf.user.notification.ffFriends.birthday.message.stacked"><![CDATA[Oggi è il compleanno di {if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} e {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} e {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} e {#$others} altri{/if}.]]></item>
+		<item name="wcf.user.notification.ffFriends.birthday.mail"><![CDATA[Oggi è il compleanno di {@$author->username}.]]></item>
+		<item name="wcf.user.notification.ffFriends.birthday.mail.stacked"><![CDATA[Oggi è il compleanno di {if $count < 4}{@$authors[0]->username}{if $count == 2} e {else}, {/if}{@$authors[1]->username}{if $count == 3} e {@$authors[2]->username}{/if}{else}{@$authors[0]->username} e {#$others} altri{/if}.]]></item>
+	</category>
+
+	<category name="wcf.user.recentActivity">
+		<item name="wcf.user.recentActivity.eu.feuerfuchs.wcf.friends.activity"><![CDATA[Amico]]></item>
+	</category>
+
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.fffriends_experimental_features"><![CDATA[Sistema amici: Caratteristiche sperimentali]]></item>
+	</category>
+
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.user.profile.ffFriends"><![CDATA[Amici]]></item>
+		<item name="wcf.acp.group.option.user.profile.ffFriends.canSendRequests"><![CDATA[Può inviare una richiesta di amiciza]]></item>
+	</category>
+
+	<category name="wcf.acp.stat">
+		<item name="wcf.acp.stat.eu.feuerfuchs.wcf.friends"><![CDATA[Amici]]></item>
+	</category>
+</language>

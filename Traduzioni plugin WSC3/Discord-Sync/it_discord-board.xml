@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com https://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.discord-sync.board"><![CDATA[Board]]></item>
+        <item name="wcf.acp.option.hanashi_discord_sync_boards_global"><![CDATA[Quali discussioni delle sezioni verranno inserite su discord?]]></item>
+		<item name="wcf.acp.option.hanashi_discord_sync_boards_global.description"><![CDATA[I post delle sezioni scelte verranno pubblicati su Discord. Le impostazioni potrebbero essere sostituite su tutte le impostazioni delle sezioni.]]></item>
+        <item name="wcf.acp.option.hanashi_discord_sync_boards_channel"><![CDATA[Discord-Channel]]></item>
+        <item name="wcf.acp.option.hanashi_discord_sync_boards_channel.description"><![CDATA[Puoi selezionare uno o più canali, il bot deve avere il permesso "MANAGE_WEBHOOKS".]]></item>
+        <item name="wcf.acp.option.hanashi_discord_sync_boards_post_title"><![CDATA[Il titolo dovrebbe esserci sul contenuto?]]></item>
+        <item name="wcf.acp.option.hanashi_discord_sync_boards_post_title.description"><![CDATA[Se è su "Sì", il titolo verrà pubblicato direttamente sopra l'embed. Se @everyone o @here è attivo, il titolo verrà pubblicato dietro.]]></item>
+		<item name="wcf.acp.option.hanashi_discord_sync_boards_notification"><![CDATA[Come dovrebbe essere notificato su Discord?]]></item>
+		<item name="wcf.acp.option.hanashi_discord_sync_boards_posts"><![CDATA[Cosa dovrebbe essere pubblicato su Discord?]]></item>
+	</category>
+
+	<category name="wbb.acp.board">
+		<item name="wbb.acp.board.discord"><![CDATA[Discord-Synchronization]]></item>
+		<item name="wbb.acp.board.discord.channel"><![CDATA[Discord-Channel]]></item>
+		<item name="wbb.acp.board.discord.botRight"><![CDATA[Il bot ha bisogno del permesso "MANAGE_WEBHOOKS".]]></item>
+
+		<item name="wbb.acp.board.discord.postTitle"><![CDATA[Il titolo dovrebbe esserci sul contenuto?]]></item>
+		<item name="wbb.acp.board.discord.postTitle.description"><![CDATA[Se è su "Sì", il titolo verrà pubblicato direttamente sopra l'embed. Se @everyone o @here è attivo, il titolo verrà pubblicato dietro.]]></item>
+
+		<item name="wbb.acp.board.discord.override"><![CDATA[Vuoi sovrascrivere i permessi globali?]]></item>
+		<item name="wbb.acp.board.discord.override.description"><![CDATA[Se non si utilizza l'impostazione globale, non è necessario abilitare questa opzione. Utilizzerà automaticamente le impostazioni su questo sito.]]></item>
+
+		<item name="wbb.acp.board.discord.notification"><![CDATA[Come lo vuoi notificare su Discord?]]></item>
+		<item name="wbb.acp.board.discord.nobody"><![CDATA[normale]]></item>
+		<item name="wbb.acp.board.discord.everyone"><![CDATA[@everyone]]></item>
+		<item name="wbb.acp.board.discord.here"><![CDATA[@here]]></item>
+
+		<item name="wbb.acp.board.discord.posts"><![CDATA[Cosa vuoi postare su Discord?]]></item>
+		<item name="wbb.acp.board.discord.allPosts"><![CDATA[messaggi e discussioni]]></item>
+		<item name="wbb.acp.board.discord.onlyThreads"><![CDATA[solo discussioni]]></item>
+		<item name="wbb.acp.board.discord.onlyPosts"><![CDATA[solo messaggi]]></item>
+	</category>
+
+    <category name="wbb.board.discord">
+		<item name="wbb.board.discord.answered"><![CDATA[risposta all´argomento:]]></item>
+		<item name="wbb.board.discord.createdTopic"><![CDATA[creata la discussione:]]></item>
+	</category>
+</language>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it" languagename="Italiano" countrycode="it">
+	<category name="ticketsystem.input">
+		<item name="ticketsystem.input.label"><![CDATA[Etichetta]]></item>
+		<item name="ticketsystem.input.type"><![CDATA[Tipo]]></item>
+		<item name="ticketsystem.input.options"><![CDATA[Opzioni]]></item>
+		<item name="ticketsystem.input.options.description"><![CDATA[Opzioni per il dropdown menu separato da virgola. (esempio: rosso, blu, verde)]]></item>
+		<item name="ticketsystem.input.type.text"><![CDATA[Testo]]></item>
+		<item name="ticketsystem.input.type.select"><![CDATA[Lista Drop-down]]></item>
+		<item name="ticketsystem.input.type.email"><![CDATA[Indirizzo Email]]></item>
+		<item name="ticketsystem.input.type.date"><![CDATA[Data]]></item>
+		<item name="ticketsystem.input.type.number"><![CDATA[Numero]]></item>
+		<item name="ticketsystem.input.description"><![CDATA[Descrizione]]></item>
+		<item name="ticketsystem.input.save"><![CDATA[Campo input salvato.]]></item>
+		<item name="ticketsystem.input.config_date_min"><![CDATA[Data vecchia]]></item>
+		<item name="ticketsystem.input.config_date_min.description"><![CDATA[Qui puoi impostare la data più vecchia possibile che l´utente può scegliere. (opzionale)]]></item>
+		<item name="ticketsystem.input.config_date_max"><![CDATA[Data futura]]></item>
+		<item name="ticketsystem.input.config_date_max.description"><![CDATA[Qui puoi impostare la data più futura che l´utente può scegliere. (opzionale)]]></item>
+		<item name="ticketsystem.input.config_date.error"><![CDATA[La data più futura non può essere inferiore alla data più vecchia.]]></item>
+	</category>
+	<category name="ticketsystem.acp.category">
+		<item name="ticketsystem.acp.category.inputs"><![CDATA[Campi input]]></item>
+		<item name="ticketsystem.acp.category.inputs.noContent"><![CDATA[Nessun campo di input disponibile.]]></item>
+	</category>
+	<category name="ticketsystem.acp.menu">
+		<item name="ticketsystem.acp.menu.link.ticketsystem.input"><![CDATA[Lista Campi input]]></item>
+		<item name="ticketsystem.acp.menu.link.ticketsystem.input.add"><![CDATA[Aggiungi campo input]]></item>
+		<item name="ticketsystem.acp.menu.link.ticketsystem.input.edit"><![CDATA[Modifica campo input]]></item>
+	</category>
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.user.ticketsystem.canSeeInputs"><![CDATA[Può riempire i campi di input]]></item>
+		<item name="wcf.acp.group.option.user.ticketsystem.canSeeInputValues"><![CDATA[Può vedere i valori del campo di input]]></item>
+		<item name="wcf.acp.group.option.admin.ticketsystem.canManageInputs"><![CDATA[Può aggiungere campi di input]]></item>
+	</category>
+</language>

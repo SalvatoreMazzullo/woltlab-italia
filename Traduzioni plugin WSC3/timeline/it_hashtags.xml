@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it" languagename="Italiano" countrycode="it">
+	<category name="wcf.tagging">
+		<item name="wcf.tagging.objectType.de.darkwood-studios.timeline.entry"><![CDATA[Aggiornamenti Timeline]]></item>
+		<item name="wcf.tagging.taggedObjects.de.darkwood-studios.timeline.entry"><![CDATA[Aggiornamenti timeline con tag „{$tag->name}“]]></item>
+	</category>
+</language>

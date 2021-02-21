@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it">
+	<category name="de.wbb-elite.donation">
+		<item name="de.wbb-elite.donation.start.paypal"><![CDATA[È stata effettuata una donazione da {$donation->username} dell´importo di {$donation->money}€.]]></item>
+		<item name="de.wbb-elite.donation.start.paypal.subject"><![CDATA[Nuova donazione PayPal da {$donation->username}]]></item>
+		<item name="de.wbb-elite.donation.success.paypal"><![CDATA[La donazione PayPal di {$donation->username} dell´importo di {$donation->money}€ è stata effettuata con successo.]]></item>
+		<item name="de.wbb-elite.donation.success.paypal.subject"><![CDATA[La donazione PayPal di {$donation->username} è stata effettuata con successo]]></item>
+		<item name="de.wbb-elite.donation.failed.paypal"><![CDATA[La donazione PayPal di {$donation->username} dell´importo di  {$donation->money}€ è fallita.]]></item>
+		<item name="de.wbb-elite.donation.failed.paypal.subject"><![CDATA[La donazione PayPal di {$donation->username} è stata cancellata]]></item>
+		<item name="de.wbb-elite.donation.free"><![CDATA[Selezionabile liberamente]]></item>
+		<item name="de.wbb-elite.donation.selected"><![CDATA[Selezionable]]></item>
+		<item name="de.wbb-elite.donation.paypal.add"><![CDATA[Aggiungi donazione PayPal]]></item>
+		<item name="de.wbb-elite.donation.payPal"><![CDATA[PayPal]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.donation.paypal"><![CDATA[Donazione PayPal]]></item>
+		<item name="wcf.acp.option.donation_paypal_active"><![CDATA[Abilita donazione PayPal]]></item>
+		<item name="wcf.acp.option.donation_paypal_mail"><![CDATA[E-mail PayPal]]></item>
+		<item name="wcf.acp.option.donation_paypal_mail.description"><![CDATA[L´indirizzo email inserito riceverà le donazioni]]></item>
+		<item name="wcf.acp.option.donation_paypal_currency"><![CDATA[Moneta]]></item>
+		<item name="wcf.acp.option.donation_paypal_selectable"><![CDATA[Tipologia di donazione]]></item>
+		<item name="wcf.acp.option.donation_notification_paypal"><![CDATA[Notifica email per la donazione]]></item>
+		<item name="wcf.acp.option.donation_paypal_amounts"><![CDATA[Importo]]></item>
+		<item name="wcf.acp.option.donation_paypal_amounts.description"><![CDATA[Inserisci delle donazioni predefinite separate da ";".]]></item>
+	</category>
+</language>

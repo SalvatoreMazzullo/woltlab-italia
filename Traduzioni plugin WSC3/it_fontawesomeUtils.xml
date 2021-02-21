@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="https://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/vortex/language.xsd" languagename="Italiano" languagecode="it" countrycode="it">
+	<category name="wcf.global">
+		<item name="wcf.global.fontawesome.title"><![CDATA[Icone Font Awesome]]></item>
+		<item name="wcf.global.fontawesome.search"><![CDATA[Cerca icona]]></item>
+		<item name="wcf.global.fontawesome.icons"><![CDATA[Icone]]></item>
+		<item name="wcf.global.fontawesome.confirm"><![CDATA[Seleziona icona]]></item>
+		<item name="wcf.global.fontawesome.cancel"><![CDATA[Cancella]]></item>
+	</category>
+</language>

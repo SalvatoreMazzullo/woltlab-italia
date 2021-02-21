@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/vortex/language.xsd" languagecode="it">
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.groupType"><![CDATA[Tipologia di gruppo utente]]></item>
+		<item name="wcf.acp.group.groupType.type4"><![CDATA[Chiuso]]></item>
+		<item name="wcf.acp.group.groupType.type5"><![CDATA[Accesso libero]]></item>
+		<item name="wcf.acp.group.groupType.type6"><![CDATA[Moderato]]></item>
+		<item name="wcf.acp.group.groupType.type7"><![CDATA[Chiuso moderato]]></item>
+		<item name="wcf.acp.group.groupType.description"><![CDATA[Seleziona la tipologia di gruppo utente:
+<ul class="nativeList">
+	<li>Chiuso: Solo gli amministratori possono aggiungere utenti.</li>
+	<li>Accesso libero: Tutti gli utenti possono accedere.</li>
+	<li>Moderato: Gli utenti devono essere inseriti ma possono uscire quando vogliono.</li>
+	<li>Chiuso moderato: Gli utenti devono essere inseriti e non possono uscire.</li>
+</ul>]]></item>
+		<item name="wcf.acp.group.leader"><![CDATA[Leader del gruppo]]></item>
+		<item name="wcf.acp.group.leader.description"><![CDATA[I leaders possono approvare gli utenti e aggiungerne di nuovi, per inserire più leader i nomi devono esssere separtai da una virgola.]]></item>
+		<item name="wcf.acp.group.leader.error.empty"><![CDATA[I gruppi chiusi e moderati devono avere almeno un leader.]]></item>
+		<item name="wcf.acp.group.leader.error.notFound"><![CDATA[Impossibile trovare {if $unknownLeader|count != 1}gli utenti {else} l´utente{/if}:<ul class="inlineDataList">{foreach from=$unknownLeader item=username}<li>{$username}</li>{/foreach}</ul>.]]></item>
+		<item name="wcf.acp.group.moderatedUserGroup"><![CDATA[Gruppo utente moderato]]></item>
+	</category>
+
+	<category name="wcf.user.userGroups">
+		<item name="wcf.user.userGroups.join"><![CDATA[Iscriviti al gruppo utenti]]></item>
+		<item name="wcf.user.userGroups.leave"><![CDATA[Disiscriviti dal gruppo utenti]]></item>
+		<item name="wcf.user.userGroups.leave.sure"><![CDATA[Sei sicuro di voler disicriverti dal gruppo utenti <span class="confirmationObject">{$group->groupName|language}</span>?]]></item>
+		<item name="wcf.user.userGroups.apply"><![CDATA[Presenta domanda di adesione]]></item>
+		<item name="wcf.user.userGroups.apply.reason"><![CDATA[Motivazione]]></item>
+		<item name="wcf.user.userGroups.apply.groupInformation"><![CDATA[Dettagli gruppo utente]]></item>
+		<item name="wcf.user.userGroups.apply.applicationInformation"><![CDATA[Dettagli]]></item>
+		<item name="wcf.user.userGroups.application.comments.description"><![CDATA[Tutti i commenti sono interni e non possono essere visualizzati dagli esterni.]]></item>
+		<item name="wcf.user.userGroups.application.status"><![CDATA[Stato della richiesta di adesione]]></item>
+		<item name="wcf.user.userGroups.application.status.status0"><![CDATA[In attesa]]></item>
+		<item name="wcf.user.userGroups.application.status.status1"><![CDATA[In lavorazione]]></item>
+		<item name="wcf.user.userGroups.application.status.status2"><![CDATA[Accettata]]></item>
+		<item name="wcf.user.userGroups.application.status.status3"><![CDATA[Rifiutata]]></item>
+		<item name="wcf.user.userGroups.application.status.status5"><![CDATA[Chiusa]]></item>
+		<item name="wcf.user.userGroups.application.time"><![CDATA[Ultima modifica]]></item>
+		<item name="wcf.user.userGroups.application.edit"><![CDATA[Modifica adesione]]></item>
+		<item name="wcf.user.userGroups.application.reply"><![CDATA[Rispondi]]></item>
+		<item name="wcf.user.userGroups.application.revoke"><![CDATA[Disdici]]></item>
+		<item name="wcf.user.userGroups.application.revoke.sure"><![CDATA[Sei sicuro di voler eliminare la richiesta d´adesione al gruppo utenti <span class="confirmationObject">{$group->groupName|language}</span>?]]></item>
+		<item name="wcf.user.userGroups.application.log"><![CDATA[Log]]></item>
+		<item name="wcf.user.userGroups.application.log.action"><![CDATA[Azione]]></item>
+		<item name="wcf.user.userGroups.application.log.time"><![CDATA[Data]]></item>
+		<item name="wcf.user.userGroups.application.log.editReason"><![CDATA[Motivazione modifica]]></item>
+		<item name="wcf.user.userGroups.application.log.changeStatus"><![CDATA[Status modificato a “{lang}wcf.user.userGroups.application.status.status{@$additionalData[newStatus]}{/lang}”.]]></item>
+		<item name="wcf.user.userGroups.application.log.editReply"><![CDATA[Risposta modificata]]></item>
+	</category>
+
+	<category name="wcf.user.moderatedUserGroups">
+		<item name="wcf.user.moderatedUserGroups.applications"><![CDATA[Adesione]]></item>
+		<item name="wcf.user.moderatedUserGroups.members"><![CDATA[Utenti]]></item>
+		<item name="wcf.user.moderatedUserGroups.members.kick"><![CDATA[Revoca]]></item>
+		<item name="wcf.user.moderatedUserGroups.members.kick.sure"><![CDATA[Vuoi veramente escludere <span class="confirmationObject">{$user->username}</span> da questo gruppo?]]></item>
+		<item name="wcf.user.moderatedUserGroups.isMember"><![CDATA[Utenti]]></item>
+		<item name="wcf.user.moderatedUserGroups.members.add"><![CDATA[Aggiungi utenti]]></item>
+		<item name="wcf.user.moderatedUserGroups.members.add.description"><![CDATA[Inserisci il nome dell´utente da aggiungere.]]></item>
+		<item name="wcf.user.moderatedUserGroups.members.add.success"><![CDATA[Questo utente è stato aggiunto.]]></item>
+		<item name="wcf.user.moderatedUserGroups.members.add.error.notFound"><![CDATA[Impossibile trovare l´utente.]]></item>
+		<item name="wcf.user.moderatedUserGroups.members.add.error.alreadyMember"><![CDATA[Questo utente è gia membro del gruppo.]]></item>
+		<item name="wcf.user.moderatedUserGroups.noApplications"><![CDATA[Non ci sono richieste in attesa al momento.]]></item>
+	</category>
+
+	<category name="wcf.user.menu">
+		<item name="wcf.user.menu.userGroups"><![CDATA[Gruppi utente]]></item>
+		<item name="wcf.user.menu.accessibleUserGroups"><![CDATA[Gruppi utenti]]></item>
+		<item name="wcf.user.menu.moderatedUserGroups"><![CDATA[Gestione gruppi utenti]]></item>
+	</category>
+
+	<category name="wcf.user.notification">
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application"><![CDATA[Gruppo utente moderato]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.created"><![CDATA[Notifica di una nuova applicazione]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.created.title"><![CDATA[Nuova applicazione]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.created.message"><![CDATA[{@$author->getAnchorTag()} applicato per il gruppo utente “{$group->groupName|language}”.]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.created.mail.plaintext"><![CDATA[{@$event->getAuthor()->username} [URL:{link controller='User' object=$event->getAuthor() isEmail=true}{/link}] applicato per il gruppo utente “{@$group->groupName|language}” [URL:{link controller='UserGroupManageApplicationEdit' id=$application->applicationID isEmail=true}{/link}]:]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.created.mail.html"><![CDATA[<p><a href="{link controller='User' object=$event->getAuthor() isEmail=true}{/link}">{$event->getAuthor()->username}</a> applicato per il gruppo utente <a href="{link controller='UserGroupManageApplicationEdit' id=$application->applicationID isEmail=true}{/link}">{$group->groupName|language}</a>:</p>]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.edited"><![CDATA[Avvisami degli aggiornamenti dello stato dell'applicazione]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.edited.title"><![CDATA[Applicazione {if $newStatus == 'accepted'}Accepted{elseif $newStatus == 'rejected'}Respinto{else}Chiuso{/if}]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.edited.message"><![CDATA[{if $author->userID}{@$author->getAnchorTag()}{else}{$author->username}{/if} {if $newStatus == 'accepted'}accettato{elseif $newStatus == 'rejected'}respinto{else}chiuso{/if} <a href="{link controller='UserGroupApplicationEdit' id=$application->applicationID}{/link}">tua applicazione</a> per il gruppo utente “{$group->groupName|language}”.]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.edited.mail.plaintext"><![CDATA[{@$event->getAuthor()->username} [URL:{link controller='User' object=$event->getAuthor() isEmail=true}{/link}] {if $newStatus == 'accepted'}accettato{elseif $newStatus == 'rejected'}respinto{else}chiuso{/if} la tua applicaione per il gruppo utente “{@$group->groupName|language}”:]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.edited.mail.html"><![CDATA[<p><a href="{link controller='User' object=$event->getAuthor() isEmail=true}{/link}">{$event->getAuthor()->username}</a> {if $newStatus == 'accepted'}accettato{elseif $newStatus == 'rejected'}respinto{else}chiuso{/if} tua applciazione per il gruppp utente “{@$group->groupName|language}”:</p>]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.notification.comment"><![CDATA[Notifica quando vengono scritti nuovi commenti per l'applicazione del gruppo di utenti]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.comment.mail.plaintext"><![CDATA[{@$authorList} ha commentato l'applicazione di {@$userGroupApplication->getUserProfile()->username} per il gruppo utente “{@$userGroupApplication->getGroup()->groupName|language}” [URL:{link controller='UserGroupManageApplicationEdit' id=$userGroupApplication->applicationID isEmail=true}#comment{@$commentID}{/link}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.comment.mail.html"><![CDATA[<p>{@$authorList} ha commentato l'applicazione di {$userGroupApplication->getUserProfile()->username} per il gruppo utente <a href="{link controller='UserGroupManageApplicationEdit' id=$userGroupApplication->applicationID isEmail=true}#comment{@$commentID}{/link}">{$userGroupApplication->getGroup()->groupName|language}</a>:</p>]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.comment.message"><![CDATA[{if !$author->userID}Un ospite{else}{@$author->getAnchorTag()}{/if} ha scritto un commento per l´applicazione del gruppo utente {@$userGroupApplication->getUserProfile()->getAnchorTag()} per il gruppo utente <a href="{link controller='UserGroupManageApplicationEdit' id=$userGroupApplication->applicationID}#comment{@$commentID}{/link}">{$userGroupApplication->getGroup()->groupName|language}</a>.]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.comment.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count != 1}{if $count == 2} e {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} e {@$authors[2]->getAnchorTag()}{/if}{/if}{else}{@$authors[0]->getAnchorTag()} e {#$others} altri utenti{/if} ha scritto un commento nell´applicazione di {@$userGroupApplication->getUserProfile()->getAnchorTag()} fper il gruppo utente <a href="{link controller='UserGroupManageApplicationEdit' id=$userGroupApplication->applicationID}#comments{/link}">{$userGroupApplication->getGroup()->groupName|language}</a>.]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.comment.title"><![CDATA[Nuovo commento (applicazione Gruppi utente)]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.comment.title.stacked"><![CDATA[{#$timesTriggered} nuovi commenti (User Groups Application)]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.response.notification.commentResponse"><![CDATA[Notifica quando vengono scritte nuove risposte ai commenti per l'applicazione del gruppo utente]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.commentResponse.mail.plaintext"><![CDATA[{@$authorList} ha scritto {if $count == 1 && !$guestTimesTriggered}una risposta{else}delle risposte{/if} al commento di {@$commentAuthor->username} nell´applicazione di {@$userGroupApplication->getUserProfile()->username} per il gruppo utente “{@$userGroupApplication->getGroup()->groupName|language}” [URL:{link controller='UserGroupManageApplicationEdit' id=$userGroupApplication->applicationID isEmail=true}#comment{@$commentID}/response{@$responseID}{/link}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.commentResponse.mail.html"><![CDATA[<p>{@$authorList} ha scritto {if $count == 1 && !$guestTimesTriggered}una risposta{else}delle risposte{/if} al commento di {$commentAuthor->username} nell´applicazione di {$userGroupApplication->getUserProfile()->username} per il gruppo utente <a href="{link controller='UserGroupManageApplicationEdit' id=$userGroupApplication->applicationID isEmail=true}#comment{@$commentID}/response{@$responseID}{/link}">{$userGroupApplication->getGroup()->groupName|language}</a>:</p>]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.commentResponse.message"><![CDATA[{if !$author->userID}Un ospite{else}{@$author->getAnchorTag()}{/if} ha risposto ad un commento di {if $commentAuthor->userID}<a href="{link controller='User' object=$commentAuthor}{/link}" class="userLink" data-user-id="{@$commentAuthor->userID}">{$commentAuthor->username}</a>{else}{$commentAuthor->username}{/if} una applicazione di {@$userGroupApplication->getUserProfile()->getAnchorTag()} per il gruppo utente <a href="{link controller='UserGroupManageApplicationEdit' id=$userGroupApplication->applicationID}#comment{@$commentID}/response{@$responseID}{/link}">{$userGroupApplication->getGroup()->groupName|language}</a>.]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.commentResponse.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count != 1}{if $count == 2} e {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} e {@$authors[2]->getAnchorTag()}{/if}{/if}{else}{@$authors[0]->getAnchorTag()} e {#$others} altri utenti{/if} hanno scritto una risposta al commento di {@$userGroupApplication->getUserProfile()->getAnchorTag()} per i l gruppo utente <a href="{link controller='UserGroupManageApplicationEdit' id=$userGroupApplication->applicationID}#comment{@$commentID}{/link}">{$userGroupApplication->getGroup()->groupName|language}</a>.]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.commentResponse.title"><![CDATA[Nuova risposta (applicazione Gruppi utente)]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.commentResponse.title.stacked"><![CDATA[{#$timesTriggered} nuove risposte (applicazione Gruppi utenti)]]></item>
+	</category>
+</language>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/language.xsd" languagecode="it">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.TeamSpeakAddons"><![CDATA[Teamspeak³ Plugin Package]]></item>
+		<item name="wcf.acp.option.category.TeamSpeakAddons.general"><![CDATA[Impostazioni generali]]></item>
+		<item name="wcf.acp.option.category.TeamSpeakAddonsSettings.general"><![CDATA[Impostazione query]]></item>
+		<item name="wcf.acp.option.TeamSpeakAddons_showIP"><![CDATA[Visualizza IP server Teamspeak³]]></item>
+		<item name="wcf.acp.option.TeamSpeakAddons_showOnlineUsersLegend"><![CDATA[Visualizza client connessi]]></item>
+		<item name="wcf.acp.option.TeamSpeakAddons_showUsersMax"><![CDATA[Mostra utenti connessi e il numero massino]]></item>
+		<item name="wcf.acp.option.TeamSpeakAddons_alternateTSDNS"><![CDATA[DNS TeamSpeak alternativo]]></item>
+		<item name="wcf.acp.option.TeamSpeakAddons_alternateTSDNS_description"><![CDATA[Se disattiva l'opzione "Visualizza indirizzo IP", sarà possibile impostare un DNS. Lasciare vuoto = Non visualizzare nulla]]></item>
+		<item name="wcf.acp.option.TeamSpeakAddons_IPAdresse"><![CDATA[Indirizzo Ip Teamspeak³]]></item>
+		<item name="wcf.acp.option.TeamSpeakAddons_Port"><![CDATA[Porta Teamspeak³]]></item>
+		<item name="wcf.acp.option.TeamSpeakAddons_QueryName"><![CDATA[Teamspeak³ Query-Name]]></item>
+		<item name="wcf.acp.option.TeamSpeakAddons_QueryPass"><![CDATA[Teamspeak³ Query-Password]]></item>
+		<item name="wcf.acp.option.TeamSpeakAddons_QueryConnectName"><![CDATA[Serverquery Nickname]]></item>
+		<item name="wcf.acp.option.TeamSpeakAddons_QueryPort"><![CDATA[Teamspeak³ Query-Port]]></item>
+		<item name="wcf.acp.option.TeamSpeakAddons_showJoinButton"><![CDATA[Visualizza link "Connettiti"]]></item>
+		<item name="wcf.acp.option.TeamSpeakAddons_showTSName"><![CDATA[Mostra nick Teamspeak³]]></item>
+		<item name="wcf.acp.option.TeamSpeakAddons_CacheTime"><![CDATA[cache time]]></item>
+		<item name="wcf.acp.option.TeamSpeakAddons_BoxTitle"><![CDATA[Titolo Box Teamspeak³]]></item>
+		<item name="wcf.acp.option.TeamSpeakAddons_BoxTitle.description"><![CDATA[Scegli un titolo che verrà visualizzato come intestazione nella casella. Puoi utilizzare i seguenti segnaposti: %servername%, %clients%, %maxclients%]]></item>
+	</category>
+	<category name="wcf.user.TeamSpeakAddons">
+		<item name="wcf.user.TeamSpeakAddons.copyright"><![CDATA[Teamspeak³ Plugin Package, by WebExpanded]]></item>
+		<item name="wcf.user.TeamSpeakAddons.title"><![CDATA[Teamspeak³ Server Viewer]]></item>
+		<item name="wcf.user.TeamSpeakAddons.status"><![CDATA[status]]></item>
+		<item name="wcf.user.TeamSpeakAddons.clients"><![CDATA[clienti]]></item>
+		<item name="wcf.user.TeamSpeakAddons.ipadresse"><![CDATA[Indirizzo IP]]></item>
+		<item name="wcf.user.TeamSpeakAddons.ServerOnline"><![CDATA[<font style="color: green;"><b>online</b></font>]]></item>
+		<item name="wcf.user.TeamSpeakAddons.ServerOffline"><![CDATA[<font style="color: red"><b>offline</b></font>]]></item>
+		<item name="wcf.user.TeamSpeakAddons.ConnectNow"><![CDATA[Connettiti!]]></item>
+		<item name="wcf.user.TeamSpeakAddons.servername"><![CDATA[Nome server]]></item>
+		<item name="wcf.user.TeamSpeakAddons.errorQuery"><![CDATA[Non puoi connetterti al query server.]]></item>
+		<item name="wcf.user.TeamSpeakAddons.errorServer"><![CDATA[Non puoi connetterti al server.]]></item>
+		<item name="wcf.user.TeamSpeakAddons.offlineServer"><![CDATA[Il server Teamspeak³ è al momento <b>Offline</b>.]]></item>
+	</category>
+	<category name="wcf.acp.box">
+		<item name="wcf.acp.box.boxController.de.webexpanded.tsviewer.viewer"><![CDATA[Teamspeak³ Server Viewer]]></item>
+	</category>
+</language>

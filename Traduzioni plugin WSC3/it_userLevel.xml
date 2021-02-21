@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd"
+          languagecode="it" languagename="Italiano" countrycode="it">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.wcf_module_userlevel"><![CDATA[Livello utente]]></item>
+		<item name="wcf.acp.option.category.user.userlevel"><![CDATA[Livello utente]]></item>
+		<item name="wcf.acp.option.category.user.userlevel.settings"><![CDATA[Impostazioni]]></item>
+		<item name="wcf.acp.option.userlevel_settings_show_level_in_header"><![CDATA[Mostra livello utente nel header]]></item>
+		<item name="wcf.acp.option.userlevel_settings_show_level_in_header.description"><![CDATA[Se questa opzione è selezionata, mostra il livello utente nel user menu.]]></item>
+		<item name="wcf.acp.option.userlevel_settings_show_avatar_in_bar"><![CDATA[Mostra avatar utente prima del livello]]></item>
+		<item name="wcf.acp.option.userlevel_settings_show_avatar_in_bar.description"><![CDATA[Mostra un piccolo avatar prima del livello utente.]]></item>
+		<item name="wcf.acp.option.userlevel_settings_hide_avatar_in_sidebar"><![CDATA[Nascondi avatar nella sidebar]]></item>
+		<item name="wcf.acp.option.userlevel_settings_hide_avatar_in_sidebar.description"><![CDATA[Se questa opzione è selezionata nasconde il piccolo avatar nella sidebar.]]></item>
+
+		<item name="wcf.acp.option.userlevel_settings_multiplier"><![CDATA[Velocità per il livello successivo]]></item>
+		<item name="wcf.acp.option.userlevel_settings_multiplier.description"><![CDATA[Specifica quanti punti di attività un utente deve raggiungere il livello successivo. (influenza l'espressione esponenziale)
+Esempio (Punti attività / livelli):
+<table>
+	<tbody>
+		<tr>
+			<td style="padding-right:5px;">punti attività</td>
+			<td style="padding-right:5px;">veloce</td>
+			<td style="padding-right:5px;">medio</td>
+			<td style="padding-right:5px;">lento</td>
+		</tr>
+		<tr>
+			<td>50</td>
+			<td>3</td>
+			<td>3</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>900</td>
+			<td>13</td>
+			<td>10</td>
+			<td>7</td>
+		</tr>
+		<tr>
+			<td>9.000</td>
+			<td>38</td>
+			<td>29</td>
+			<td>19</td>
+		</tr>
+		<tr>
+			<td>15.000</td>
+			<td>49</td>
+			<td>37</td>
+			<td>25</td>
+		</tr>
+		<tr>
+			<td>90.000</td>
+			<td>121</td>
+			<td>91</td>
+			<td>61</td>
+		</tr>
+	</tbody>
+</table>]]></item>
+	</category>
+
+	<category name="wcf.userlevel">
+		<item name="wcf.userlevel.multiplier.fast"><![CDATA[veloce]]></item>
+		<item name="wcf.userlevel.multiplier.mid"><![CDATA[medio]]></item>
+		<item name="wcf.userlevel.multiplier.slow"><![CDATA[lento]]></item>
+	</category>
+</language>

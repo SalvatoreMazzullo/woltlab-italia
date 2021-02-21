@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/vortex/language.xsd" languagecode="it">
+	<category name="calendar.event">
+		<item name="calendar.event.button.jumpToEventThread"><![CDATA[Discussione]]></item>
+		<item name="calendar.event.eventThread.boardID"><![CDATA[Forum]]></item>
+		<item name="calendar.event.eventThread.boardID.description"><![CDATA[La discussione verrà creata nel forum selezionato.]]></item>
+		<item name="calendar.event.eventThread.info"><![CDATA[{#$eventThread->replies} {if $eventThread->replies == 1}risposta{else}risposte{/if}{if $eventThread->replies > 0}, ultima: {@$eventThread->lastPostTime|time}{/if}]]></item>
+		<item name="calendar.event.eventThread.subject"><![CDATA[{@$event->subject} ({@$event->getFirstEventDate()->getFormattedTimeFrame($__language)})]]></item>
+		<item name="calendar.event.eventThread.message"><![CDATA[<p>{@$event->username} ha annunciato un nuovo evento:<br>[event]{@$event->getFirstEventDate()->eventDateID}[/event]</p>
+<woltlab-quote>{@$event->message}</woltlab-quote>]]></item>
+		<item name="calendar.event.participants.summary"><![CDATA[{#$calendarEventDateParticipation[yes]} {if $calendarEventDateParticipation[yes] != 1}partecipanti{else}partecipante{/if}, {#$calendarEventDateParticipation[maybe]} indecisi e {#$calendarEventDateParticipation[no]} {if $calendarEventDateParticipation[no] == 1}non partecipanti{else}non partecipante{/if} ]]></item>
+	</category>
+
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.calendar.event.eventThread"><![CDATA[Discussione]]></item>
+		<item name="wcf.acp.option.category.calendar.event.eventThread.description"><![CDATA[La discussione verrà creata nel forum selezionato.]]></item>
+		<item name="wcf.acp.option.calendar_event_thread_board_id"><![CDATA[Forum]]></item>
+		<item name="wcf.acp.option.calendar_event_thread_board_id.description"><![CDATA[La discussione verrà creata nel forum selezionato.]]></item>
+		<item name="wcf.acp.option.calendar_event_thread_categories"><![CDATA[Categorie]]></item>
+		<item name="wcf.acp.option.calendar_event_thread_categories.description"><![CDATA[La discussione verrà creata solo nelle categorie selezionate.]]></item>
+		<item name="wcf.acp.option.calendar_event_thread_single_board"><![CDATA[Singolo forum per tutte le categorie]]></item>
+		<item name="wcf.acp.option.calendar_event_thread_single_board.description"><![CDATA[Discussioni saranno creati nel forum specificato, a prescindere dalle categorie selezionate. La disattivazione di questa funzione consente di modificare le categorie desiderate e di assegnare un forum specifico.]]></item>
+	</category>
+</language>

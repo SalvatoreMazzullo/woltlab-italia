@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/vortex/language.xsd" languagecode="it">
+	<category name="gallery.acp.menu">
+		<item name="gallery.acp.menu.link.gallery"><![CDATA[Galleria]]></item>
+		<item name="gallery.acp.menu.link.gallery.category.add"><![CDATA[Aggiungi Categoria]]></item>
+		<item name="gallery.acp.menu.link.gallery.category.list"><![CDATA[Categorie]]></item>
+	</category>
+
+	<category name="gallery.album">
+		<item name="gallery.album.add"><![CDATA[Crea Album]]></item>
+		<item name="gallery.album.button.add"><![CDATA[Crea Nuovo Album]]></item>
+		<item name="gallery.album.delete"><![CDATA[Elimina]]></item>
+		<item name="gallery.album.delete.confirmMessage"><![CDATA[Vuoi davvero eliminare questo album?]]></item>
+		<item name="gallery.album.delete.success"><![CDATA[L'album è stato eliminato.]]></item>
+		<item name="gallery.album.edit"><![CDATA[Modifica Album]]></item>
+		<item name="gallery.album.info"><![CDATA[<li>Ultimo aggiornamento: {@$album->lastUpdateTime|time}</li>{if $album->images}<li>{#$album->images} {if $album->images != 1}immagini{else}immagine{/if}</li>{/if}{if $album->videos}<li>{#$album->videos} {if $album->videos != 1}video{else}video{/if}</li>{/if}{if $album->hasRegisteredAccessLevel()}<li>Accesibile solo da utenti registrati</li>{elseif $album->hasFollowingAccessLevel()}<li>Accessibile solo per gli utenti seguiti</li>{elseif $album->hasOwnerAccessLevel()}<li>Album privato</li>{/if}]]></item>
+		<item name="gallery.album.lastUpdateTime"><![CDATA[Ultimo aggiornamento]]></item>
+		<item name="gallery.album.userAlbums"><![CDATA[Album di {$user->username}]]></item>
+		<item name="gallery.album.moreAlbums"><![CDATA[Più Album]]></item>
+		<item name="gallery.album.moreAlbums.images"><![CDATA[{#$albumItem->images} immagini{if $albumItem->images != 1}s{/if}]]></item>
+		<item name="gallery.album.albums"><![CDATA[Albums]]></item>
+		<item name="gallery.album.accessLevel"><![CDATA[Può vedere l'album]]></item>
+		<item name="gallery.album.accessLevel.description"><![CDATA[Questo album dovrebbe essere visibile solo per gli utenti selezionati.{if $album|isset} Si prega di essere consapevoli del fatto che le modifiche sono immediatamente applicate a tutte le immagini contenute.{/if}]]></item>
+		<item name="gallery.album.accessLevel.everyone"><![CDATA[Tutti]]></item>
+		<item name="gallery.album.accessLevel.registered"><![CDATA[Utenti Registrati]]></item>
+		<item name="gallery.album.accessLevel.following"><![CDATA[Utenti che seguo]]></item>
+		<item name="gallery.album.accessLevel.owner"><![CDATA[Solo io]]></item>
+		<item name="gallery.album.accessLevel.info"><![CDATA[{if $album->hasRegisteredAccessLevel()}Accesso solo per utenti registrati{elseif $album->hasFollowingAccessLevel()}Accesso solo per gli utenti che seguo{elseif $album->hasOwnerAccessLevel()}Album privato{/if}]]></item>
+		<item name="gallery.album.ownerImageModerationWarning"><![CDATA[Dal momento che le nuove immagini che hai caricato richiedono l'approvazione, non è possibile caricare altre immagini in questo album privato.]]></item>
+		<item name="gallery.album.sortImages"><![CDATA[Ordinare le immagini]]></item>
+		<item name="gallery.album.sortImages.loadMoreImages"><![CDATA[Più immagini]]></item>
+		<item name="gallery.album.search"><![CDATA[Cerca Album]]></item>
+		<item name="gallery.album.search.results"><![CDATA[Cerca risulati]]></item>
+		<item name="gallery.album.displayOptions"><![CDATA[Opzioni di visualizzazione]]></item>
+		<item name="gallery.album.sortBy"><![CDATA[Ordina per]]></item>
+		<item name="gallery.album.showAll"><![CDATA[Visualizza tutti gli album]]></item>
+		<item name="gallery.album.map"><![CDATA[Mappa]]></item>
+		<item name="gallery.album.sortField.images"><![CDATA[Numero di immagini]]></item>
+		<item name="gallery.album.sortField.lastUpdateTime"><![CDATA[Momento del aggiornamento]]></item>
+		<item name="gallery.album.sortField.time"><![CDATA[Tempo di creazione]]></item>
+		<item name="gallery.album.sortField.videos"><![CDATA[Numero di video]]></item>
+	</category>
+
+	<category name="gallery.category">
+		<item name="gallery.category.delete.sure"><![CDATA[Vuoi davvero eliminare questa categoria? Tutte le categorie figlio di questa categoria verranno spostati categoria principale di questa categoria. Immagini che sono solo in questa categoria verranno eliminati.]]></item>
+	</category>
+
+	<category name="gallery.image">
+		<item name="gallery.image.image"><![CDATA[Immagine]]></item>
+		<item name="gallery.image.albumID"><![CDATA[Album]]></item>
+		<item name="gallery.image.albumID.error.cannotAddToPrivateAlbumDueToModeration"><![CDATA[Una nuova immagine ha bisogno di essere moderata, non puoi caricare una nuova immagine in un album privato.]]></item>
+		<item name="gallery.image.albumID.overwrite.confirmMessage"><![CDATA[Vuoi davvero assegnare tutte  le immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} e i video{/if} da questo album?]]></item>
+		<item name="gallery.image.albumImage"><![CDATA[{if $image->isImage()}Immagine{else}Video{/if} {#$albumImage} di {if $albumImageCount|isset}{#$albumImageCount}{else}{#($image->getAlbum()->images + $image->getAlbum()->videos)}{/if}]]></item>
+		<item name="gallery.image.browser"><![CDATA[Galleria]]></item>
+		<item name="gallery.image.browser.insert"><![CDATA[Inserire nel messaggio]]></item>
+		<item name="gallery.image.browser.insert.tiny"><![CDATA[Minuscola ({$dimensions[width]} × {$dimensions[height]})]]></item>
+		<item name="gallery.image.browser.insert.small"><![CDATA[Piccola ({$dimensions[width]} × {$dimensions[height]})]]></item>
+		<item name="gallery.image.browser.insert.medium"><![CDATA[Media ({$dimensions[width]} × {$dimensions[height]})]]></item>
+		<item name="gallery.image.browser.insert.large"><![CDATA[Grande ({$dimensions[width]} × {$dimensions[height]})]]></item>
+		<item name="gallery.image.browser.insert.original"><![CDATA[Originale ({$dimensions[width]} × {$dimensions[height]})]]></item>
+		<item name="gallery.image.browser.image.list"><![CDATA[Tutto]]></item>
+		<item name="gallery.image.browser.image.search"><![CDATA[Cerca]]></item>
+		<item name="gallery.image.browser.image.search.description"><![CDATA[Digitare in almeno 3 caratteri per avviare la ricerca.]]></item>
+		<item name="gallery.image.browser.imagesAndVideos"><![CDATA[Immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} e Video{/if}]]></item>
+		<item name="gallery.image.browser.noAlbums"><![CDATA[Al momento non hai album con immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} o video{/if} visibili.]]></item>
+		<item name="gallery.image.browser.noImages"><![CDATA[Al momento non hai immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} o video{/if} visibili.]]></item>
+		<item name="gallery.image.button.markAll"><![CDATA[Segna tutto]]></item>
+		<item name="gallery.image.button.overwrite"><![CDATA[Applica alle altre immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} e video{/if}]]></item>
+		<item name="gallery.image.button.upload"><![CDATA[Carica]]></item>
+		<item name="gallery.image.button.sort"><![CDATA[Ordina]]></item>
+		<item name="gallery.image.categories"><![CDATA[Categorie]]></item>
+		<item name="gallery.image.categorizedImages"><![CDATA[Immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} e video{/if} della categoria “{$category->getTitle()}”]]></item>
+		<item name="gallery.image.categoryIDs.overwrite.confirmMessage"><![CDATA[Sei sicuro di voler assegnare tutte le altre immagini {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} e video{/if} caricati alla categoria selezionata?]]></item>
+		<item name="gallery.image.comment"><![CDATA[Commento Galleria]]></item>
+		<item name="gallery.image.comments"><![CDATA[Commenti]]></item>
+		<item name="gallery.image.comments.count"><![CDATA[{#$image->comments} {if $image->comments != 1}commenti{else}commento{/if}]]></item>
+		<item name="gallery.image.coordinates"><![CDATA[Coordinate]]></item>
+		<item name="gallery.image.coordinates.description"><![CDATA[Puoi specificare una posizione per questa immagine{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{/if}.]]></item>
+		<item name="gallery.image.coordinates.location"><![CDATA[Posizione]]></item>
+		<item name="gallery.image.coordinates.locationSearch"><![CDATA[Cerca posizione]]></item>
+		<item name="gallery.image.coordinates.location.description"><![CDATA[Digita una posizione e scegli un risultato dai suggerimenti.]]></item>
+		<item name="gallery.image.coordinates.overwrite.confirmMessage"><![CDATA[Sei sicuro di voler assegnare a tutte le altre immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} e video{/if} caricati a questa posizione?]]></item>
+		<item name="gallery.image.coordinates.useCoordinates"><![CDATA[Specifica posizione]]></item>
+		<item name="gallery.image.delete"><![CDATA[Elimina]]></item>
+		<item name="gallery.image.delete.confirmMessage"><![CDATA[Sei sicuro di voler eliminare questa immagine{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{/if}?]]></item>
+		<item name="gallery.image.delete.success"><![CDATA[L´immagine{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{/if} è stata eliminata.]]></item>
+		<item name="gallery.image.description"><![CDATA[Descrizione]]></item>
+		<item name="gallery.image.description.error.tooLong"><![CDATA[Questa descrizione è troppo lunga.]]></item>
+		<item name="gallery.image.description.overwrite.confirmMessage"><![CDATA[Sei sicuro di voler assegnare questa descrizione a tutte le immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} evideo{/if} caricati?]]></item>
+		<item name="gallery.image.disable"><![CDATA[Disattiva]]></item>
+		<item name="gallery.image.edit"><![CDATA[Modifica {if $image->isImage()}Immagine{else}Video{/if}]]></item>
+		<item name="gallery.image.edit.multiple"><![CDATA[Modifica immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{/if}]]></item>
+		<item name="gallery.image.enable"><![CDATA[Approva]]></item>
+		<item name="gallery.image.filename"><![CDATA[Nome file]]></item>
+		<item name="gallery.image.filesize"><![CDATA[Dimensione file]]></item>
+		<item name="gallery.image.images"><![CDATA[Immagini]]></item>
+		<item name="gallery.image.imagesAndVideos"><![CDATA[Immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} e video{/if}]]></item>
+		<item name="gallery.image.imagesInfoWindow"><![CDATA[Immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Video{/if} multipli]]></item>
+		<item name="gallery.image.isDeleted"><![CDATA[Cancellato]]></item>
+		<item name="gallery.image.isDisabled"><![CDATA[Disattivato]]></item>
+		<item name="gallery.image.map"><![CDATA[Posizione]]></item>
+		<item name="gallery.image.moderation.info"><![CDATA[Nuovi caricamenti di {if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration')}immagini{if GALLERY_VIDEO_UPLOAD && $__wcf->session->getPermission('user.gallery.canUploadVideo') && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration')} e video{/if}{elseif $__gallery->canUploadVideo() && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration')}video caricati{/if}{if $__gallery->canLinkVideo() && !$__wcf->session->getPermission('user.gallery.canLinkVideoWithoutModeration')}{if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration') || (GALLERY_VIDEO_UPLOAD && $__wcf->session->getPermission('user.gallery.canUploadVideo') && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration'))} e {/if}link video aggiunti{/if} rimarrà inaccessibile fino all'approvazione da parte di un moderatore. Fino alla loro approvazione, non puoi né visualizzare né modificare il file {if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration')}immagini{/if}{if (GALLERY_VIDEO_UPLOAD && $__wcf->session->getPermission('user.gallery.canUploadVideo') && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration')) || (GALLERY_VIDEO_LINKS && $__wcf->session->getPermission('user.gallery.canLinkVideo') && !$__wcf->session->getPermission('user.gallery.canLinkVideoWithoutModeration'))}{if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration')} e {/if}video{/if}.]]></item>
+		<item name="gallery.image.moveToAlbum"><![CDATA[Sposta immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Video{/if} nel Album]]></item>
+		<item name="gallery.image.noImages"><![CDATA[Non ci sono immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} o video{/if} in questa categoria al momento.]]></item>
+		<item name="gallery.image.pendingImages"><![CDATA[{if $pendingImageList|count > 1}Ci sono {#$pendingImageList|count} immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} e video{/if} in sospeso {else}C´è un immagine{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} o video{/if} {/if} che sono stati caricati, ma non salvati.]]></item>
+		<item name="gallery.image.pendingImages.delete"><![CDATA[Elimina immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{/if} in sospeso]]></item>
+		<item name="gallery.image.pendingImages.delete.confirmMessage"><![CDATA[Vuoi realmente eliminare le immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} e video{/if} in sospeso?]]></item>
+		<item name="gallery.image.pendingImages.load"><![CDATA[Carica immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{/if} in sospeso]]></item>
+		<item name="gallery.image.recentActivity.image"><![CDATA[{if $image->isVideoLink}Aggiunto{else}Caricato{/if} {if $image->isImage()}l´immagine{else}il video{/if} <a href="{link application='gallery' controller='Image' object=$image}{/link}" class="galleryImageLink" data-image-id="{@$image->imageID}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.recentActivity.images"><![CDATA[Aggiunto {if $images}{#$images}{if $images > 1} immagini{else}immagine{/if}{/if}{if $videos}{if $images} e {/if}{#$videos} {if $videos > 1}video{else}video{/if}{/if}.]]></item>
+		<item name="gallery.image.recentActivity.likedImage"><![CDATA[Piace {if $image->isImage()}l´immagine{else}il video{/if} <a href="{link application='gallery' controller='Image' object=$image}{/link}" class="galleryImageLink" data-image-id="{@$image->imageID}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.recentActivity.imageComment"><![CDATA[Commento nel {if $image->isImage()}immagine{else}video{/if} <a href="{link application='gallery' controller='Image' object=$image}#comment{@$commentID}{/link}" class="galleryImageLink" data-image-id="{@$image->imageID}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.recentActivity.imageCommentResponse"><![CDATA[Risposta al commento di <a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a> nel {if $image->isImage()}immagine{else}video{/if} <a href="{link application='gallery' controller='Image' object=$image}#comment{@$commentID}{/link}" class="galleryImageLink" data-image-id="{@$image->imageID}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.restore"><![CDATA[Ripristina]]></item>
+		<item name="gallery.image.size"><![CDATA[Dimensioni]]></item>
+		//CONTINUA
+		<item name="gallery.image.tags.overwrite.confirmMessage"><![CDATA[Do you really want to assign the selected tags to all the other uploaded images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if}?]]></item>
+		<item name="gallery.image.thumbnail.chooseSelection"><![CDATA[Apply Selection]]></item>
+		<item name="gallery.image.title.overwrite.confirmMessage"><![CDATA[Do you really want to assign the title to all the other uploaded images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if}?]]></item>
+		<item name="gallery.image.trash"><![CDATA[Move to Trash]]></item>
+		<item name="gallery.image.trash.confirmMessage"><![CDATA[Do you really want to move this image{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{/if} to the trash?]]></item>
+		<item name="gallery.image.trash.reason"><![CDATA[Reason (optional)]]></item>
+		<item name="gallery.image.unreadImages"><![CDATA[New Images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and Videos{/if}]]></item>
+		<item name="gallery.image.userImages"><![CDATA[Images by {$user->username}]]></item>
+		<item name="gallery.image.upload"><![CDATA[Upload images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if}]]></item>
+		<item name="gallery.image.upload.abort"><![CDATA[Abort]]></item>
+		<item name="gallery.image.upload.albumLimitReached"><![CDATA[The album has been created. Unfortunately you have reached your limit and cannot create any more albums.]]></item>
+		<item name="gallery.image.upload.archive.success"><![CDATA[The archive has been uploaded and the contained files are currently being processed.]]></item>
+		<item name="gallery.image.upload.currentImage"><![CDATA[Current Image]]></item>
+		<item name="gallery.image.upload.info.containsInvalidImages"><![CDATA[The archive “{$file->getFilename()}” contains invalid images:]]></item>
+		<item name="gallery.image.upload.info.thumbnailGeneration"><![CDATA[Thumbnails are currently being created, you will automatically be redirected upon completion.]]></item>
+		<item name="gallery.image.upload.images"><![CDATA[Uploaded Images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and Videos{/if}]]></item>
+		<item name="gallery.image.upload.error.containsNoImages"><![CDATA[The archive “{$file->getFilename()}” does not contain images.]]></item>
+		<item name="gallery.image.upload.error.containsNoValidImages"><![CDATA[The archive “{$file->getFilename()}” does not contain valid images.]]></item>
+		<item name="gallery.image.upload.error.fileExtension"><![CDATA[The file “{if $file|isset}{$file->getFilename()}{else}{$filename}{/if}” has an invalid extension.]]></item>
+		<item name="gallery.image.upload.error.invalidArchive"><![CDATA[Unable to open archive “{$file->getFilename()}”.]]></item>
+		<item name="gallery.image.upload.error.markedImages"><![CDATA[One or more fields are erroneous, please check the input fields of the highlighted images by clicking on the thumbnails.]]></item>
+		<item name="gallery.image.upload.error.maxHeight"><![CDATA[The image “{if $file|isset}{$file->getFilename()}{else}{$filename}{/if}” is too tall.]]></item>
+		<item name="gallery.image.upload.error.maxParallelFileUpload"><![CDATA[You cannot upload more than {if GALLERY_MAX_PARALLEL_IMAGE_UPLOADS != 1}{#GALLERY_MAX_PARALLEL_IMAGE_UPLOADS} images{else}one image{/if} in parallel.]]></item>
+		<item name="gallery.image.upload.error.maxWidth"><![CDATA[The image “{if $file|isset}{$file->getFilename()}{else}{$filename}{/if}” is too wide.]]></item>
+		<item name="gallery.image.upload.error.minHeight"><![CDATA[The image “{if $file|isset}{$file->getFilename()}{else}{$filename}{/if}” is too small.]]></item>
+		<item name="gallery.image.upload.error.minWidth"><![CDATA[The image “{if $file|isset}{$file->getFilename()}{else}{$filename}{/if}” is too small.]]></item>
+		<item name="gallery.image.upload.error.maxSize"><![CDATA[The image “{if $file|isset}{$file->getFilename()}{else}{$filename}{/if}” is too big.]]></item>
+		<item name="gallery.image.upload.error.noImage"><![CDATA[The uploaded file “{$file->getFilename()}” is not an image.]]></item>
+		<item name="gallery.image.upload.error.uploadFailed"><![CDATA[An unknown error occurred during the upload of {if $file|isset}“{$file->getFilename()}”{else}a file{/if}.]]></item>
+		<item name="gallery.image.upload.error.quotaExceeded"><![CDATA[You have exceeded your storage limit and cannot upload new images. You must delete existing images to free up some space.]]></item>
+		<item name="gallery.image.upload.error.totalQuotaExceeded"><![CDATA[You have exceeded your storage limit and cannot upload new images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and video{/if}. You must delete existing images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} or video{/if} to free up some space.]]></item>
+		<item name="gallery.image.upload.error.tooManyImages"><![CDATA[You have exceeded your maximum image limit and cannot upload new images. You must delete existing images to free up some space.]]></item>
+		<item name="gallery.image.upload.error.tooManyImageSelected"><![CDATA[You have selected {#$imageCount} images but you are {if $maximumImageCount}only allowed to upload {#$maximumImageCount} additional image{if $maximumImageCount > 1}s{/if}{else}not allowed to upload more images{/if}.]]></item>
+		<item name="gallery.image.upload.error.tooManyOfAll"><![CDATA[You have exceeded your maximum image{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and video{/if} limit and cannot add new images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} or videos{/if}. You must delete existing images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} or videos{/if} to free up some space.]]></item>
+		<item name="gallery.image.upload.error.tooManyUploads"><![CDATA[You have exceeded your maximum image{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and video{/if} limit and cannot upload new images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} or videos{/if}. You must delete existing images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} or videos{/if} to free up some space.]]></item>
+		<item name="gallery.image.upload.error.uploadPhpLimit"><![CDATA[The file exceeds the PHP limit “max_upload_filesize” and/or “post_max_size”.]]></item>
+		<item name="gallery.image.upload.description"><![CDATA[If you have uploaded multiple images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} or videos{/if}, you can edit them one by one by clicking on the thumbnail.]]></item>
+		<item name="gallery.image.upload.showRestrictions"><![CDATA[Show restrictions]]></item>
+		<item name="gallery.image.upload.restrictions.title"><![CDATA[Restrictions on adding new images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if}]]></item>
+		<item name="gallery.image.upload.restriction.fileExtensions"><![CDATA[Allowed File Extensions]]></item>
+		<item name="gallery.image.upload.restriction.count"><![CDATA[Uploaded Images]]></item>
+		<item name="gallery.image.upload.restriction.count.value"><![CDATA[{#$userImageCount}/{#$__wcf->session->getPermission('user.gallery.maxImages')}]]></item>
+		<item name="gallery.image.upload.restriction.quota"><![CDATA[Used Quota]]></item>
+		<item name="gallery.image.upload.restriction.quota.value"><![CDATA[{$usedImageQuota|filesize}/{$__wcf->session->getPermission('user.gallery.quota')|filesize}]]></item>
+		<item name="gallery.image.upload.restriction.maximumFilesize"><![CDATA[Maximum Filesize]]></item>
+		<item name="gallery.image.upload.restriction.maximumFilesize.value"><![CDATA[{@$__wcf->session->getPermission('user.gallery.maxSize')|filesize}]]></item>
+		<item name="gallery.image.upload.restriction.minimumImageSize"><![CDATA[Minimum Image Size]]></item>
+		<item name="gallery.image.upload.restriction.minimumImageSize.value"><![CDATA[{#GALLERY_IMAGE_MIN_WIDTH}&times;{#GALLERY_IMAGE_MIN_HEIGHT} pixels]]></item>
+		<item name="gallery.image.upload.restriction.maximumImageSize"><![CDATA[Maximum Image Size]]></item>
+		<item name="gallery.image.upload.restriction.maximumImageSize.value"><![CDATA[{#$__wcf->session->getPermission('user.gallery.maxWidth')}&times;{#$__wcf->session->getPermission('user.gallery.maxHeight')} pixels]]></item>
+		<item name="gallery.image.upload.restriction.maximumImageSize.description"><![CDATA[If the uploaded image is larger than these restrictions, the system attempts to downscale the image if possible.]]></item>
+		<item name="gallery.image.upload.restriction.archives"><![CDATA[Archive Upload]]></item>
+		<item name="gallery.image.upload.restriction.archives.description"><![CDATA[You can also upload images using a Zip-, Tar-, or Gzip-archive.]]></item>
+		<item name="gallery.image.upload.save"><![CDATA[Save All]]></item>
+		<item name="gallery.image.views"><![CDATA[Views]]></item>
+		<item name="gallery.image.creationTime"><![CDATA[Creation Date]]></item>
+		<item name="gallery.image.uploadTime"><![CDATA[Upload Date]]></item>
+		<item name="gallery.image.camera"><![CDATA[Camera]]></item>
+		<item name="gallery.image.information"><![CDATA[Details]]></item>
+		<item name="gallery.image.coordinates.value"><![CDATA[{@$latDegrees}° {@$latMinutes}' {@$latSeconds}" {if $latitudeRef == 'S'}S{else}N{/if}, {@$longDegrees}° {@$longMinutes}' {@$longSeconds}" {if $longitudeRef == 'E'}E{else}W{/if}]]></item>
+		<item name="gallery.image.exif.focalLength"><![CDATA[Focal Length]]></item>
+		<item name="gallery.image.exif.exposureTime"><![CDATA[Exposure Time]]></item>
+		<item name="gallery.image.exif.aperture"><![CDATA[Aperture]]></item>
+		<item name="gallery.image.exif.iso"><![CDATA[ISO speed]]></item>
+		<item name="gallery.image.exif.flash"><![CDATA[Flash]]></item>
+		<item name="gallery.image.exif.flash.0"><![CDATA[Flash did not fire]]></item>
+		<item name="gallery.image.exif.flash.1"><![CDATA[Flash fired.]]></item>
+		<item name="gallery.image.exif.flash.5"><![CDATA[Strobe return light not detected]]></item>
+		<item name="gallery.image.exif.flash.7"><![CDATA[Strobe return light detected]]></item>
+		<item name="gallery.image.exif.flash.9"><![CDATA[Flash fired, compulsory flash mode]]></item>
+		<item name="gallery.image.exif.flash.13"><![CDATA[Flash fired, compulsory flash mode, return light not detected]]></item>
+		<item name="gallery.image.exif.flash.15"><![CDATA[Flash fired, compulsory flash mode, return light detected]]></item>
+		<item name="gallery.image.exif.flash.16"><![CDATA[Flash did not fire, compulsory flash mode]]></item>
+		<item name="gallery.image.exif.flash.17"><![CDATA[Flash fired, compulsory flash mode]]></item>
+		<item name="gallery.image.exif.flash.24"><![CDATA[Flash did not fire, auto mode]]></item>
+		<item name="gallery.image.exif.flash.25"><![CDATA[Flash fired, auto mode]]></item>
+		<item name="gallery.image.exif.flash.29"><![CDATA[Flash fired, auto mode, return light not detected]]></item>
+		<item name="gallery.image.exif.flash.31"><![CDATA[Flash fired, auto mode, return light detected]]></item>
+		<item name="gallery.image.exif.flash.32"><![CDATA[No flash function]]></item>
+		<item name="gallery.image.exif.flash.65"><![CDATA[Flash fired, red-eye reduction mode]]></item>
+		<item name="gallery.image.exif.flash.69"><![CDATA[Flash fired, red-eye reduction mode, return light not detected]]></item>
+		<item name="gallery.image.exif.flash.71"><![CDATA[Flash fired, red-eye reduction mode, return light detected]]></item>
+		<item name="gallery.image.exif.flash.73"><![CDATA[Flash fired, compulsory flash mode, red-eye reduction mode]]></item>
+		<item name="gallery.image.exif.flash.77"><![CDATA[Flash fired, compulsory flash mode, red-eye reduction mode, return light not detected]]></item>
+		<item name="gallery.image.exif.flash.79"><![CDATA[Flash fired, compulsory flash mode, red-eye reduction mode, return light detected]]></item>
+		<item name="gallery.image.exif.flash.80"><![CDATA[Flash did not fire, red-eye reduction mode]]></item>
+		<item name="gallery.image.exif.flash.89"><![CDATA[Flash fired, auto mode, red-eye reduction mode]]></item>
+		<item name="gallery.image.exif.flash.93"><![CDATA[Flash fired, auto mode, return light not detected, red-eye reduction mode]]></item>
+		<item name="gallery.image.exif.flash.95"><![CDATA[Flash fired, auto mode, return light detected, red-eye reduction mode]]></item>
+		<item name="gallery.image.share.smallImage"><![CDATA[Small Version]]></item>
+		<item name="gallery.image.share.largeImage"><![CDATA[Large Version]]></item>
+		<item name="gallery.image.viewFullSize"><![CDATA[View Full Size]]></item>
+		<item name="gallery.image.watchedImages"><![CDATA[Watched Categories]]></item>
+		<item name="gallery.image.watchedImages.noImages"><![CDATA[You are not watching any categories at the moment.]]></item>
+		<item name="gallery.image.log.trash.summary"><![CDATA[{if $additionalData[isVideo]|empty}Image{else}Video{/if} was deleted by {if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-user-id="{@$userID}">{$username}</a>{else}{$username}{/if}{if $additionalData[reason]} for the following reason: {$additionalData[reason]}{/if} ({@$time|time}).]]></item>
+		<item name="gallery.image.notification.title"><![CDATA[New {if $image->isImage()}Image{else}Video{/if}]]></item>
+		<item name="gallery.image.notification.message"><![CDATA[{@$author->getAnchorTag()} {if $image->isVideoLink}added{else}uploaded{/if} the {if $image->isImage()}image{else}video{/if} <a href="{link application='gallery' controller='Image' object=$image}{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.notification.mail.plaintext"><![CDATA[{if $event->getAuthor()->userID}{@$event->getAuthor()->username} [URL:{link controller='User' object=$event->getAuthor() isEmail=true}{/link}]{else}a guest{/if} {if $image->isVideoLink}added{else}uploaded{/if} the {if $image->isImage()}image{else}video{/if} “{@$image->title}” [URL:{link application='gallery' controller='Image' object=$image isEmail=true}{/link}]:]]></item>
+		<item name="gallery.image.notification.mail.html"><![CDATA[<p>{if $event->getAuthor()->userID}<a href="{link controller='User' object=$event->getAuthor() isEmail=true}{/link}">{$event->getAuthor()->username}</a>{else}a guest{/if} {if $image->isVideoLink}added{else}uploaded{/if} the {if $image->isImage()}image{else}video{/if} <a href="{link application='gallery' controller='Image' object=$image isEmail=true}{/link}">{$image->title}</a>:</p>]]></item>
+		<item name="gallery.image.mention.notification.title"><![CDATA[You were mentioned]]></item>
+		<item name="gallery.image.mention.notification.message"><![CDATA[{@$author->getAnchorTag()} mentioned you in the description of the {if $image->isImage()}image{else}video{/if} <a href="{link application='gallery' controller='Image' object=$image}{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.mention.notification.mail.plaintext"><![CDATA[{if $event->getAuthor()->userID}{@$event->getAuthor()->username} [URL:{link controller='User' object=$event->getAuthor() isEmail=true}{/link}]{else}a guest{/if} mentioned you in the description of the {if $image->isImage()}image{else}video{/if} “{@$image->title}” [URL:{link application='gallery' controller='Image' object=$image isEmail=true}{/link}]:]]></item>
+		<item name="gallery.image.mention.notification.mail.html"><![CDATA[<p>{if $event->getAuthor()->userID}<a href="{link controller='User' object=$event->getAuthor() isEmail=true}{/link}">{$event->getAuthor()->username}</a>{else}a guest{/if} mentioned you in the description of the {if $image->isImage()}image{else}video{/if} <a href="{link application='gallery' controller='Image' object=$image isEmail=true}{/link}">{$image->title}</a>:</p>]]></item>
+		<item name="gallery.image.marker.notification.title"><![CDATA[You were marked]]></item>
+		<item name="gallery.image.marker.notification.message"><![CDATA[{@$author->getAnchorTag()} marked you on the image <a href="{link application='gallery' controller='Image' object=$image}{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.marker.notification.mail.plaintext"><![CDATA[{if $event->getAuthor()->userID}{@$event->getAuthor()->username} [URL:{link controller='User' object=$event->getAuthor() isEmail=true}{/link}]{else}a guest{/if} marked you on the image “{@$image->title}” [URL:{link application='gallery' controller='Image' object=$image isEmail=true}{/link}]:]]></item>
+		<item name="gallery.image.marker.notification.mail.html"><![CDATA[<p>{if $event->getAuthor()->userID}<a href="{link controller='User' object=$event->getAuthor() isEmail=true}{/link}">{$event->getAuthor()->username}</a>{else}a guest{/if} marked you on the image <a href="{link application='gallery' controller='Image' object=$image isEmail=true}{/link}">{$image->title}</a>:</p>]]></item>
+		<item name="gallery.image.comment.notification.title"><![CDATA[New Comment ({if $image->isImage()}Image{else}Video{/if})]]></item>
+		<item name="gallery.image.comment.notification.title.stacked"><![CDATA[{#$timesTriggered} new Comments ({if $image->isImage()}Image{else}Video{/if})]]></item>
+		<item name="gallery.image.comment.notification.message"><![CDATA[{if $author->userID}{@$author->getAnchorTag()}{else}A guest{/if} commented on your {if $image->isImage()}image{else}video{/if} <a href="{link application='gallery' controller='Image' object=$image}#comment{@$commentID}{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.comment.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3}{if !$guestTimesTriggered} and {else}, {/if} {@$authors[2]->getAnchorTag()}{/if}{/if}{if $guestTimesTriggered} and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{else}{@$authors[0]->getAnchorTag()}{if $guestTimesTriggered},{else} and{/if} {#$others} other users {if $guestTimesTriggered}and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{/if} commented on your {if $image->isImage()}image{else}video{/if} <a href="{link application='gallery' controller='Image' object=$image}#comments{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.comment.notification.mail.plaintext"><![CDATA[{@$authorList} commented on your {if $image->isImage()}image{else}video{/if} “{@$image->title}” [URL:{link application='gallery' controller='Image' object=$image isEmail=true}#comment{@$commentID}{/link}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+		<item name="gallery.image.comment.notification.mail.html"><![CDATA[<p>{@$authorList} commented on your {if $image->isImage()}image{else}video{/if} <a href="{link application='gallery' controller='Image' object=$image isEmail=true}#comment{@$commentID}{/link}">{$image->title}</a>:</p>]]></item>
+		<item name="gallery.image.comment.like.notification.title"><![CDATA[Likes a comment ({if $image->isImage()}Image{else}Video{/if})]]></item>
+		<item name="gallery.image.comment.like.notification.title.stacked"><![CDATA[{#$count} users like your comment ({if $image->isImage()}image{else}video{/if})]]></item>
+		<item name="gallery.image.comment.like.notification.message"><![CDATA[{@$author->getAnchorTag()} likes your comment on the {if $image->isImage()}image{else}video{/if} <a href="{link application='gallery' controller='Image' object=$image}#comment{@$commentID}{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.comment.like.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} and {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} and {#$others} others{/if} like your comment on the {if $image->isImage()}image{else}video{/if} <a href="{link application='gallery' controller='Image' object=$image}#comment{@$commentID}{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.commentResponse"><![CDATA[Reply to Gallery Comment]]></item>
+		<item name="gallery.image.commentResponse.notification.title"><![CDATA[New Reply ({if $image->isImage()}Image{else}Video{/if})]]></item>
+		<item name="gallery.image.commentResponse.notification.title.stacked"><![CDATA[{#$timesTriggered} new Replies ({if $image->isImage()}Image{else}Video{/if})]]></item>
+		<item name="gallery.image.commentResponse.notification.message"><![CDATA[{if $author->userID}{@$author->getAnchorTag()}{else}A guest{/if} replied to your comment on the {if $image->isImage()}image{else}video{/if} <a href="{link application='gallery' controller='Image' object=$image}#comment{@$commentID}/response{@$responseID}{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.commentResponse.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3}{if !$guestTimesTriggered} and {else}, {/if} {@$authors[2]->getAnchorTag()}{/if}{/if}{if $guestTimesTriggered} and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{else}{@$authors[0]->getAnchorTag()}{if $guestTimesTriggered},{else} and{/if} {#$others} other users {if $guestTimesTriggered}and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{/if} replied to your comment on the {if $image->isImage()}image{else}video{/if} <a href="{link application='gallery' controller='Image' object=$image}#comment{@$commentID}{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.commentResponse.notification.mail.plaintext"><![CDATA[{@$authorList} wrote {if $count == 1 && !$guestTimesTriggered}a reply{else}replies{/if} to your comment on the {if $image->isImage()}image{else}video{/if} “{@$image->title}” [URL:{link application='gallery' controller='Image' object=$image isEmail=true}#comment{@$commentID}/response{@$responseID}{/link}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+		<item name="gallery.image.commentResponse.notification.mail.html"><![CDATA[<p>{@$authorList} wrote {if $count == 1 && !$guestTimesTriggered}a reply{else}replies{/if} to your comment on the {if $image->isImage()}image{else}video{/if} <a href="{link application='gallery' controller='Image' object=$image isEmail=true}#comment{@$commentID}/response{@$responseID}{/link}">{$image->title}</a>:</p>]]></item>
+		<item name="gallery.image.commentResponse.like.notification.title"><![CDATA[Likes your reply to a comment ({if $image->isImage()}Image{else}Video{/if})]]></item>
+		<item name="gallery.image.commentResponse.like.notification.title.stacked"><![CDATA[{#$count} users like your reply to a comment ({if $image->isImage()}Image{else}Video{/if})]]></item>
+		<item name="gallery.image.commentResponse.like.notification.message"><![CDATA[{@$author->getAnchorTag()} likes your reply to a comment on the {if $image->isImage()}image{else}video{/if} <a href="{link application='gallery' controller='Image' object=$image}#comment{@$commentID}/response{@$responseID}{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.commentResponse.like.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} and {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} and {#$others} others{/if} like your reply to a comment on the {if $image->isImage()}image{else}video{/if} <a href="{link application='gallery' controller='Image' object=$image}#comment{@$commentID}/response{@$responseID}{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.commentResponseOwner.notification.title"><![CDATA[New Reply ({if $image->isImage()}Image{else}Video{/if})]]></item>
+		<item name="gallery.image.commentResponseOwner.notification.title.stacked"><![CDATA[{#$timesTriggered} new Replies ({if $image->isImage()}Image{else}Video{/if})]]></item>
+		<item name="gallery.image.commentResponseOwner.notification.message"><![CDATA[{if $author->userID}{@$author->getAnchorTag()}{else}A guest{/if} replied to the comment by {$commentAuthor->username} on your {if $image->isImage()}image{else}video{/if} <a href="{link application='gallery' controller='Image' object=$image}#comment{@$commentID}/response{@$responseID}{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.commentResponseOwner.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3}{if !$guestTimesTriggered} and {else}, {/if} {@$authors[2]->getAnchorTag()}{/if}{/if}{if $guestTimesTriggered} and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{else}{@$authors[0]->getAnchorTag()}{if $guestTimesTriggered},{else} and{/if} {#$others} other users {if $guestTimesTriggered}and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{/if} replied to a comment by {if $author->userID}<a href="{link controller='User' object=$author}{/link}" class="userLink" data-user-id="{@$author->userID}">{$author->username}</a>{else}{$author->username}{/if} on your {if $image->isImage()}image{else}video{/if} <a href="{link application='gallery' controller='Image' object=$image}#comment{@$commentID}{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.commentResponseOwner.notification.mail.plaintext"><![CDATA[{@$authorList} wrote {if $count == 1 && !$guestTimesTriggered}a reply{else}replies{/if} to {@$notificationContent[variables][commentAuthor]->username}’s{if $notificationContent[variables][commentAuthor]->userID} [URL:{link controller='User' object=$notificationContent[variables][commentAuthor] isEmail=true}{/link}]{/if} comment on your {if $image->isImage()}image{else}video{/if} “{@$image->title}” [URL:{link application='gallery' controller='Image' object=$image isEmail=true}#comment{@$commentID}/response{@$responseID}{/link}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+		<item name="gallery.image.commentResponseOwner.notification.mail.html"><![CDATA[<p>{@$authorList} wrote {if $count == 1 && !$guestTimesTriggered}a reply{else}replies{/if} to {if $notificationContent[variables][commentAuthor]->userID}<a href="{link controller='User' object=$notificationContent[variables][commentAuthor] isEmail=true}{/link}">{$notificationContent[variables][commentAuthor]->username}</a>{else}{$notificationContent[variables][commentAuthor]->username}{/if}’s comment on your {if $image->isImage()}image{else}video{/if} <a href="{link application='gallery' controller='Image' object=$image isEmail=true}#comment{@$commentID}/response{@$responseID}{/link}">{$image->title}</a>:</p>]]></item>
+		<item name="gallery.image.like.notification.title"><![CDATA[Likes your {if $image->isImage()}image{else}video{/if}]]></item>
+		<item name="gallery.image.like.notification.title.stacked"><![CDATA[{#$count} users like your {if $image->isImage()}image{else}video{/if}]]></item>
+		<item name="gallery.image.like.notification.message"><![CDATA[{@$author->getAnchorTag()} likes your {if $image->isImage()}image{else}video{/if} <a href="{link application='gallery' controller='Image' object=$image}{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.like.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} and {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} and {#$others} others{/if} like your {if $image->isImage()}image{else}video{/if} <a href="{link application='gallery' controller='Image' object=$image}{/link}">{$image->title}</a>.]]></item>
+		<item name="gallery.image.enableComments"><![CDATA[Enable comments]]></item>
+		<item name="gallery.image.enableComments.description"><![CDATA[Allows users to write comments.]]></item>
+		<item name="gallery.image.enableComments.overwrite.confirmMessage"><![CDATA[Do you really want to apply the setting for “Enable comments” for all the uploaded images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if}?]]></item>
+		<item name="gallery.image.markAllAsRead"><![CDATA[Mark All Images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and Videos{/if} as Viewed]]></item>
+		<item name="gallery.image.moreImages"><![CDATA[More Images]]></item>
+		<item name="gallery.image.overwriteData.confirmMessage"><![CDATA[Do you really want to apply the details of the current image{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{/if} to all the other images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if}?]]></item>
+		<item name="gallery.image.button.overwriteAll"><![CDATA[Apply to all]]></item>
+		<item name="gallery.image.useFilenameAsTitle"><![CDATA[Use filename as title]]></item>
+		<item name="gallery.image.button.selectThumbnailArea"><![CDATA[Select Thumbnail Area]]></item>
+		<item name="gallery.image.marker"><![CDATA[Marker]]></item>
+		<item name="gallery.image.marker.add"><![CDATA[Add Marker]]></item>
+		<item name="gallery.image.marker.delete.confirmMessage"><![CDATA[Do you really want to delete this marker?]]></item>
+		<item name="gallery.image.marker.description"><![CDATA[Click on the image to add a marker at that position.]]></item>
+		<item name="gallery.image.marker.edit"><![CDATA[Edit Marker]]></item>
+		<item name="gallery.image.marker.text"><![CDATA[Text]]></item>
+		<item name="gallery.image.marker.text.description"><![CDATA[Automatically detects links and smilies.]]></item>
+		<item name="gallery.image.marker.type"><![CDATA[Marker Type]]></item>
+		<item name="gallery.image.marker.type.text"><![CDATA[Text]]></item>
+		<item name="gallery.image.marker.type.user"><![CDATA[User]]></item>
+		<item name="gallery.image.marker.user"><![CDATA[Marked user]]></item>
+		<item name="gallery.image.marker.user.description"><![CDATA[The marked user will receive a notification that you had marked them on this image.]]></item>
+		<item name="gallery.image.markedUsers"><![CDATA[Marked Users]]></item>
+		<item name="gallery.image.markedUsers.description"><![CDATA[Markers are highlighted on the image while hovering over a username.]]></item>
+		<item name="gallery.image.nextImage"><![CDATA[Next {if $nextImage->isImage()}Image{else}Video{/if}]]></item>
+		<item name="gallery.image.previousImage"><![CDATA[Previous {if $previousImage->isImage()}Image{else}Video{/if}]]></item>
+		<item name="gallery.image.rotate"><![CDATA[Rotate Image]]></item>
+		<item name="gallery.image.rotate.90"><![CDATA[Rotate by 90°]]></item>
+		<item name="gallery.image.rotate.180"><![CDATA[Rotate by 180°]]></item>
+		<item name="gallery.image.rotate.270"><![CDATA[Rotate by 270°]]></item>
+		<item name="gallery.image.rotate.confirmMessage"><![CDATA[Do you really want to rotate the image? The selected thumbnail area will be reset during the rotation.]]></item>
+		<item name="gallery.image.categoryIDs.error.tooMany"><![CDATA[You have selected too many categories. You can select up to {@GALLERY_IMAGE_MAX_CATEGORIES} {if GALLERY_IMAGE_MAX_CATEGORIES == 1}category{else}categories{/if}.]]></item>
+		<item name="gallery.image.sortField.comments"><![CDATA[Number of Comments]]></item>
+		<item name="gallery.image.sortField.cumulativeLikes"><![CDATA[Likes]]></item>
+		<item name="gallery.image.sortField.random"><![CDATA[Random]]></item>
+		<item name="gallery.image.sortField.title"><![CDATA[Title]]></item>
+		<item name="gallery.image.sortField.uploadTime"><![CDATA[Time of Upload]]></item>
+		<item name="gallery.image.sortField.views"><![CDATA[Number of Views]]></item>
+		<item name="gallery.image.condition.category"><![CDATA[Category]]></item>
+		<item name="gallery.image.condition.timeFrame"><![CDATA[Age]]></item>
+		<item name="gallery.image.condition.timeFrame.description"><![CDATA[This option sets the minimum and maximum age in days of the images shown in the box.]]></item>
+		<item name="gallery.image.condition.displayMode"><![CDATA[Display Mode]]></item>
+		<item name="gallery.image.condition.displayMode.grid"><![CDATA[Grid]]></item>
+		<item name="gallery.image.condition.displayMode.motion"><![CDATA[Images in Motion]]></item>
+		<item name="gallery.image.condition.displayMode.description"><![CDATA[This option is not applicable for boxes placed in the sidebars. For the “Images in Motion” option, at least two images larger than {#1200}&times;{#900} pixels have to be available.]]></item>
+		<item name="gallery.image.condition.type"><![CDATA[Type]]></item>
+		<item name="gallery.image.condition.type.image"><![CDATA[Images]]></item>
+		<item name="gallery.image.condition.type.video"><![CDATA[Videos]]></item>
+		<item name="gallery.image.condition.type.videoLink"><![CDATA[Video Links]]></item>
+	</category>
+
+	<category name="gallery.index">
+		<item name="gallery.index.stats"><![CDATA[Statistics]]></item>
+		<item name="gallery.index.stats.detail"><![CDATA[<ul class="inlineList dotSeparated">
+<li>{#$stats[authors]} Author{if $stats[authors] != 1}s{/if}</li>
+<li>{#$stats[albums]} Album{if $stats[albums] != 1}s{/if}</li>
+<li>{#$stats[images]} Image{if $stats[images] != 1}s{/if} ({#$stats[imagesPerDay]} Image{if $stats[imagesPerDay] != 1}s{/if} per Day)</li>
+{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}
+	<li>{#$stats[videos]} Video{if $stats[videos] != 1}s{/if} ({#$stats[videosPerDay]} Video{if $stats[videosPerDay] != 1}s{/if} per Day)</li>
+{/if}
+<li>{@$stats[size]|filesize} Total File Size</li>
+<li>{#$stats[comments]} Comment{if $stats[comments] != 1}s{/if}</li>
+</ul>]]></item>
+	</category>
+
+	<category name="gallery.video">
+		<item name="gallery.video.video"><![CDATA[Video]]></item>
+		<item name="gallery.video.albumID.error.cannotAddToPrivateAlbumDueToModeration"><![CDATA[As new videos need to be approved by moderators, you are not allowed to add new videos to private albums.]]></item>
+		<item name="gallery.video.link.add"><![CDATA[Add Video Link]]></item>
+		<item name="gallery.video.link.button.add"><![CDATA[Add video link]]></item>
+		<item name="gallery.video.link.currentVideoLink"><![CDATA[Current Video Link]]></item>
+		<item name="gallery.video.link.error.invalid"><![CDATA[The entered link is invalid.]]></item>
+		<item name="gallery.video.link.error.tooManyVideos"><![CDATA[You have exceeded your maximum video link limit and cannot upload new videos. You must delete existing video links to free up some space.]]></item>
+		<item name="gallery.video.link.error.unknownVideoProvider"><![CDATA[The entered link is not supported.]]></item>
+		<item name="gallery.video.link.provider.com.woltlab.gallery.video.dailymotion"><![CDATA[Dailymotion]]></item>
+		<item name="gallery.video.link.provider.com.woltlab.gallery.video.vimeo"><![CDATA[Vimeo]]></item>
+		<item name="gallery.video.link.provider.com.woltlab.gallery.video.youTube"><![CDATA[YouTube]]></item>
+		<item name="gallery.video.link.link"><![CDATA[Video Link]]></item>
+		<item name="gallery.video.link.restriction.count"><![CDATA[Linked Videos]]></item>
+		<item name="gallery.video.link.restriction.count.value"><![CDATA[{#$userVideoLinkCount}/{#$__wcf->session->getPermission('user.gallery.maxVideoLinks')}]]></item>
+		<item name="gallery.video.link.restriction.providers"><![CDATA[Supported Video Platforms]]></item>
+		<item name="gallery.video.thumbnail"><![CDATA[Thumbnail]]></item>
+		<item name="gallery.video.thumbnail.delete.confirmMessage"><![CDATA[Do you really want to delete this thumbnail?]]></item>
+		<item name="gallery.video.upload.currentVideo"><![CDATA[Current Video]]></item>
+		<item name="gallery.video.upload.error.tooManyVideos"><![CDATA[You have exceeded your maximum video limit and cannot upload new videos. You must delete existing videos to free up some space.]]></item>
+		<item name="gallery.video.upload.error.fileExtension"><![CDATA[The file “{if $file|isset}{$file->getFilename()}{else}{$filename}{/if}” has an invalid extension.]]></item>
+		<item name="gallery.video.upload.error.maxSize"><![CDATA[The video “{if $file|isset}{$file->getFilename()}{else}{$filename}{/if}” is too big.]]></item>
+		<item name="gallery.video.upload.error.uploadFailed"><![CDATA[An unknown error occurred during the upload of “{$file->getFilename()}”.]]></item>
+		<item name="gallery.video.upload.error.quotaExceeded"><![CDATA[You have exceeded your storage limit and cannot upload new videos. You must delete existing videos to free up some space.]]></item>
+		<item name="gallery.video.upload.restriction.fileExtensions"><![CDATA[Allowed File Extensions]]></item>
+		<item name="gallery.video.upload.restriction.count"><![CDATA[Uploaded Videos]]></item>
+		<item name="gallery.video.upload.restriction.count.value"><![CDATA[{#$userUploadedVideoCount}/{#$__wcf->session->getPermission('user.gallery.maxUploadedVideos')}]]></item>
+		<item name="gallery.video.upload.restriction.quota"><![CDATA[Used Quota]]></item>
+		<item name="gallery.video.upload.restriction.quota.value"><![CDATA[{$usedVideoQuota|filesize}/{$__wcf->session->getPermission('user.gallery.videoQuota')|filesize}]]></item>
+		<item name="gallery.video.upload.restriction.maximumFilesize"><![CDATA[Maximum Filesize]]></item>
+		<item name="gallery.video.upload.restriction.maximumFilesize.value"><![CDATA[{@$__wcf->session->getPermission('user.gallery.maxVideoSize')|filesize}]]></item>
+		<item name="gallery.video.userVideos"><![CDATA[Videos by {$user->username}]]></item>
+		<item name="gallery.video.videos"><![CDATA[Videos]]></item>
+		<item name="gallery.video.videoLinks"><![CDATA[Video Links]]></item>
+	</category>
+
+	<category name="gallery.search">
+		<item name="gallery.search.categories"><![CDATA[Search in Categories]]></item>
+		<item name="gallery.search.findMarkedUser"><![CDATA[Marked Users]]></item>
+		<item name="gallery.search.findMarkedUser.description"><![CDATA[All of the specified users must be marked on the searched images.]]></item>
+		<item name="gallery.search.type"><![CDATA[Type]]></item>
+		<item name="gallery.search.type.image"><![CDATA[Images]]></item>
+		<item name="gallery.search.type.video"><![CDATA[Videos]]></item>
+	</category>
+
+	<category name="wcf.acl.option">
+		<item name="wcf.acl.option.com.woltlab.gallery.category.canUseCategory"><![CDATA[Can add images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if}]]></item>
+		<item name="wcf.acl.option.com.woltlab.gallery.category.canViewCategory"><![CDATA[Can view category]]></item>
+	</category>
+
+	<category name="wcf.acp.box">
+		<item name="wcf.acp.box.boxController.com.woltlab.gallery.albumList"><![CDATA[Albums]]></item>
+		<item name="wcf.acp.box.boxController.com.woltlab.gallery.categories"><![CDATA[Gallery Categories]]></item>
+		<item name="wcf.acp.box.boxController.com.woltlab.gallery.commentList"><![CDATA[Image{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and Video{/if} Comments]]></item>
+		<item name="wcf.acp.box.boxController.com.woltlab.gallery.imageList"><![CDATA[Images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and Videos{/if}]]></item>
+		<item name="wcf.acp.box.boxController.com.woltlab.gallery.tagCloud"><![CDATA[Image{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and Video{/if} Tags]]></item>
+	</category>
+
+	<category name="wcf.acp.dataImport">
+		<item name="wcf.acp.dataImport.data.com.woltlab.gallery.image"><![CDATA[Images (Gallery)]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.gallery.category"><![CDATA[Gallery categories]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.gallery.album"><![CDATA[Albums]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.gallery.image.comment"><![CDATA[Image comments]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.gallery.image.comment.response"><![CDATA[Image comment replies]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.gallery.image.like"><![CDATA[Image likes]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.gallery.image.marker"><![CDATA[Markers]]></item>
+	</category>
+
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.admin.gallery"><![CDATA[Gallery]]></item>
+		<item name="wcf.acp.group.option.category.mod.gallery"><![CDATA[Gallery]]></item>
+		<item name="wcf.acp.group.option.category.mod.gallery.album"><![CDATA[Albums]]></item>
+		<item name="wcf.acp.group.option.category.mod.gallery.comment"><![CDATA[Comments]]></item>
+		<item name="wcf.acp.group.option.category.mod.gallery.image"><![CDATA[Images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and Videos{/if}]]></item>
+		<item name="wcf.acp.group.option.category.user.gallery"><![CDATA[Gallery]]></item>
+		<item name="wcf.acp.group.option.category.user.gallery.album"><![CDATA[Albums]]></item>
+		<item name="wcf.acp.group.option.category.user.gallery.comment"><![CDATA[Comments]]></item>
+		<item name="wcf.acp.group.option.category.user.gallery.image"><![CDATA[Images]]></item>
+		<item name="wcf.acp.group.option.category.user.gallery.video"><![CDATA[Videos]]></item>
+
+		<item name="wcf.acp.group.option.admin.gallery.canManageCategory"><![CDATA[Can manage categories]]></item>
+		<item name="wcf.acp.group.option.mod.gallery.canDeleteAlbum"><![CDATA[Can delete albums]]></item>
+		<item name="wcf.acp.group.option.mod.gallery.canDeleteComment"><![CDATA[Can delete comments]]></item>
+		<item name="wcf.acp.group.option.mod.gallery.canDeleteImage"><![CDATA[Can move images {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if} to trash]]></item>
+		<item name="wcf.acp.group.option.mod.gallery.canDeleteImageCompletely"><![CDATA[Can delete images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if}]]></item>
+		<item name="wcf.acp.group.option.mod.gallery.canEditAlbum"><![CDATA[Can edit albums]]></item>
+		<item name="wcf.acp.group.option.mod.gallery.canEditComment"><![CDATA[Can edit comments]]></item>
+		<item name="wcf.acp.group.option.mod.gallery.canEditImage"><![CDATA[Can edit images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if}]]></item>
+		<item name="wcf.acp.group.option.mod.gallery.canRestoreImage"><![CDATA[Can restore images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if}]]></item>
+		<item name="wcf.acp.group.option.mod.gallery.canModerateImage"><![CDATA[Can moderate images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if}]]></item>
+		<item name="wcf.acp.group.option.mod.gallery.canModerateComment"><![CDATA[Can moderate comments]]></item>
+		<item name="wcf.acp.group.option.mod.gallery.canViewDeletedImage"><![CDATA[Can view deleted images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if}]]></item>
+		<item name="wcf.acp.group.option.user.gallery.allowedFileExtensions"><![CDATA[Allowed Image Extensions]]></item>
+		<item name="wcf.acp.group.option.user.gallery.allowedFileExtensions.description"><![CDATA[Enter one extension per line.]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canAddComment"><![CDATA[Can create comments]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canAddCommentWithoutModeration"><![CDATA[Can create comments without approval]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canAddImage"><![CDATA[Can upload images]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canAddImageWithoutModeration"><![CDATA[Can upload images without approval]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canDeleteComment"><![CDATA[Can delete their comments]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canDeleteImage"><![CDATA[Can move their images to trash]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canDisableCommentFunction"><![CDATA[Can disable comments on their images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if}]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canEditComment"><![CDATA[Can edit their comments]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canEditImage"><![CDATA[Can edit their images]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canViewImage"><![CDATA[Can view images]]></item>
+		<item name="wcf.acp.group.option.user.gallery.maxAlbums"><![CDATA[Maximum Albums]]></item>
+		<item name="wcf.acp.group.option.user.gallery.maxAlbums.description"><![CDATA[The maximum number of albums allowed per user.]]></item>
+		<item name="wcf.acp.group.option.user.gallery.maxDescriptionLength"><![CDATA[Maximum Description Length for Images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and Videos{/if}]]></item>
+		<item name="wcf.acp.group.option.user.gallery.maxHeight"><![CDATA[Maximum Image Height]]></item>
+		<item name="wcf.acp.group.option.user.gallery.maxHeight.description"><![CDATA[The maximum height in pixels for uploaded images, the system will attempt to downsize images that exceed this height.]]></item>
+		<item name="wcf.acp.group.option.user.gallery.maxImages"><![CDATA[Maximum Images]]></item>
+		<item name="wcf.acp.group.option.user.gallery.maxImages.description"><![CDATA[The maximum number of images allowed per user.]]></item>
+		<item name="wcf.acp.group.option.user.gallery.maxSize"><![CDATA[Maximum Image File Size]]></item>
+		<item name="wcf.acp.group.option.user.gallery.maxWidth"><![CDATA[Maximum Image Width]]></item>
+		<item name="wcf.acp.group.option.user.gallery.maxWidth.description"><![CDATA[The maximum width in pixels for uploaded images, the system will attempt to downsize images that exceed this width.]]></item>
+		<item name="wcf.acp.group.option.user.gallery.quota"><![CDATA[Maximum Filesystem Quota]]></item>
+		<item name="wcf.acp.group.option.user.gallery.quota.description"><![CDATA[The maximum disk space allowed for images, thumbnails are excluded from this quota.]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canRestrictAlbumAccess"><![CDATA[Can restrict album access]]></item>
+
+		<item name="wcf.acp.group.option.user.gallery.canViewVideo"><![CDATA[Can view videos]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canUploadVideo"><![CDATA[Can upload videos]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canUploadVideoWithoutModeration"><![CDATA[Can upload videos without approval]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canLinkVideo"><![CDATA[Can add links to videos]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canLinkVideoWithoutModeration"><![CDATA[Can add links to videos without approval]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canEditVideo"><![CDATA[Can edit their videos]]></item>
+		<item name="wcf.acp.group.option.user.gallery.canDeleteVideo"><![CDATA[Can move their videos to trash]]></item>
+		<item name="wcf.acp.group.option.user.gallery.videoQuota"><![CDATA[Maximum Filesystem Quota]]></item>
+		<item name="wcf.acp.group.option.user.gallery.videoQuota.description"><![CDATA[The maximum disk space allowed for videos. Video thumbnails are excluded from this quota.]]></item>
+		<item name="wcf.acp.group.option.user.gallery.maxUploadedVideos"><![CDATA[Maximum Uploaded Videos]]></item>
+		<item name="wcf.acp.group.option.user.gallery.maxVideoSize"><![CDATA[Maximum Uploaded Video File Size]]></item>
+		<item name="wcf.acp.group.option.user.gallery.allowedVideoFileExtensions"><![CDATA[Allowed Video Extensions]]></item>
+		<item name="wcf.acp.group.option.user.gallery.allowedVideoFileExtensions.description"><![CDATA[Enter one extension per line.]]></item>
+		<item name="wcf.acp.group.option.user.gallery.maxVideoLinks"><![CDATA[Maximum Linked Videos]]></item>
+	</category>
+
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.gallery"><![CDATA[Galleria]]></item>
+		<item name="wcf.acp.option.category.gallery.image"><![CDATA[Immagini]]></item>
+		<item name="wcf.acp.option.category.gallery.index"><![CDATA[Indice galleria]]></item>
+		<item name="wcf.acp.option.gallery_image_min_height"><![CDATA[Minimo Altezza immagine]]></item>
+		<item name="wcf.acp.option.gallery_image_min_height.description"><![CDATA[L'altezza minima in pixel per le immagini caricate.]]></item>
+		<item name="wcf.acp.option.gallery_image_min_width"><![CDATA[Immagine larghezza minima]]></item>
+		<item name="wcf.acp.option.gallery_image_min_width.description"><![CDATA[La larghezza minima in pixel per immagini caricate.]]></item>
+		<item name="wcf.acp.option.gallery_images_per_page"><![CDATA[Immagini per pagina]]></item>
+		<item name="wcf.acp.option.gallery_index_enable_stats"><![CDATA[Mostra statistiche sequenza]]></item>
+		<item name="wcf.acp.option.gallery_max_parallel_image_uploads"><![CDATA[Upload Massimo parallele]]></item>
+		<item name="wcf.acp.option.gallery_max_parallel_image_uploads.description"><![CDATA[Il numero massimo di arrivi in parallelo per utente.]]></item>
+		<item name="wcf.acp.option.gallery_message_sidebar_enable_user_images"><![CDATA[Visualizza conteggio immagine caricata display dell´autore]]></item>
+		<item name="wcf.acp.option.gallery_message_sidebar_enable_user_videos"><![CDATA[Visualizza conteggio video caricati display dell´autore]]></item>
+		<item name="wcf.acp.option.gallery_image_max_categories"><![CDATA[Categorie massimo a immagine]]></item>
+		<item name="wcf.acp.option.category.gallery.watermark"><![CDATA[Filigrana]]></item>
+		<item name="wcf.acp.option.category.gallery.watermark.image"><![CDATA[Immagini]]></item>
+		<item name="wcf.acp.option.category.gallery.watermark.text"><![CDATA[Testo]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_type"><![CDATA[Tipo watemark]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_type.none"><![CDATA[Non utilizzare Watermark]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_type.image"><![CDATA[Usa immagine]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_type.text"><![CDATA[Usa testo]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_position"><![CDATA[Posizione]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_position.topLeft"><![CDATA[A sinistra in alto]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_position.topCenter"><![CDATA[In alto al centro]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_position.topRight"><![CDATA[In alto a destra]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_position.middleLeft"><![CDATA[Centro sinistra]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_position.middleCenter"><![CDATA[Centro]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_position.middleRight"><![CDATA[Centro destra]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_position.bottomLeft"><![CDATA[In basso a sinistra]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_position.bottomCenter"><![CDATA[In basso al centro]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_position.bottomRight"><![CDATA[In basso a destra]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_position_margin"><![CDATA[Margine]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_position_margin.description"><![CDATA[Il margine in pixel dai bordi delle immagini.]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_transparency"><![CDATA[Trasparenza]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_transparency.description"><![CDATA[Impostare la trasparenza in percentuale. Utilizzare 0 per disabilitare]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_image"><![CDATA[Immagine]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_image.removeFile"><![CDATA[Rimuovere le immagini esistenti]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_text"><![CDATA[Testo]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_text.description"><![CDATA[Il segnaposto “{literal}{$username}{/literal}” sarà sostituito con il nome utente dell'autore.]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_original"><![CDATA[Applicare watermark su immagine originale]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_original.description"><![CDATA[Attenzione! Applicando la filigrana su l'immagine originale è permanente e non può essere invertita successivamente.]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_font_size"><![CDATA[Dimensione del font]]></item>
+		<item name="wcf.acp.option.gallery_image_watermark_font_size.description"><![CDATA[Dimensione del carattere in punti.]]></item>
+		<item name="wcf.acp.option.gallery_image_empty_recycle_bin_cycle"><![CDATA[Trash Prune]]></item>
+		<item name="wcf.acp.option.gallery_image_empty_recycle_bin_cycle.description"><![CDATA[Le immagini vengono rimossi dal cestino con i seguenti giorni. Utilizzare 0 per disabilitare.]]></item>
+		<item name="wcf.acp.option.gallery_user_profile_enable_latest_user_images"><![CDATA[Ultime immagini dell´utente nel profilo sidebar]]></item>
+		<item name="wcf.acp.option.gallery_user_profile_enable_latest_user_videos"><![CDATA[Ultimi video dell´utente nel profilo sidebar]]></item>
+		<item name="wcf.acp.option.category.gallery.video"><![CDATA[Video]]></item>
+		<item name="wcf.acp.option.gallery_video_upload"><![CDATA[Abilita caricamento video]]></item>
+		<item name="wcf.acp.option.gallery_video_links"><![CDATA[Abilita link video]]></item>
+		<item name="wcf.acp.option.gallery_video_links.description"><![CDATA[Oltre a abilitare questa opzione, devi anche abilitare le seguenti piattaforme video da cui gli utenti devono collegare i video.]]></item>
+		<item name="wcf.acp.option.category.gallery.video.link.provider"><![CDATA[Piattaforme video]]></item>
+		<item name="wcf.acp.option.category.gallery.video.link.provider.description"><![CDATA[Affinché miniature video e dati video vengano recuperati automaticamente durante la creazione di un collegamento video, è necessario creare le chiavi per alcune piattaforme video.]]></item>
+		<item name="wcf.acp.option.gallery_video_link_providers"><![CDATA[Piattaforme video abilitate]]></item>
+		<item name="wcf.acp.option.gallery_video_link_providers.description"><![CDATA[Gli utenti saranno in grado di collegarsi ai video delle piattaforme selezionate.]]></item>
+		<item name="wcf.acp.option.gallery_youtube_api_key"><![CDATA[YouTube API Key]]></item>
+		<item name="wcf.acp.option.gallery_youtube_api_key.description"><![CDATA[Google fornisce una descrizione dettagliata su come ottenere una chiave API <a href="{@$__wcf->getPath()}acp/dereferrer.php?url={'https://developers.google.com/youtube/registering_an_application'|rawurlencode}" class="externalURL">qui</a>. Se si limita la chiave utilizzata sul sito Web dell'API di Google, selezionare "Indirizzi IP (server Web, cron jobs, ecc.)" E immettere l'indirizzo / i IP del server Web del proprio sito Web.]]></item>
+		<item name="wcf.acp.option.gallery_vimeo_client_id"><![CDATA[Vimeo Client Identifier]]></item>
+		<item name="wcf.acp.option.gallery_vimeo_client_id.description"><![CDATA[Vimeo fornisce una descrizione dettagliata su come ottenere l'identificatore del client e i segreti del client <a href="{@$__wcf->getPath()}acp/dereferrer.php?url={'https://developer.vimeo.com/api/authentication#overview'|rawurlencode}" class="externalURL">qui</a>. Nota che devi solo creare un <a href="{@$__wcf->getPath()}acp/dereferrer.php?url={'https://developer.vimeo.com/apps'|rawurlencode}" class="externalURL">app</a> e che è possibile trovare le informazioni richieste nella pagina di autenticazione dell'app.]]></item>
+		<item name="wcf.acp.option.gallery_vimeo_client_secrets"><![CDATA[Vimeo Client Secrets]]></item>
+	</category>
+
+	<category name="wcf.acp.rebuildData">
+		<item name="wcf.acp.rebuildData.com.woltlab.gallery.thumbnail"><![CDATA[Ricostruire le miniature di Galleria Immagini]]></item>
+		<item name="wcf.acp.rebuildData.com.woltlab.gallery.thumbnail.description"><![CDATA[Ricostruisce le miniature delle immagini della galleria.]]></item>
+		<item name="wcf.acp.rebuildData.com.woltlab.gallery.album"><![CDATA[Ricostruire gli album]]></item>
+		<item name="wcf.acp.rebuildData.com.woltlab.gallery.album.description"><![CDATA[Ricostruisce i contatori degli album e copertine.]]></item>
+		<item name="wcf.acp.rebuildData.com.woltlab.gallery.image"><![CDATA[Ricostruire Galleria Immagini]]></item>
+		<item name="wcf.acp.rebuildData.com.woltlab.gallery.image.description"><![CDATA[Ricostruisce i contatori di immagini della galleria.]]></item>
+	</category>
+
+	<category name="wcf.acp.sitemap">
+		<item name="wcf.acp.sitemap.objectType.com.woltlab.gallery.sitemap.object.album"><![CDATA[Album]]></item>
+		<item name="wcf.acp.sitemap.objectType.com.woltlab.gallery.sitemap.object.image"><![CDATA[Gallerie immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} e video{/if}]]></item>
+		<item name="wcf.acp.sitemap.objectType.com.woltlab.gallery.sitemap.object.category"><![CDATA[Categorie immagini]]></item>
+	</category>
+
+	<category name="wcf.acp.stat">
+		<item name="wcf.acp.stat.category.com.woltlab.gallery"><![CDATA[WoltLab Suite Gallery]]></item>
+		<item name="wcf.acp.stat.com.woltlab.gallery.image"><![CDATA[Immagini]]></item>
+		<item name="wcf.acp.stat.com.woltlab.gallery.image.diskUsage"><![CDATA[Dimensioni totali file immagini (MB)]]></item>
+		<item name="wcf.acp.stat.com.woltlab.gallery.imageComment"><![CDATA[Commenti immagini]]></item>
+		<item name="wcf.acp.stat.com.woltlab.gallery.video"><![CDATA[Video]]></item>
+		<item name="wcf.acp.stat.com.woltlab.gallery.video.diskUsage"><![CDATA[Dimensioni totali dei file video (MB)]]></item>
+		<item name="wcf.acp.stat.com.woltlab.gallery.videoLink"><![CDATA[Link video]]></item>
+	</category>
+
+	<category name="wcf.clipboard">
+		<item name="wcf.clipboard.label.com.woltlab.gallery.image.marked"><![CDATA[{if $count == 1}Un immagine{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Video{/if}{else}{#$count} Immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Video{/if}{/if}]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.gallery.image.trash.confirmMessage"><![CDATA[Vuoi veramente spostare nel cestino {if $count != 1}le immagini{else} l´immagine{/if}{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{if $count != 1}{/if}{/if} selezionate nel cestino?]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.gallery.image.delete.confirmMessage"><![CDATA[Vuoi veramente eliminare {if $count != 1}le immagini {else} l´immagine{/if}{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{if $count != 1}{/if}{/if}?]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.gallery.image.moveToAlbum"><![CDATA[Sposta nel album({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.gallery.image.trash"><![CDATA[Sposta nel cestino ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.gallery.image.enable"><![CDATA[Approvare ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.gallery.image.disable"><![CDATA[Disabilitare ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.gallery.image.delete"><![CDATA[Cancellare ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.gallery.image.restore"><![CDATA[Ristabilire ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.gallery.image.edit"><![CDATA[Modifica ({#$count})]]></item>
+	</category>
+
+	<category name="wcf.like">
+		<item name="wcf.like.objectType.com.woltlab.gallery.likeableImage"><![CDATA[Immagine]]></item>
+		<item name="wcf.like.title.com.woltlab.gallery.imageComment"><![CDATA[{if $like->isDislike()}Non mi piace{else}Mi piace{/if} il commento di {if $commentAuthor}<a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}un ospite{/if} nell'immagine <a href="{link application='gallery' controller='Image' object=$image}#comments{/link}">{$image->getTitle()}</a>.]]></item>
+		<item name="wcf.like.title.com.woltlab.gallery.imageComment.response"><![CDATA[{if $like->isDislike()}Non mi piace{else}Mi piace{/if} la risposta di {if $responseAuthor}<a href="{link controller='User' object=$responseAuthor}{/link}">{$responseAuthor->username}</a>{else}a guest{/if} on the comment by {if $commentAuthor}<a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}a guest{/if} on the image <a href="{link application='gallery' controller='Image' object=$image}#comments{/link}">{$image->getTitle()}</a>.]]></item>
+		<item name="wcf.like.title.com.woltlab.gallery.likeableImage"><![CDATA[{if $like->isDislike()}Non mi piace{else}Mi piace{/if} l'immagine <a href="{link application='gallery' controller='Image' object=$image}#comments{/link}">{$image->getTitle()}</a>.]]></item>
+	</category>
+
+	<category name="wcf.moderation">
+		<item name="wcf.moderation.deletedContent.com.woltlab.gallery.image"><![CDATA[Immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} e video{/if} eliminate]]></item>
+		<item name="wcf.moderation.deletedContent.objectType.com.woltlab.gallery.image"><![CDATA[Immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} e Video{/if}]]></item>
+		<item name="wcf.moderation.type.com.woltlab.gallery.image"><![CDATA[Immagine{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Video{/if}]]></item>
+	</category>
+
+	<category name="wcf.page">
+		<item name="wcf.page.category.com.woltlab.gallery"><![CDATA[WoltLab Suite Gallery]]></item>
+		<item name="wcf.page.com.woltlab.gallery.AlbumListPage"><![CDATA[Album]]></item>
+		<item name="wcf.page.com.woltlab.gallery.AlbumPage"><![CDATA[Album]]></item>
+		<item name="wcf.page.com.woltlab.gallery.ImageAddPage"><![CDATA[Carcia immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Video{/if}]]></item>
+		<item name="wcf.page.com.woltlab.gallery.ImageEditPage"><![CDATA[Modifica immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Video{/if}]]></item>
+		<item name="wcf.page.com.woltlab.gallery.ImageListPage"><![CDATA[Immagini]]></item>
+		<item name="wcf.page.com.woltlab.gallery.ImagePage"><![CDATA[Immagine{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Video{/if}]]></item>
+		<item name="wcf.page.com.woltlab.gallery.MapPage"><![CDATA[Map]]></item>
+		<item name="wcf.page.com.woltlab.gallery.UnreadImageListPage"><![CDATA[Nuove immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} e Video{/if}]]></item>
+		<item name="wcf.page.com.woltlab.gallery.WatchedImageListPage"><![CDATA[Categorie sottoscritte]]></item>
+		<item name="wcf.page.onlineLocation.com.woltlab.gallery.Album"><![CDATA[Album <a href="{$album->getLink()}">{$album->getTitle()}</a>]]></item>
+		<item name="wcf.page.onlineLocation.com.woltlab.gallery.CategoryImageList"><![CDATA[Categoria gallery <a href="{$category->getLink()}">{$category->getTitle()}</a>]]></item>
+		<item name="wcf.page.onlineLocation.com.woltlab.gallery.Image"><![CDATA[{if $image->isImage()}Immagine{else}Video{/if} <a href="{$image->getLink()}">{$image->getTitle()}</a>]]></item>
+		<item name="wcf.page.onlineLocation.com.woltlab.gallery.ImageEdit"><![CDATA[Modifica {if $image->isImage()}Image{else}Video{/if} <a href="{$image->getLink()}">{$image->getTitle()}</a>]]></item>
+		<item name="wcf.page.onlineLocation.com.woltlab.gallery.UserAlbumList"><![CDATA[<a href="{link controller='UserAlbumList' application='gallery' object=$user}{/link}">Album di {$user->username}</a>]]></item>
+		<item name="wcf.page.onlineLocation.com.woltlab.gallery.UserImageList"><![CDATA[<a href="{link controller='UserImageList' application='gallery' object=$user}{/link}">Immagini di {$user->username}</a>]]></item>
+		<item name="wcf.page.onlineLocation.com.woltlab.gallery.UserVideoList"><![CDATA[<a href="{link controller='UserVideoList' application='gallery' object=$user}{/link}">Video di {$user->username}</a>]]></item>
+	</category>
+
+	<category name="wcf.search">
+		<item name="wcf.search.object.com.woltlab.gallery.image"><![CDATA[{if $message|isset && ($message->isVideo || $message->isVideoLink)}Video{else}Immagine{/if}]]></item>
+		<item name="wcf.search.type.com.woltlab.gallery.image"><![CDATA[Galleria]]></item>
+	</category>
+
+	<category name="wcf.tagging">
+		<item name="wcf.tagging.objectType.com.woltlab.gallery.image"><![CDATA[Immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} e Video{/if}]]></item>
+		<item name="wcf.tagging.taggedObjects.com.woltlab.gallery.image"><![CDATA[Immagini{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} e Video{/if} Taggati con “{$tag->name}”]]></item>
+	</category>
+
+	<category name="wcf.user">
+		<item name="wcf.user.activityPoint.objectType.com.woltlab.gallery.activityPointEvent.image"><![CDATA[Immagini]]></item>
+		<item name="wcf.user.activityPoint.objectType.com.woltlab.gallery.activityPointEvent.video"><![CDATA[Video]]></item>
+		<item name="wcf.user.activityPoint.objectType.com.woltlab.gallery.activityPointEvent.videoLink"><![CDATA[Link video]]></item>
+		<item name="wcf.user.boxList.description.galleryImages"><![CDATA[{#$boxUser->galleryImages} {if $boxUser->galleryImages != 1}Immagini{else}Immagine{/if}]]></item>
+		<item name="wcf.user.boxList.description.galleryVideos"><![CDATA[{#$boxUser->galleryVideos} {if $boxUser->galleryVideos != 1}Video{/if}]]></item>
+		<item name="wcf.user.sortField.galleryImages"><![CDATA[Immagini]]></item>
+		<item name="wcf.user.sortField.galleryVideos"><![CDATA[Video]]></item>
+	</category>
+
+	<category name="wcf.user.condition">
+		<item name="wcf.user.condition.galleryImages"><![CDATA[Immagini]]></item>
+		<item name="wcf.user.condition.galleryVideos"><![CDATA[Video]]></item>
+	</category>
+
+	<category name="wcf.user.notification">
+		<item name="wcf.user.notification.com.woltlab.gallery"><![CDATA[Galleria]]></item>
+		<item name="wcf.user.notification.com.woltlab.gallery.image.image"><![CDATA[Inviate nuove immagini in categorie guardato]]></item>
+		<item name="wcf.user.notification.com.woltlab.gallery.image.mention"><![CDATA[Avvisami quando sono stato menzionato]]></item>
+		<item name="wcf.user.notification.com.woltlab.gallery.imageComment.notification.comment"><![CDATA[Notificami nuovi commenti nelle mie immagini]]></item>
+		<item name="wcf.user.notification.com.woltlab.gallery.imageComment.response.notification.commentResponse"><![CDATA[Inviate nuove risposte ai miei commenti]]></item>
+		<item name="wcf.user.notification.com.woltlab.gallery.imageComment.response.notification.commentResponseOwner"><![CDATA[Inviate nuove risposte ai commenti sulle mie immagini]]></item>
+		<item name="wcf.user.notification.com.woltlab.gallery.likeableImage.notification.like"><![CDATA[Inviami una notifica quando le mie immagini sono piaciuto]]></item>
+		<item name="wcf.user.notification.com.woltlab.gallery.imageComment.like.notification.like"><![CDATA[Inviami una notifica quando i miei commenti sono piaciuto]]></item>
+		<item name="wcf.user.notification.com.woltlab.gallery.imageComment.response.like.notification.like"><![CDATA[Inviami una notifica quando i miei sono piaciuti]]></item>
+		<item name="wcf.user.notification.com.woltlab.gallery.image.marker"><![CDATA[Avvisami quando sto segnato sulle immagini]]></item>
+	</category>
+
+	<category name="wcf.user.objectWatch">
+		<item name="wcf.user.objectWatch.subscribe.com.woltlab.gallery.category"><![CDATA[Guarda Categoria]]></item>
+		<item name="wcf.user.objectWatch.enableNotification.com.woltlab.gallery.category"><![CDATA[Notificami per nuove immagini.]]></item>
+		<item name="wcf.user.objectWatch.unsubscribe.com.woltlab.gallery.category"><![CDATA[Non guardare questa categoria]]></item>
+	</category>
+
+	<category name="wcf.user.profile">
+		<item name="wcf.user.profile.menu.albums"><![CDATA[Albums]]></item>
+	</category>
+
+	<category name="wcf.user.recentActivity">
+		<item name="wcf.user.recentActivity.com.woltlab.gallery.likeableImage.recentActivityEvent"><![CDATA[Mi piace (Immagine)]]></item>
+		<item name="wcf.user.recentActivity.com.woltlab.gallery.recentActivityEvent.image"><![CDATA[Immagine]]></item>
+		<item name="wcf.user.recentActivity.com.woltlab.gallery.recentActivityEvent.images"><![CDATA[Immagine]]></item>
+		<item name="wcf.user.recentActivity.com.woltlab.gallery.imageComment.recentActivityEvent"><![CDATA[Commenti (Immagine)]]></item>
+		<item name="wcf.user.recentActivity.com.woltlab.gallery.imageComment.response.recentActivityEvent"><![CDATA[Risposte (Immagine)]]></item>
+	</category>
+</language>

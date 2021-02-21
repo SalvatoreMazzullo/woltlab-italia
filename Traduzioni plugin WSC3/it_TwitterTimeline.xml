@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.twitter.timeline"><![CDATA[Timeline]]></item>
+		<item name="wcf.acp.option.twitter_timeline_screen_name"><![CDATA[Hashtag]]></item>
+		<item name="wcf.acp.option.twitter_timeline_screen_name.description"><![CDATA[Inserisci gli Hastag di cui vuoi mostrare i tweet, separa gli hastag con una virgola.]]></item>
+		<item name="wcf.acp.option.twitter_timeline_count"><![CDATA[Numero di Tweet]]></item>
+		<item name="wcf.acp.option.twitter_timeline_count.description"><![CDATA[Inserisci il numero di tweet che vuoi visualizzare.]]></item>
+		<item name="wcf.acp.option.twitter_timeline_expert_mode"><![CDATA[Abilita la modalità esperto]]></item>
+		<item name="wcf.acp.option.twitter_timeline_expert_mode.description"><![CDATA[Attiva la modalità esperto, che consente di definire una query personalizzata tutto viene poi inviato al Twitter API. Attivare questa opzione solo se si sa cosa si sta facendo.]]></item>
+		<item name="wcf.acp.option.twitter_timeline_query"><![CDATA[Query]]></item>
+		<item name="wcf.acp.option.twitter_timeline_query.description"><![CDATA[Definisci una query personalizzata.]]>></item>
+		<item name="wcf.acp.option.twitter_timeline_media_display"><![CDATA[Mostra media]]></item>
+		<item name="wcf.acp.option.twitter_timeline_media_display.description"><![CDATA[Abilita per visualizzare i media dei tweet.]]></item>
+	</category>
+	<category name="wcf.twitter">
+		<item name="wcf.twitter.reply"><![CDATA[Rispondi]]></item>
+		<item name="wcf.twitter.retweet"><![CDATA[Retweet]]></item>
+		<item name="wcf.twitter.like"><![CDATA[Mi piace]]></item>
+		<item name="wcf.twitter.liked"><![CDATA[Hanno messo mi piace]]></item>
+		<item name="wcf.twitter.followme"><![CDATA[Mi seguono su Twitter]]></item>
+		<item name="wcf.twitter.timeline"><![CDATA[Ultimi Tweets]]></item>
+		<item name="wcf.twitter.error"><![CDATA[Non posso caricare i tweets.]]></item>
+	</category>
+	<category name="wcf.dashboard.box">
+		<item name="wcf.dashboard.box.com.thurnax.wcf.twitter.twitterTimelineDashboardBox"><![CDATA[Twitter Timeline]]></item>
+	</category>
+</language>

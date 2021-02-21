@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd"
+          languagecode="it" languagename="Italiano" countrycode="it">
+	<category name="wcf.acp.box">
+		<item name="wcf.acp.box.boxController.de.darkwood-studios.wcf.gamification"><![CDATA[Gamification (Progessi utenti)]]></item>
+	</category>
+
+	<category name="wcf.gamification.condition">
+		<item name="wcf.gamification.condition.showUser"><![CDATA[Mostra l´utente corrente]]></item>
+		<item name="wcf.gamification.condition.showUser.description"><![CDATA[Mostra l'utente attivo con rank e avatar effettivi sopra la barra di avanzamento.]]></item>
+	</category>
+
+	<category name="wcf.gamification">
+		<item name="wcf.gamification.nextRank"><![CDATA[Prossimo lviello:]]></item>
+		<item name="wcf.gamification.activityPoints"><![CDATA[Punti attività]]></item>
+		<item name="wcf.gamification.activityPoints.level"><![CDATA[Punti di attività fino al livello]]></item>
+	</category>
+
+</language>

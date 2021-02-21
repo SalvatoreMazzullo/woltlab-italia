@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/vortex/language.xsd" languagecode="it" languagename="Italiano" countrycode="it">
+
+	<!-- ************************************************************************************ WoltLab Filebase 3.0  V1.0.0 ************************************************************************************ -->
+
+	<category name="filebase.acp.file">
+		<item name="filebase.acp.file.option.list"><![CDATA[Campi opzionali]]></item>
+		<item name="filebase.acp.file.option.optionType"><![CDATA[Tipologia]]></item>
+		<item name="filebase.acp.file.option.optionType.boolean"><![CDATA[Si/No]]></item>
+		<item name="filebase.acp.file.option.optionType.boolean.yes"><![CDATA[Si]]></item>
+		<item name="filebase.acp.file.option.optionType.boolean.no"><![CDATA[No]]></item>
+		<item name="filebase.acp.file.option.optionType.checkboxes"><![CDATA[Box di controllo]]></item>
+		<item name="filebase.acp.file.option.optionType.date"><![CDATA[Data]]></item>
+		<item name="filebase.acp.file.option.optionType.integer"><![CDATA[Intero]]></item>
+		<item name="filebase.acp.file.option.optionType.float"><![CDATA[Decimale]]></item>
+		<item name="filebase.acp.file.option.optionType.multiSelect"><![CDATA[Selezione multipla]]></item>
+		<item name="filebase.acp.file.option.optionType.radioButton"><![CDATA[Selezione radio]]></item>
+		<item name="filebase.acp.file.option.optionType.select"><![CDATA[Selezione singola]]></item>
+		<item name="filebase.acp.file.option.optionType.text"><![CDATA[Piccolo testo]]></item>
+		<item name="filebase.acp.file.option.optionType.textarea"><![CDATA[Testo multilinea]]></item>
+		<item name="filebase.acp.file.option.optionType.message"><![CDATA[Testo multilinea (supporto dei bbcode)]]></item>
+		<item name="filebase.acp.file.option.optionType.URL"><![CDATA[Link]]></item>
+		<item name="filebase.acp.file.option.add"><![CDATA[Aggiungi campi opzionali]]></item>
+		<item name="filebase.acp.file.option.edit"><![CDATA[Modifica campi opzionali]]></item>
+		<item name="filebase.acp.file.option.showOrder"><![CDATA[Ordine di visualizzazione]]></item>
+		<item name="filebase.acp.file.option.delete.confirmMessage"><![CDATA[Vuoi realmente eliminare il campo “{$option->optionTitle|language}”?]]></item>
+		<item name="filebase.acp.file.option.defaultValue"><![CDATA[Valore di default]]></item>
+		<item name="filebase.acp.file.option.defaultValue.description"><![CDATA[Valore predefinito prima di ogni modifica.]]></item>
+		<item name="filebase.acp.file.option.typeData"><![CDATA[Proprietà]]></item>
+		<item name="filebase.acp.file.option.selectOptions"><![CDATA[Opzioni]]></item>
+		<item name="filebase.acp.file.option.selectOptions.description"><![CDATA[Puoi fornire una opzione di scelta per riga. Si prega di prendere nota che l´utilizzo dei due punti farà si che il sistema utilizzi tutto ciò che a sinistra come un identificatore interno e solo la parte dopo i due punti sarà visualizzata all´utente.]]></item>
+		<item name="filebase.acp.file.option.validationPattern"><![CDATA[Espressione regolare]]></item>
+		<item name="filebase.acp.file.option.validationPattern.description"><![CDATA[È possibile fornire un´espressione regolare per convalidare l´input dell'utente.]]></item>
+		<item name="filebase.acp.file.option.required"><![CDATA[Questo è un campo obligatorio]]></item>
+		<item name="filebase.acp.file.paymentLog.list"><![CDATA[Transizioni]]></item>
+		<item name="filebase.acp.file.paymentLog.transactionID"><![CDATA[ID transizioni]]></item>
+		<item name="filebase.acp.file.paymentLog.paymentMethod"><![CDATA[Metodo di pagamento]]></item>
+		<item name="filebase.acp.file.paymentLog.logTime"><![CDATA[Data]]></item>
+		<item name="filebase.acp.file.paymentLog.logMessage"><![CDATA[Azione]]></item>
+		<item name="filebase.acp.file.paymentLog"><![CDATA[Transizione]]></item>
+		<item name="filebase.acp.file.paymentLog.transactionDetails"><![CDATA[Dettagli]]></item>
+	</category>
+
+	<category name="filebase.acp.license">
+		<item name="filebase.acp.license.list"><![CDATA[Licenses]]></item>
+		<item name="filebase.acp.license.add"><![CDATA[Add License]]></item>
+		<item name="filebase.acp.license.edit"><![CDATA[Edit License]]></item>
+		<item name="filebase.acp.license.delete.sure"><![CDATA[Do you really want to delete the license “{$license->licenseName}”?]]></item>
+	</category>
+
+	<category name="filebase.acp.menu">
+		<item name="filebase.acp.menu.link.filebase"><![CDATA[Filebase]]></item>
+		<item name="filebase.acp.menu.link.filebase.category.list"><![CDATA[Lista Categorie]]></item>
+		<item name="filebase.acp.menu.link.filebase.category.add"><![CDATA[Aggiungi Categorie]]></item>
+		<item name="filebase.acp.menu.link.filebase.license.list"><![CDATA[Lista licenze]]></item>
+		<item name="filebase.acp.menu.link.filebase.file.option.list"><![CDATA[Lista campi opzionali]]></item>
+		<item name="filebase.acp.menu.link.filebase.paymentLog.list"><![CDATA[Lista delle transizioni]]></item>
+	</category>
+
+	<category name="filebase.category">
+		<item name="filebase.category.delete.sure"><![CDATA[Do you really want to delete this category? All child categories of this category will be moved to this category’s parent category. Files which are only in this category will be deleted.]]></item>
+		<item name="filebase.category.categories"><![CDATA[Categories]]></item>
+		<item name="filebase.category.markAllAsRead"><![CDATA[Mark All Files as Read]]></item>
+	</category>
+
+	<category name="filebase.file">
+		<item name="filebase.file.file"><![CDATA[File]]></item>
+		<item name="filebase.file.files"><![CDATA[File]]></item>
+		<item name="filebase.file.featuredFiles"><![CDATA[File In Rilievo]]></item>
+		<item name="filebase.file.newestFiles"><![CDATA[Nuovo]]></item>
+		<item name="filebase.file.latestUpdates"><![CDATA[Aggiornati di recente]]></item>
+		<item name="filebase.file.mostDownloadedFiles"><![CDATA[Più scaricati]]></item>
+		<item name="filebase.file.topFiles"><![CDATA[Top valutate]]></item>
+		<item name="filebase.file.fileDownloads"><![CDATA[{@$file->downloads|shortUnit} Download{if $file->downloads != 1}s{/if}]]></item>
+		<item name="filebase.file.fileComments"><![CDATA[{@$file->comments|shortUnit} {if $file->comments != 1}Commenti{else}Commento{/if}]]></item>
+		<item name="filebase.file.filePurchases"><![CDATA[{@$file->purchases|shortUnit} {if $file->purchases != 1}Comprati{else}Comprato{/if}]]></item>
+		<item name="filebase.file.version.versionDownloads"><![CDATA[{@$version->downloads|shortUnit} Download{if $version->downloads != 1}s{/if}]]></item>
+		<item name="filebase.file.latestFileDownloads"><![CDATA[{@$file->getDownloads()|shortUnit} Download{if $file->getDownloads() != 1}s{/if}]]></item>
+		<item name="filebase.file.latestFilePurchases"><![CDATA[{@$file->getPurchases()|shortUnit} {if $file->getPurchases() != 1}Comprati{else}Comprato{/if}]]></item>
+		<item name="filebase.file.bestSellingFiles"><![CDATA[Vendite migliori]]></item>
+		<item name="filebase.file.button.download"><![CDATA[Download]]></item>
+		<item name="filebase.file.button.purchase"><![CDATA[Compra adesso]]></item>
+		<item name="filebase.file.version.more"><![CDATA[{literal}{if $count == 1}un file più vecchio{else}{#$count} file più vecchi{/if}{/literal}]]></item>
+		<item name="filebase.file.downloads"><![CDATA[Download]]></item>
+		<item name="filebase.file.comments"><![CDATA[Commenti]]></item>
+		<item name="filebase.file.lastChangeTime"><![CDATA[Orario Ultima Modifica]]></item>
+		<item name="filebase.file.featured"><![CDATA[Featured]]></item>
+		<item name="filebase.file.isDeleted"><![CDATA[Eliminati]]></item>
+		<item name="filebase.file.isDisabled"><![CDATA[Disabilitati]]></item>
+		<item name="filebase.file.version"><![CDATA[Versione]]></item>
+		<item name="filebase.file.versions"><![CDATA[Versioni]]></item>
+		<item name="filebase.file.overview"><![CDATA[Panormaica]]></item>
+		<item name="filebase.file.size"><![CDATA[Grandezza file]]></item>
+		<item name="filebase.file.time"><![CDATA[Caricato]]></item>
+		<item name="filebase.file.website"><![CDATA[Sito]]></item>
+		<item name="filebase.file.moreFiles"><![CDATA[Altri file]]></item>
+		<item name="filebase.file.moreUserFiles"><![CDATA[Altri file di {$file->username}]]></item>
+		<item name="filebase.file.moreFiles.all"><![CDATA[Tutti i file]]></item>
+		<item name="filebase.file.information"><![CDATA[Dettagli file]]></item>
+		<item name="filebase.file.recentActivity.file"><![CDATA[Aggiunto un file <a href="{link application='filebase' controller='File' object=$file}{/link}" class="filebaseFileLink" data-file-id="{@$file->fileID}">{$file->subject}</a>.]]></item>
+		<item name="filebase.file.recentActivity.version"><![CDATA[Aggiunta una nuova versione {$version->versionNumber} del file <a href="{link application='filebase' controller='File' object=$version->getFile()}{/link}" class="filebaseFileLink" data-file-id="{@$version->getFile()->fileID}">{$version->getFile()->subject}</a>.]]></item>
+		<item name="filebase.file.recentActivity.likedFile"><![CDATA[“Mi Piace“ nel file <a href="{link application='filebase' controller='File' object=$file}{/link}" class="filebaseFileLink" data-file-id="{@$file->fileID}">{$file->subject}</a>.]]></item>
+		<item name="filebase.file.recentActivity.fileComment"><![CDATA[Commenti nel file <a href="{link application='filebase' controller='File' object=$file}{/link}#comments" class="filebaseFileLink" data-file-id="{@$file->fileID}">{$file->subject}</a>.]]></item>
+		<item name="filebase.file.recentActivity.fileCommentResponse"><![CDATA[Risposte al commento nel file di <a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a> nel file <a href="{link application='filebase' controller='File' object=$file}{/link}#comments" class="filebaseFileLink" data-file-id="{@$file->fileID}">{$file->subject}</a>.]]></item>
+		<item name="filebase.file.ipAddress"><![CDATA[Indirizzo IP]]></item>
+		<item name="filebase.file.version.add"><![CDATA[Aggiungi Versione]]></item>
+		<item name="filebase.file.version.edit"><![CDATA[Modifica Versione]]></item>
+		<item name="filebase.file.add"><![CDATA[Aggiungi File]]></item>
+		<item name="filebase.file.edit"><![CDATA[Modifica File]]></item>
+		<item name="filebase.file.upload"><![CDATA[Carica File]]></item>
+		<item name="filebase.file.upload.confirmOverwrite"><![CDATA[Hai già caricato un file, continuando lo sovrascriverai.]]></item>
+		<item name="filebase.file.upload.error.invalidExtension"><![CDATA[L´estensione del file non è valida.]]></item>
+		<item name="filebase.file.upload.error.tooLarge"><![CDATA[Il file è troppo grande]]></item>
+		<item name="filebase.file.upload.error.uploadFailed"><![CDATA[Caricamento file fallito]]></item>
+		<item name="filebase.file.upload.limits"><![CDATA[Grandezza massima del file: {@$__wcf->session->getPermission('user.filebase.maxFileSize')|filesize}<br />
+Estensioni file concesse: {', '|implode:$allowedFileExtensions}]]></item>
+		<item name="filebase.file.versionNumber"><![CDATA[Numero Versione]]></item>
+		<item name="filebase.file.versionNumber.error.notUnique"><![CDATA[Questo numero della versione è già in uso.]]></item>
+		<item name="filebase.file.teaser"><![CDATA[Breve descrizione]]></item>
+		<item name="filebase.file.teaser.description"><![CDATA[Breve descrizione del file (Numero massimo di caratteri: {#FILEBASE_MAX_TEASER_LENGTH}).]]></item>
+		<item name="filebase.file.website.description"><![CDATA[Opzionale: Sito web (URL) con ulteriori dettagli su questo file.]]></item>
+		<item name="filebase.file.message"><![CDATA[Descrizione]]></item>
+		<item name="filebase.file.enableComments"><![CDATA[Abilita Commenti]]></item>
+		<item name="filebase.file.enableComments.description"><![CDATA[Consenti ad altri utenti di commentare il file.]]></item>
+		<item name="filebase.file.watchedFiles"><![CDATA[Watched Files]]></item>
+		<item name="filebase.file.watchedFiles.stopWatchingAll"><![CDATA[Stop watching files]]></item>
+		<item name="filebase.file.watchedFiles.stopWatchingAll.confirmMessage"><![CDATA[Vuoi smettere di seguire tutti i file??]]></item>
+		<item name="filebase.file.watchedFiles.stopWatchingMarked"><![CDATA[{literal}Smetti di seguire{if $count > 1}i file selezionati{else}il file selezionato{/if}{if $count > 1} ({#$count}){/if}{/literal}]]></item>
+		<item name="filebase.file.watchedFiles.stopWatchingMarked.confirmMessage"><![CDATA[Vuoi smettere di seguire tutti i file selezionati?]]></item>
+		<item name="filebase.file.categorizedFiles"><![CDATA[File nella categoria “{$category->getTitle()}”]]></item>
+		<item name="filebase.file.categorizedUnreadFiles"><![CDATA[New files in category “{$category->getTitle()}”]]></item>
+		<item name="filebase.file.userFiles"><![CDATA[File di “{$user->username}”]]></item>
+		<item name="filebase.file.searchFiles"><![CDATA[Cerca File]]></item>
+		<item name="filebase.file.version.description"><![CDATA[Descrizione]]></item>
+		<item name="filebase.file.authors"><![CDATA[Altri autori]]></item>
+		<item name="filebase.file.authors.description"><![CDATA[Puoi aggiungere altri utenti come autori, questi autori possono modificare i file e aggiungere nuove versioni. Separa più utenti con virgola.]]></item>
+		<item name="filebase.file.authors.error.notFound"><![CDATA[L´utente {$errorData[username]} non esiste.]]></item>
+		<item name="filebase.file.edit.assignLabel"><![CDATA[Assegna etichetta]]></item>
+		<item name="filebase.file.edit.delete"><![CDATA[Elimina]]></item>
+		<item name="filebase.file.edit.disable"><![CDATA[Disapprova]]></item>
+		<item name="filebase.file.edit.enable"><![CDATA[Approva]]></item>
+		<item name="filebase.file.edit.restore"><![CDATA[Ripristina]]></item>
+		<item name="filebase.file.edit.trash"><![CDATA[Sposta nel cestino]]></item>
+		<item name="filebase.file.edit.setAsFeatured"><![CDATA[Metti in rilievo]]></item>
+		<item name="filebase.file.edit.unsetAsFeatured"><![CDATA[Rimuovi Rilievo]]></item>
+		<item name="filebase.file.version.edit.delete"><![CDATA[Elimina]]></item>
+		<item name="filebase.file.version.edit.disable"><![CDATA[Disapprova]]></item>
+		<item name="filebase.file.version.edit.enable"><![CDATA[Approva]]></item>
+		<item name="filebase.file.version.edit.restore"><![CDATA[Ripristina]]></item>
+		<item name="filebase.file.version.edit.trash"><![CDATA[Sposta nel cestino]]></item>
+		<item name="filebase.file.version.information"><![CDATA[Dettagli]]></item>
+		<item name="filebase.file.version.isDeleted"><![CDATA[Eliminato]]></item>
+		<item name="filebase.file.version.isDisabled"><![CDATA[Disapprovato]]></item>
+		<item name="filebase.file.version.upload"><![CDATA[Carica versione]]></item>
+		<item name="filebase.file.version.notification.title"><![CDATA[Nuova versione del file]]></item>
+		<item name="filebase.file.version.notification.message"><![CDATA[{@$author->getAnchorTag()} ha aggiunto {if $version->versionNumber}la versione {$version->versionNumber}{else}una nuova versione{/if} del file <a href="{link application='filebase' controller='File' object=$version->getFile()}{/link}">{$version->getFile()->getSubject()}</a>.]]></item>
+		<item name="filebase.file.version.notification.mail"><![CDATA[{@$author->username} ha aggiunto {if $version->versionNumber}la versione "{$version->versionNumber}"{else}una nuova versione{/if} del file "{@$version->getFile()->getSubject()}":
+{link application='filebase' controller='File' object=$version->getFile() isEmail=true}{/link}]]></item>
+		<item name="filebase.file.comment.notification.title"><![CDATA[Nuovo commento (File)]]></item>
+		<item name="filebase.file.comment.notification.title.stacked"><![CDATA[{#$timesTriggered} nuovi commenti (File)]]></item>
+		<item name="filebase.file.comment.notification.message"><![CDATA[{if $author->userID}{@$author->getAnchorTag()}{else}Un ospite{/if} un ospite ha commentato un tuo file <a href="{link application='filebase' controller='File' object=$file}#comments{/link}">{$file->getSubject()}</a>.]]></item>
+		<item name="filebase.file.comment.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} e {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3}{if !$guestTimesTriggered} e {else}, {/if} {@$authors[2]->getAnchorTag()}{/if}{/if}{if $guestTimesTriggered} e {if $guestTimesTriggered == 1}un ospite{else}degli ospiti{/if}{/if}{else}{@$authors[0]->getAnchorTag()}{if $guestTimesTriggered},{else} e{/if} {#$others} altri utenti {if $guestTimesTriggered}and {if $guestTimesTriggered == 1}un ospite{else}degli ospiti{/if}{/if}{/if} ha commentato un tuo file <a href="{link application='filebase' controller='File' object=$file}#comments{/link}">{$file->getSubject()}</a>.]]></item>
+		<item name="filebase.file.comment.notification.mail"><![CDATA[{if $author->userID}{@$author->username}{else}un ospite{/if} ha commentato un tuo file "{@$file->getSubject()}":
+{if $notificationType == 'instant'}
+---------------------------------
+{@$comment->message}
+---------------------------------
+{/if}{link application='filebase' controller='File' object=$file isEmail=true}#comments{/link}]]></item>
+		<item name="filebase.file.comment.notification.mail.stacked"><![CDATA[{if $count < 4}{@$authors[0]->username}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} e {else}, {/if}{@$authors[1]->username}{if $count == 3}{if !$guestTimesTriggered} e {else}, {/if} {@$authors[2]->username}{/if}{/if}{if $guestTimesTriggered} e {if $guestTimesTriggered == 1}un ospite{else}degli ospiti{/if}{/if}{else}{@$authors[0]->username}{if $guestTimesTriggered},{else} e{/if} {#$others} altri utenti {if $guestTimesTriggered}and {if $guestTimesTriggered == 1}un ospite{else}degli ospiti{/if}{/if}{/if} hanno commentato il tuo file "{@$file->getSubject()}":
+{link application='filebase' controller='File' object=$file isEmail=true}#comments{/link}]]></item>
+		<item name="filebase.file.comment.like.notification.title"><![CDATA[Piace un commento (File)]]></item>
+		<item name="filebase.file.comment.like.notification.title.stacked"><![CDATA[A {#$count} utenti piace il tuo commento (File)]]></item>
+		<item name="filebase.file.comment.like.notification.message"><![CDATA[{@$author->getAnchorTag()} piace il tuo commento nel file <a href="{link application='filebase' controller='File' object=$file}#comments{/link}">{$file->getSubject()}</a>.]]></item>
+		<item name="filebase.file.comment.like.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} e {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} e {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} e {#$others} altri{/if} piace il tuo commento nel file <a href="{link application='filebase' controller='File' object=$file}#comments{/link}">{$file->getSubject()}</a>.]]></item>
+		<item name="filebase.file.commentResponse.notification.title"><![CDATA[Nuova risposta (File)]]></item>
+		<item name="filebase.file.commentResponse.notification.title.stacked"><![CDATA[{#$timesTriggered} nuove risposte (File)]]></item>
+		<item name="filebase.file.commentResponse.notification.message"><![CDATA[{if $author->userID}{@$author->getAnchorTag()}{else}Un ospite{/if} ha risposto al tuo commento al file <a href="{link application='filebase' controller='File' object=$file}#comments{/link}">{$file->getSubject()}</a>.]]></item>
+		<item name="filebase.file.commentResponse.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} e {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3}{if !$guestTimesTriggered} e {else}, {/if} {@$authors[2]->getAnchorTag()}{/if}{/if}{if $guestTimesTriggered} e {if $guestTimesTriggered == 1}un ospite{else}degli ospiti{/if}{/if}{else}{@$authors[0]->getAnchorTag()}{if $guestTimesTriggered},{else} e{/if} {#$others} altri utenti {if $guestTimesTriggered}e {if $guestTimesTriggered == 1}un ospite{else}ospiti{/if}{/if}{/if} hanno risposto al tuo commento al file <a href="{link application='filebase' controller='File' object=$file}#comments{/link}">{$file->getSubject()}</a>.]]></item>
+		<item name="filebase.file.commentResponse.notification.mail"><![CDATA[{if $author->userID}{@$author->username}{else}un ospite{/if} ha risposto al tuo commento al file "{@$file->getSubject()}":
+{if $notificationType == 'instant'}
+---------------------------------
+{@$response->message}
+---------------------------------
+{/if}{link application='filebase' controller='File' object=$file isEmail=true}#comments{/link}]]></item>
+		<item name="filebase.file.commentResponse.notification.mail.stacked"><![CDATA[{if $count < 4}{@$authors[0]->username}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} e {else}, {/if}{@$authors[1]->username}{if $count == 3}{if !$guestTimesTriggered} e {else}, {/if} {@$authors[2]->username}{/if}{/if}{if $guestTimesTriggered} e {if $guestTimesTriggered == 1}un ospite{else}degli ospiti{/if}{/if}{else}{@$authors[0]->username}{if $guestTimesTriggered},{else} e{/if} {#$others} altri utenti {if $guestTimesTriggered}e {if $guestTimesTriggered == 1}un ospite{else}degli ospiti{/if}{/if}{/if} hanno risposto al tuo commento al file "{@$file->getSubject()}":
+{link application='filebase' controller='File' object=$file isEmail=true}#comments{/link}]]></item>
+		<item name="filebase.file.commentResponse.like.notification.title"><![CDATA[Mi piace alla tua risposta al commento (File)]]></item>
+		<item name="filebase.file.commentResponse.like.notification.title.stacked"><![CDATA[A {#$count} utenti piace la tua risposta al commento (File)]]></item>
+		<item name="filebase.file.commentResponse.like.notification.message"><![CDATA[{@$author->getAnchorTag()} mi piace alla tua risposta al commento di <a href="{link application='filebase' controller='File' object=$file}#comments{/link}">{$file->getSubject()}</a>.]]></item>
+		<item name="filebase.file.commentResponse.like.notification.message.stacked"><![CDATA[A {if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} e {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} e {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} e {#$others} altri{/if} piace la tua risposta al commento di <a href="{link application='filebase' controller='File' object=$file}#comments{/link}">{$file->getSubject()}</a>.]]></item>
+		<item name="filebase.file.commentResponseOwner.notification.title"><![CDATA[Nuova risposta (File)]]></item>
+		<item name="filebase.file.commentResponseOwner.notification.title.stacked"><![CDATA[{#$timesTriggered} nuove risposte (File)]]></item>
+		<item name="filebase.file.commentResponseOwner.notification.message"><![CDATA[{if $author->userID}{@$author->getAnchorTag()}{else}Un ospite{/if} ha risposto al commento di {$commentAuthor->username} sul tuo file <a href="{link application='filebase' controller='File' object=$file}#comments{/link}">{$file->getSubject()}</a>.]]></item>
+		<item name="filebase.file.commentResponseOwner.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} e{else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3}{if !$guestTimesTriggered} e {else}, {/if} {@$authors[2]->getAnchorTag()}{/if}{/if}{if $guestTimesTriggered} e {if $guestTimesTriggered == 1}un ospite{else}degli ospiti{/if}{/if}{else}{@$authors[0]->getAnchorTag()}{if $guestTimesTriggered},{else} e{/if} {#$others} altri utenti {if $guestTimesTriggered}e {if $guestTimesTriggered == 1}un ospite{else}degli ospiti{/if}{/if}{/if} hanno risposto al commento di {if $author->userID}<a href="{link controller='User' object=$author}{/link}" class="userLink" data-user-id="{@$author->userID}">{$author->username}</a>{else}{$author->username}{/if} nel tuo file <a href="{link application='filebase' controller='File' object=$file}#comments{/link}">{$file->getSubject()}</a>.]]></item>
+		<item name="filebase.file.commentResponseOwner.notification.mail"><![CDATA[{if $author->userID}{@$author->username}{else}un ospite{/if} ha risposto al commento di "{@$commentAuthor->username}" in un tuo file "{@$file->getSubject()}":
+{if $notificationType == 'instant'}
+---------------------------------
+{@$response->message}
+---------------------------------
+{/if}{link application='filebase' controller='File' object=$file isEmail=true}#comments{/link}]]></item>
+		<item name="filebase.file.commentResponseOwner.notification.mail.stacked"><![CDATA[{if $count < 4}{@$authors[0]->username}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} e {else}, {/if}{@$authors[1]->username}{if $count == 3}{if !$guestTimesTriggered} e {else}, {/if} {@$authors[2]->username}{/if}{/if}{if $guestTimesTriggered} e {if $guestTimesTriggered == 1}un ospite{else}degli ospiti{/if}{/if}{else}{@$authors[0]->username}{if $guestTimesTriggered},{else} e{/if} {#$others} altri utenti {if $guestTimesTriggered}e {if $guestTimesTriggered == 1}un ospite{else}degli ospiti{/if}{/if}{/if} hanno risposto al commento di "{@$commentAuthor->username}" nel tuo file "{@$file->getSubject()}":
+{link application='filebase' controller='File' object=$file isEmail=true}#comments{/link}]]></item>
+		<item name="filebase.file.like.notification.title"><![CDATA[Piace il tuo commento]]></item>
+		<item name="filebase.file.like.notification.title.stacked"><![CDATA[A {#$count} piace il tu ofile]]></item>
+		<item name="filebase.file.like.notification.message"><![CDATA[{@$author->getAnchorTag()} Piace al tuo file <a href="{link application='filebase' controller='File' object=$file}{/link}">{$file->getSubject()}</a>.]]></item>
+		<item name="filebase.file.like.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} e {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} e {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} e {#$others} altri{/if} piace il tuo file <a href="{link application='filebase' controller='File' object=$file}{/link}">{$file->getSubject()}</a>.]]></item>
+		<item name="filebase.file.confirmDelete"><![CDATA[Vuoi veramente eliminare permanentemente questo file?]]></item>
+		<item name="filebase.file.version.confirmDelete"><![CDATA[Vuoi veramente eliminare permanentemente questa versione del file?]]></item>
+		<item name="filebase.file.version.deleted"><![CDATA[Questa versione è stata cancellata {if $version->userID == $version->getLogEntry()->userID}dall´autore{else}da “<a href="{link controller='User' id=$version->getLogEntry()->userID title=$version->getLogEntry()->username}{/link}" class="userLink" data-user-id="{@$version->getLogEntry()->userID}">{$version->getLogEntry()->username}</a>”{/if}{if $version->getLogEntry()->reason}: “{$version->getLogEntry()->reason}”{/if} ({@$version->getLogEntry()->time|time}).]]></item>
+		<item name="filebase.file.confirmTrash"><![CDATA[Vuoi veramente eliminare questo file?]]></item>
+		<item name="filebase.file.confirmTrash.reason"><![CDATA[Motivazione (Opzionale)]]></item>
+		<item name="filebase.file.version.confirmTrash"><![CDATA[Vuoi veramente eliminare questa versione?]]></item>
+		<item name="filebase.file.version.confirmTrash.reason"><![CDATA[Motivazione (Opzionale)]]></item>
+		<item name="filebase.file.website.error.invalid"><![CDATA[Sei entrato in un link non valido.]]></item>
+		<item name="filebase.file.commercial"><![CDATA[Commerciale]]></item>
+		<item name="filebase.file.isCommercial"><![CDATA[Vendi file]]></item>
+		<item name="filebase.file.isCommercial.description"><![CDATA[Questo file è disponibile per l'acquisto nelle seguenti condizioni.]]></item>
+		<item name="filebase.file.currency"><![CDATA[Valuta]]></item>
+		<item name="filebase.file.price"><![CDATA[Prezzo]]></item>
+		<item name="filebase.file.price.error.invalid"><![CDATA[Hai inserito un prezzo non valido.]]></item>
+		<item name="filebase.file.purchases"><![CDATA[Acquisti]]></item>
+		<item name="filebase.file.moderation.info"><![CDATA[I file aggiunti dovranno essere approvati da un moderatore, fino a quel momento non saranno visibili agli utenti.]]></item>
+		<item name="filebase.file.moderation.disabledFile"><![CDATA[Questo file è in attesa di approvazione da parte di un moderatore.]]></item>
+		<item name="filebase.file.version.moderation.disabledVersion"><![CDATA[Questa versione è in attesa di approvazione da parte di un moderatore.]]></item>
+		<item name="filebase.file.notPurchasable"><![CDATA[Questo file non è più disponibile per l´acquisto.]]></item>
+		<item name="filebase.file.comment"><![CDATA[Commento del file]]></item>
+		<item name="filebase.file.commentResponse"><![CDATA[Rispondi al commento del file]]></item>
+		<item name="filebase.file.filterByPrice"><![CDATA[Filtra per prezzo]]></item>
+		<item name="filebase.file.filterByPrice.all"><![CDATA[Entrambi]]></item>
+		<item name="filebase.file.filterByPrice.free"><![CDATA[Gratis]]></item>
+		<item name="filebase.file.filterByPrice.paid"><![CDATA[A pagamento]]></item>
+		<item name="filebase.file.subscribed"><![CDATA[File sottoscritti]]></item>
+		<item name="filebase.file.userFileCounter"><![CDATA[{#$activeAuthor->filebaseFiles} file{if $activeAuthor->filebaseFiles != 1}s{/if}]]></item>
+		<item name="filebase.file.downloadFromExternalURL"><![CDATA[(Da link esterno)]]></item>
+		<item name="filebase.file.externalURL"><![CDATA[Link esterno]]></item>
+		<item name="filebase.file.downloadURL.error.invalid"><![CDATA[Hai inserito un link non valido.]]></item>
+		<item name="filebase.file.customersAlsoBought"><![CDATA[Chi ha comprato questo file ha acquistato anche]]></item>
+		<item name="filebase.file.upload.error.quotaExceeded"><![CDATA[Hai superato il limite di grandezza del file.]]></item>
+		<item name="filebase.file.options"><![CDATA[Informazioni aggiuntive]]></item>
+		<item name="filebase.file.icon"><![CDATA[Icona]]></item>
+		<item name="filebase.file.icon.description"><![CDATA[L´icona visualizzata viene mostrata prima del nome del file. le icone devono essere delle seguenti dimensioni: 144 × 144 px.<br />Estensioni permesse: jpg, jpeg, png]]></item>
+		<item name="filebase.file.icon.delete"><![CDATA[Elimina icona]]></item>
+		<item name="filebase.file.icon.delete.confirmMessage"><![CDATA[Vuoi realmente eliminare l´icona?]]></item>
+		<item name="filebase.file.icon.error.invalidExtension"><![CDATA[L´estensione del file non è valida.]]></item>
+		<item name="filebase.file.icon.error.noImage"><![CDATA[Il file caricato non è un immagine.]]></item>
+		<item name="filebase.file.icon.error.tooSmall"><![CDATA[L´immagine caricata è troppo piccola.]]></item>
+		<item name="filebase.file.icon.error.tooLarge"><![CDATA[L´immagine caricata è troppo grande.]]></item>
+		<item name="filebase.file.icon.error.uploadFailed"><![CDATA[Errore sconosciuto durante il caricamento.]]></item>
+		<item name="filebase.file.unreadFiles"><![CDATA[Nuovi files]]></item>
+		<item name="filebase.file.labeledFiles"><![CDATA[Files con l´etichetta “{$label->label|language}”]]></item>
+		<item name="filebase.file.hasOldVersions"><![CDATA[Versioni vecchie]]></item>
+		<item name="filebase.file.editReason"><![CDATA[Motivazione modifica (opzionale)]]></item>
+		<item name="filebase.file.purchased"><![CDATA[Acquistati]]></item>
+		<item name="filebase.file.purchase"><![CDATA[Acquista]]></item>
+		<item name="filebase.file.author"><![CDATA[Autore]]></item>
+		<item name="filebase.file.purchase.returnMessage"><![CDATA[Grazie per il tuo pagamento, la transizione è stata completata. L'accesso al file acquistato è concesso appena possibile.]]></item>
+		<item name="filebase.file.purchasedFiles"><![CDATA[File comprati]]></item>
+		<item name="filebase.file.isPurchasable"><![CDATA[In vendita]]></item>
+		<item name="filebase.file.isPurchasable.description"><![CDATA[Disattivare questa opzione per disabilitare temporaneamente la vendita di questo file. I clienti che hanno già comprato il file continueranno ad avere accesso.]]></item>
+		<item name="filebase.file.category"><![CDATA[Categorie]]></item>
+		<item name="filebase.file.cumulativeLikes"><![CDATA[Mi piace]]></item>
+		<item name="filebase.file.totalRevenue"><![CDATA[Reddito]]></item>
+	</category>
+
+	<category name="filebase.file.log">
+		<item name="filebase.file.log"><![CDATA[Log]]></item>
+		<item name="filebase.file.log.noEntries"><![CDATA[Non ci sono log per questo file.]]></item>
+		<item name="filebase.file.log.file.trash.summary"><![CDATA[Il file è stato eliminato da “{if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-user-id="{@$userID}">{$username}</a>{else}{$username}{/if}”{if $additionalData[reason]} per la seguente ragione: “{$additionalData[reason]|tableWordwrap}”{/if}. ({@$time|time})]]></item>
+		<item name="filebase.file.log.file.version.delete"><![CDATA[Versione eliminata]]></item>
+		<item name="filebase.file.log.file.version.disable"><![CDATA[Disapprovata la versione{if $version->versionNumber} “{$version->versionNumber}”{/if}]]></item>
+		<item name="filebase.file.log.file.version.enable"><![CDATA[Approvata la versione{if $version->versionNumber} “{$version->versionNumber}”{/if}]]></item>
+		<item name="filebase.file.log.file.version.restore"><![CDATA[Ripristinata la versione{if $version->versionNumber} “{$version->versionNumber}”{/if}]]></item>
+		<item name="filebase.file.log.file.version.trash"><![CDATA[Sposta la versione{if $version->versionNumber} “{$version->versionNumber}”{/if} nel cestino{if $additionalData[reason]}: “{$additionalData[reason]}” {/if}]]></item>
+		<item name="filebase.file.log.file.delete"><![CDATA[Elimina il file]]></item>
+		<item name="filebase.file.log.file.disable"><![CDATA[Disapprova il file]]></item>
+		<item name="filebase.file.log.file.enable"><![CDATA[Approva il file]]></item>
+		<item name="filebase.file.log.file.restore"><![CDATA[Ripristina il file]]></item>
+		<item name="filebase.file.log.file.trash"><![CDATA[Spostato il file nel cestino{if $additionalData[reason]}: “{$additionalData[reason]}” {/if}]]></item>
+		<item name="filebase.file.log.file.edit"><![CDATA[Modifiche del file]]></item>
+		<item name="filebase.file.log.file.setLabel"><![CDATA[Imposta l'etichetta di <span class="badge label{if $additionalData[label]->cssClassName} {$additionalData[label]->cssClassName}{/if}">{$additionalData[label]->label|language}</span>]]></item>
+	</category>
+
+	<category name="filebase.index">
+		<item name="filebase.index.stats"><![CDATA[Statistiche]]></item>
+		<item name="filebase.index.stats.detail"><![CDATA[<ul class="inlineList dotSeparated">
+<li>{#$stats[authors]} {if $stats[authors] != 1}Autori{else}Autore{/if}</li>
+<li>{#$stats[files]} File{if $stats[files] != 1}s{/if}</li>
+<li>{@$stats[size]|filesize} Peso totale dei file</li>
+<li>{#$stats[downloads]} Download{if $stats[downloads] != 1}s{/if} ({#$stats[downloadsPerDay]} Download{if $stats[downloadsPerDay] != 1}s{/if} per giorno)</li>
+<li>{#$stats[comments]} {if $stats[comments] != 1}Commenti{else}Commento{/if}</li>
+</ul>]]></item>
+		<item name="filebase.index.evaluation"><![CDATA[Questa è una versione di test. Funzionerà per un periodo limitato <strong>{@FILEBASE_EVALUATION_END|plainTime}</strong>{if FILEBASE_EVALUATION_END > TIME_NOW} ({@FILEBASE_EVALUATION_END|dateDiff:TIME_NOW:true}){/if}.
+		Per un uso legale del software sei pregato di <a href="https://www.woltlab.com">acquistare una licenza</a>, o di eliminare immediatamente il software.]]></item>
+	</category>
+
+	<category name="filebase.license">
+		<item name="filebase.license.licenseAgreement"><![CDATA[Contratto di Licenza]]></item>
+		<item name="filebase.license.licenseAgreement.description"><![CDATA[Si prega di leggere il contratto di licenza con attenzione, utilizzare le barre di scorrimento per leggere l'intero documento.]]></item>
+		<item name="filebase.license.licenseAgreement.confirm"><![CDATA[Accetti il contratto di licenza? È necessario per scaricare e acquistare il prodotto.]]></item>
+		<item name="filebase.license.licenseAgreement.confirm.missingConfirmation"><![CDATA[Devi accettare il contratto di licenza.]]></item>
+		<item name="filebase.license.licenseAgreement.inputDescription"><![CDATA[Fornisci il contratto di licenza per questo prodotto.{if FILEBASE_ENABLE_LICENSE_CONFIRMATION} Gli utenti devono accettare questo accordo per poter scaricare / acquistare il prodotto.{/if}]]></item>
+		<item name="filebase.license.licenseType.predefined"><![CDATA[Usa una licenza predefinita]]></item>
+		<item name="filebase.license.licenseType.custom"><![CDATA[Inserisci una licenza proprietaria]]></item>
+		<item name="filebase.license.license"><![CDATA[Licenza]]></item>
+		<item name="filebase.license.licenseName"><![CDATA[Nome licenza]]></item>
+		<item name="filebase.license.licenseURL"><![CDATA[Link licenza]]></item>
+	</category>
+
+	<category name="filebase.search">
+		<item name="filebase.search.categories"><![CDATA[Cerca nelle categorie]]></item>
+	</category>
+
+	<category name="wcf.acl.option">
+		<item name="wcf.acl.option.com.woltlab.filebase.category.canViewCategory"><![CDATA[Può vedere le categorie]]></item>
+		<item name="wcf.acl.option.com.woltlab.filebase.category.canDownload"><![CDATA[Può scaricare i file all´interno di questa sezione]]></item>
+		<item name="wcf.acl.option.com.woltlab.filebase.category.canUseCategory"><![CDATA[Può aggiungere file in questa categoria]]></item>
+	</category>
+
+	<category name="wcf.acp.box">
+		<item name="wcf.acp.box.boxController.com.woltlab.filebase.categories"><![CDATA[Categorie Filebase]]></item>
+		<item name="wcf.acp.box.boxController.com.woltlab.filebase.tagCloud"><![CDATA[Tags Filebase]]></item>
+		<item name="wcf.acp.box.boxController.com.woltlab.filebase.mostActiveAuthors"><![CDATA[Autori Filebase più attivi]]></item>
+		<item name="wcf.acp.box.boxController.com.woltlab.filebase.fileList"><![CDATA[File Filebase]]></item>
+		<item name="wcf.acp.box.boxController.com.woltlab.filebase.commentList"><![CDATA[Commenti Filebase]]></item>
+	</category>
+
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.user.filebase"><![CDATA[Filebase]]></item>
+		<item name="wcf.acp.group.option.category.mod.filebase"><![CDATA[Filebase]]></item>
+		<item name="wcf.acp.group.option.category.admin.filebase"><![CDATA[Filebase]]></item>
+		<item name="wcf.acp.group.option.user.filebase.canViewFile"><![CDATA[Può vedere i file]]></item>
+		<item name="wcf.acp.group.option.user.filebase.canDownloadFile"><![CDATA[Può scaricare i file]]></item>
+		<item name="wcf.acp.group.option.user.filebase.canAddFile"><![CDATA[Può caricare i file]]></item>
+		<item name="wcf.acp.group.option.user.filebase.canAddFileWithoutModeration"><![CDATA[Può caricare file senza approvazione]]></item>
+		<item name="wcf.acp.group.option.user.filebase.canEditFile"><![CDATA[Può modificare i propri file]]></item>
+		<item name="wcf.acp.group.option.user.filebase.canDeleteFile"><![CDATA[Può eliminare i propri file]]></item>
+		<item name="wcf.acp.group.option.user.filebase.canDisableCommentFunction"><![CDATA[Può disabilitare i commenti nei suoi file]]></item>
+		<item name="wcf.acp.group.option.user.filebase.maxTextLength"><![CDATA[Lunghezza massima della descrizione (File)]]></item>
+		<item name="wcf.acp.group.option.user.filebase.maxVersionTextLength"><![CDATA[Lunghezza massima della descrizione (Versione)]]></item>
+		<item name="wcf.acp.group.option.user.filebase.maxFileSize"><![CDATA[Grandezza massima file]]></item>
+		<item name="wcf.acp.group.option.user.filebase.allowedFileExtensions"><![CDATA[estensioni file consentite]]></item>
+		<item name="wcf.acp.group.option.user.filebase.allowedFileExtensions.description"><![CDATA[Un estensione file per rigo]]></item>
+		<item name="wcf.acp.group.option.user.filebase.canDownloadAttachment"><![CDATA[Può scaricare i file]]></item>
+		<item name="wcf.acp.group.option.user.filebase.canUploadAttachment"><![CDATA[Può caricare i file]]></item>
+		<item name="wcf.acp.group.option.user.filebase.maxAttachmentSize"><![CDATA[Grandezza massima per gli allegati]]></item>
+		<item name="wcf.acp.group.option.user.filebase.allowedAttachmentExtensions"><![CDATA[Estensione degli allegati permesse]]></item>
+		<item name="wcf.acp.group.option.user.filebase.allowedAttachmentExtensions.description"><![CDATA[Un´estensione per rigo]]></item>
+		<item name="wcf.acp.group.option.user.filebase.maxAttachmentCount"><![CDATA[Grandezza massima per i file]]></item>
+		<item name="wcf.acp.group.option.user.filebase.canAddComment"><![CDATA[Può scrivere i commenti]]></item>
+		<item name="wcf.acp.group.option.user.filebase.canEditComment"><![CDATA[Può modificare i propri commenti]]></item>
+		<item name="wcf.acp.group.option.user.filebase.canDeleteComment"><![CDATA[Può eliminare i propri commenti]]></item>
+		<item name="wcf.acp.group.option.user.filebase.quota"><![CDATA[Quota File]]></item>
+		<item name="wcf.acp.group.option.user.filebase.quota.description"><![CDATA[Quantità massima di spazio su disco per i file]]></item>
+		<item name="wcf.acp.group.option.admin.filebase.canManageCategory"><![CDATA[Può gestire le categorie]]></item>
+		<item name="wcf.acp.group.option.admin.filebase.canManageLicense"><![CDATA[Può gestire le licenze]]></item>
+		<item name="wcf.acp.group.option.admin.filebase.canManageFileOption"><![CDATA[Può gestire i campi opzionali]]></item>
+		<item name="wcf.acp.group.option.mod.filebase.canEditFile"><![CDATA[Può modificare i file]]></item>
+		<item name="wcf.acp.group.option.mod.filebase.canDeleteFile"><![CDATA[Può spostare i file nel cestino]]></item>
+		<item name="wcf.acp.group.option.mod.filebase.canModerateFile"><![CDATA[Può moderare i file]]></item>
+		<item name="wcf.acp.group.option.mod.filebase.canViewDeletedFile"><![CDATA[Può vedere i file eliminati]]></item>
+		<item name="wcf.acp.group.option.mod.filebase.canRestoreFile"><![CDATA[Può ripristinare i file]]></item>
+		<item name="wcf.acp.group.option.mod.filebase.canDeleteFileCompletely"><![CDATA[Può eliminare i file]]></item>
+		<item name="wcf.acp.group.option.mod.filebase.canEditComment"><![CDATA[Può modificare i commenti]]></item>
+		<item name="wcf.acp.group.option.mod.filebase.canDeleteComment"><![CDATA[Può eliminare i commenti]]></item>
+		<item name="wcf.acp.group.option.mod.filebase.canModerateComment"><![CDATA[Può moderare i commenti]]></item>
+		<item name="wcf.acp.group.option.user.filebase.canSellFile"><![CDATA[Può vendere i file]]></item>
+	</category>
+
+	<category name="wcf.acp.index">
+		<item name="wcf.acp.index.system.software.filebaseVersion"><![CDATA[Versione WoltLab Filebase&trade;]]></item>
+	</category>
+
+	<category name="wcf.acp.label">
+		<item name="wcf.acp.label.container.com.woltlab.filebase.category"><![CDATA[Filebase]]></item>
+	</category>
+
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.filebase"><![CDATA[Filebase]]></item>
+		<item name="wcf.acp.option.category.filebase.index"><![CDATA[Pagina iniziale Filebase]]></item>
+		<item name="wcf.acp.option.category.filebase.files"><![CDATA[Files]]></item>
+		<item name="wcf.acp.option.category.filebase.general"><![CDATA[Generale]]></item>
+		<item name="wcf.acp.option.category.filebase.license"><![CDATA[Licenze]]></item>
+		<item name="wcf.acp.option.category.filebase.stats"><![CDATA[Statistiche]]></item>
+		<item name="wcf.acp.option.category.filebase.selling"><![CDATA[Vendi]]></item>
+		<item name="wcf.acp.option.filebase_enable_selling"><![CDATA[Abilita vendita file]]></item>
+		<item name="wcf.acp.option.filebase_enable_selling.description"><![CDATA[Consenti la vendita dei file. La funzione è disponibile in base ai permessi del gruppo utente.]]></item>
+		<item name="wcf.acp.option.filebase_multiple_purchase"><![CDATA[I Clienti possono scaricare più volte i file]]></item>
+		<item name="wcf.acp.option.filebase_available_currencies"><![CDATA[Valute supportate]]></item>
+		<item name="wcf.acp.option.filebase_available_currencies.desciption"><![CDATA[Una valuta per riga]]></item>
+		<item name="wcf.acp.option.filebase_min_price"><![CDATA[Prezzo minimo di vendita]]></item>
+		<item name="wcf.acp.option.filebase_max_price"><![CDATA[Prezzo massimo di vendita]]></item>
+		<item name="wcf.acp.option.filebase_price_tax"><![CDATA[IVA]]></item>
+		<item name="wcf.acp.option.filebase_price_tax.description"><![CDATA[Imposta il valore aggiunto in percentuale; Verranno aggiunti al prezzo di vendita]]></item>
+		<item name="wcf.acp.option.filebase_index_enable_stats"><![CDATA[Mostra le statistiche generali]]></item>
+		<item name="wcf.acp.option.filebase_files_per_page"><![CDATA[File per pagina]]></item>
+		<item name="wcf.acp.option.filebase_max_teaser_length"><![CDATA[Lunghezza massiam della breve descrizione]]></item>
+		<item name="wcf.acp.option.filebase_storage"><![CDATA[Collocazione file nel Disco]]></item>
+		<item name="wcf.acp.option.filebase_storage.description"><![CDATA[Si può definire un percorso di archiviazioni dei file diverso. I file precedentemente caricati devono essere spostati manualmente.]]></item>
+		<item name="wcf.acp.option.filebase_dashboard_box_files"><![CDATA[Quantità file]]></item>
+		<item name="wcf.acp.option.category.dashboard.sidebar.files"><![CDATA[File]]></item>
+		<item name="wcf.acp.option.filebase_message_sidebar_enable_user_files"><![CDATA[Mostra il numero dei file caricati degli utenti]]></item>
+		<item name="wcf.acp.option.filebase_enable_version_number"><![CDATA[Abilita la versione del file]]></item>
+		<item name="wcf.acp.option.filebase_enable_version_number.description"><![CDATA[Gli utenti sono tenuti a specificare una versione per ogni file caricato]]></item>
+		<item name="wcf.acp.option.filebase_enable_multilingualism"><![CDATA[Abilita multilinguismo]]></item>
+		<item name="wcf.acp.option.filebase_enable_license"><![CDATA[Abilita licenze]]></item>
+		<item name="wcf.acp.option.filebase_enable_license.description"><![CDATA[I file dovranno essere associati ad una licenza. Gli utenti possono scegliere nella <a href="{link application='filebase' controller='LicenseList'}{/link}">lista delle licenze predefinite</a>.]]></item>
+		<item name="wcf.acp.option.filebase_enable_custom_license"><![CDATA[Enable custom licenses]]></item>
+		<item name="wcf.acp.option.filebase_enable_custom_license.description"><![CDATA[Gli utenti possono utilizzare delle licenze personalizzate.]]></item>
+		<item name="wcf.acp.option.filebase_enable_license_confirmation"><![CDATA[Gli utenti devono accettare la licenza]]></item>
+		<item name="wcf.acp.option.filebase_enable_license_confirmation.description"><![CDATA[Gli utenti dovranno accettare la licenza pere eseguire l'acquisto/download del file.]]></item>
+		<item name="wcf.acp.option.filebase_file_types"><![CDATA[Tipi di file ammessi]]></item>
+		<item name="wcf.acp.option.filebase_file_types.upload"><![CDATA[Carica file]]></item>
+		<item name="wcf.acp.option.filebase_file_types.externalURL"><![CDATA[Link esterno]]></item>
+		<item name="wcf.acp.option.filebase_file_types.description"><![CDATA[È possibile selezionare quali tipi di file dovrebbero essere consentiti, è necessario selezionarne almeno un tipo.]]></item>
+		<item name="wcf.acp.option.filebase_file_empty_recycle_bin_cycle"><![CDATA[Pulisci il cestino]]></item>
+		<item name="wcf.acp.option.filebase_file_empty_recycle_bin_cycle.description"><![CDATA[Periodo di tempo dopo il quale il cestino viene pulito. [tempo in giorni, 0 per disabilitare]]]></item>
+		<item name="wcf.acp.option.filebase_enable_file_icon"><![CDATA[Icona]]></item>
+		<item name="wcf.acp.option.filebase_enable_file_icon.description"><![CDATA[Gli utenti possono caricare un'icona opzionale che verrà utilizzato per presentare il file.]]></item>
+		<item name="wcf.acp.option.filebase_enable_time_limited_file_stats"><![CDATA[Abilitare le statistiche a tempo]]></item>
+		<item name="wcf.acp.option.filebase_enable_time_limited_file_stats.description"><![CDATA[Tutte le statistiche verranno aggiornate dopo un periodo di tempo prestabilito.]]></item>
+		<item name="wcf.acp.option.filebase_time_limited_file_stats_period"><![CDATA[Periodo di tempo per le statistiche]]></item>
+		<item name="wcf.acp.option.filebase_time_limited_file_stats_period.description"><![CDATA[Periodo di tempo dopo il quale le statistiche vengono aggiornate. [Tempo in giorni]]]></item>
+	</category>
+
+	<category name="wcf.acp.rebuildData">
+		<item name="wcf.acp.rebuildData.com.woltlab.filebase.file"><![CDATA[Ricostruisci file]]></item>
+		<item name="wcf.acp.rebuildData.com.woltlab.filebase.file.description"><![CDATA[Ricostruisce l´index di ricerca e i punti attività]]></item>
+	</category>
+
+	<category name="wcf.acp.stat">
+		<item name="wcf.acp.stat.category.com.woltlab.filebase"><![CDATA[Filebase]]></item>
+		<item name="wcf.acp.stat.com.woltlab.filebase.file"><![CDATA[Files]]></item>
+		<item name="wcf.acp.stat.com.woltlab.filebase.file.diskUsage"><![CDATA[Spazio totale occupato dai file (MB)]]></item>
+		<item name="wcf.acp.stat.com.woltlab.filebase.fileComment"><![CDATA[Commenti dei file]]></item>
+		<item name="wcf.acp.stat.com.woltlab.filebase.version"><![CDATA[Versioni dei File]]></item>
+	</category>
+
+	<category name="wcf.clipboard">
+		<item name="wcf.clipboard.label.com.woltlab.filebase.file.marked"><![CDATA[{if $count == 1}Un file è selezionato{else}{#$count} file sono selezionati{/if} ]]></item>
+		<item name="wcf.clipboard.label.com.woltlab.filebase.version.marked"><![CDATA[{if $count == 1}Una versione è selezionata{else}{#$count} versioni sono selezionate{/if} ]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.filebase.file.trash.confirmMessage"><![CDATA[Vuoi veramente eliminare i file selezionati?]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.filebase.file.version.trash.confirmMessage"><![CDATA[Vuoi veramente eliminare le versioni selezionate?]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.filebase.file.delete.confirmMessage"><![CDATA[Vuoi veramente eliminare permanentemente i file selezionati?]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.filebase.file.version.delete.confirmMessage"><![CDATA[Vuoi veramente eliminare permanentemente le versioni selezionate?]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.filebase.file.assignLabel"><![CDATA[Etichette assegnate ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.filebase.file.trash"><![CDATA[Spostati nel cestino ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.filebase.file.enable"><![CDATA[Approvati ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.filebase.file.disable"><![CDATA[Disapprovati ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.filebase.file.delete"><![CDATA[Eliminati ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.filebase.file.restore"><![CDATA[Ripristinati ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.filebase.version.trash"><![CDATA[Spostate nel cestino ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.filebase.version.enable"><![CDATA[Approvate ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.filebase.version.disable"><![CDATA[Disapprovate ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.filebase.version.delete"><![CDATA[Eliminate ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.filebase.version.restore"><![CDATA[Ripristinate ({#$count})]]></item>
+	</category>
+
+	<category name="wcf.like">
+		<item name="wcf.like.objectType.com.woltlab.filebase.likeableFile"><![CDATA[File]]></item>
+		<item name="wcf.like.objectType.com.woltlab.filebase.likeableFileVersion"><![CDATA[Versione file]]></item>
+		<item name="wcf.like.title.com.woltlab.filebase.fileComment"><![CDATA[{if $like->isDislike()}Non piace{else}Piace{/if} il commento di {if $commentAuthor}<a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}un ospite{/if} nel file {if $file->hasLabels()}{foreach from=$file->getLabels() item=label}<span class="label badge{if $label->getClassNames()} {$label->getClassNames()}{/if}">{lang}{$label->label}{/lang}</span> {/foreach}{/if}<a href="{link application='filebase' controller='File' object=$file}#comments{/link}" class="filebaseFileLink" data-file-id="{@$file->fileID}">{$file->getTitle()}</a>.]]></item>
+		<item name="wcf.like.title.com.woltlab.filebase.fileComment.response"><![CDATA[{if $like->isDislike()}Non piace{else}Piace{/if} la risposta {if $responseAuthor}di <a href="{link controller='User' object=$responseAuthor}{/link}">{$responseAuthor->username}</a>{else}di un ospite{/if} al commento di{if $commentAuthor}<a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}un ospite{/if} nel file {if $file->hasLabels()}{foreach from=$file->getLabels() item=label}<span class="label badge{if $label->getClassNames()} {$label->getClassNames()}{/if}">{lang}{$label->label}{/lang}</span> {/foreach}{/if}<a href="{link application='filebase' controller='File' object=$file}#comments{/link}" class="filebaseFileLink" data-file-id="{@$file->fileID}">{$file->getTitle()}</a>.]]></item>
+		<item name="wcf.like.title.com.woltlab.filebase.likeableFile"><![CDATA[{if $like->isDislike()}Non piace{else}Piace{/if} il file {if $file->hasLabels()}{foreach from=$file->getLabels() item=label}<span class="label badge{if $label->getClassNames()} {$label->getClassNames()}{/if}">{lang}{$label->label}{/lang}</span> {/foreach}{/if}<a href="{link application='filebase' controller='File' object=$file}#comments{/link}" class="filebaseFileLink" data-file-id="{@$file->fileID}">{$file->getTitle()}</a>.]]></item>
+		<item name="wcf.like.title.com.woltlab.filebase.likeableFileVersion"><![CDATA[{if $like->isDislike()}Non mi piace{else}Mi piace{/if} {if $version->versionNumber}la versione {$version->versionNumber}{else}una versione{/if} del file <a href="{link application='filebase' controller='File' object=$version->getFile()}{/link}" class="filebaseFileLink" data-file-id="{@$version->getFile()->fileID}">{$version->getFile()->getTitle()}</a>.]]></item>
+	</category>
+
+	<category name="wcf.moderation">
+		<item name="wcf.moderation.type.com.woltlab.filebase.file"><![CDATA[File]]></item>
+		<item name="wcf.moderation.type.com.woltlab.filebase.version"><![CDATA[Versione file]]></item>
+		<item name="wcf.moderation.deletedContent.com.woltlab.filebase.file"><![CDATA[File Cestinati]]></item>
+		<item name="wcf.moderation.deletedContent.objectType.com.woltlab.filebase.file"><![CDATA[File]]></item>
+		<item name="wcf.moderation.deletedContent.com.woltlab.filebase.version"><![CDATA[Versione File Cestinate]]></item>
+		<item name="wcf.moderation.deletedContent.objectType.com.woltlab.filebase.version"><![CDATA[Versione File]]></item>
+	</category>
+
+	<category name="wcf.page">
+		<item name="wcf.page.onlineLocation.com.woltlab.filebase.File"><![CDATA[File <a href="{link controller='File' application='filebase' object=$file}{/link}" class="filebaseFileLink" data-file-id="{@$file->fileID}">{$file->getSubject()}</a>]]></item>
+		<item name="wcf.page.onlineLocation.com.woltlab.filebase.CategoryFileList"><![CDATA[Categoria File<a href="{$category->getLink()}">{$category->getTitle()}</a>]]></item>
+		<item name="wcf.page.onlineLocation.com.woltlab.filebase.UserFileList"><![CDATA[<a href="{link controller='UserFileList' application='filebase' object=$user}{/link}">Files di {$user->username}</a>]]></item>
+	</category>
+
+	<category name="wcf.search">
+		<item name="wcf.search.type.com.woltlab.filebase.file"><![CDATA[File]]></item>
+		<item name="wcf.search.object.com.woltlab.filebase.file"><![CDATA[File]]></item>
+	</category>
+
+	<category name="wcf.tagging">
+		<item name="wcf.tagging.objectType.com.woltlab.filebase.file"><![CDATA[File]]></item>
+		<item name="wcf.tagging.taggedObjects.com.woltlab.filebase.file"><![CDATA[Il file contiene i seguenti tag “{$tag->name}”]]></item>
+	</category>
+
+	<category name="wcf.user">
+		<item name="wcf.user.activityPoint.objectType.com.woltlab.filebase.activityPointEvent.file"><![CDATA[File]]></item>
+	</category>
+
+	<category name="wcf.user.condition">
+		<item name="wcf.user.condition.filebaseFiles"><![CDATA[Files]]></item>
+	</category>
+
+	<category name="wcf.user.notification">
+		<item name="wcf.user.notification.com.woltlab.filebase"><![CDATA[Filebase]]></item>
+		<item name="wcf.user.notification.com.woltlab.filebase.version.version"><![CDATA[Nuova versione del file visualizzata]]></item>
+		<item name="wcf.user.notification.com.woltlab.filebase.fileComment.notification.comment"><![CDATA[Nuovo commento in un tuo file]]></item>
+		<item name="wcf.user.notification.com.woltlab.filebase.fileComment.response.notification.commentResponse"><![CDATA[Nuova risposta a un commento nel tuo file]]></item>
+		<item name="wcf.user.notification.com.woltlab.filebase.fileComment.response.notification.commentResponseOwner"><![CDATA[Nuova risposta su uno dei tuoi commenti]]></item>
+		<item name="wcf.user.notification.com.woltlab.filebase.likeableFile.notification.like"><![CDATA[Il tuo file è piaciuto]]></item>
+		<item name="wcf.user.notification.com.woltlab.filebase.fileComment.like.notification.like"><![CDATA[Il tuo commento è piaciuto]]></item>
+		<item name="wcf.user.notification.com.woltlab.filebase.fileComment.response.like.notification.like"><![CDATA[La tua risposta al commento è piaciuto]]></item>
+	</category>
+
+	<category name="wcf.user.objectWatch">
+		<item name="wcf.user.objectWatch.subscribe.com.woltlab.filebase.file"><![CDATA[Visualizza File]]></item>
+		<item name="wcf.user.objectWatch.enableNotification.com.woltlab.filebase.file"><![CDATA[Abilita notifiche per una nuova versione di questo file]]></item>
+		<item name="wcf.user.objectWatch.unsubscribe.com.woltlab.filebase.file"><![CDATA[Non visualizzare questo file]]></item>
+	</category>
+
+	<category name="wcf.user.recentActivity">
+		<item name="wcf.user.recentActivity.com.woltlab.filebase.fileComment.response.recentActivityEvent"><![CDATA[Rispondi (file)]]></item>
+		<item name="wcf.user.recentActivity.com.woltlab.filebase.fileComment.recentActivityEvent"><![CDATA[Commenti (file)]]></item>
+		<item name="wcf.user.recentActivity.com.woltlab.filebase.likeableFile.recentActivityEvent"><![CDATA[Mi Piace (file)]]></item>
+		<item name="wcf.user.recentActivity.com.woltlab.filebase.recentActivityEvent.file"><![CDATA[File]]></item>
+		<item name="wcf.user.recentActivity.com.woltlab.filebase.recentActivityEvent.version"><![CDATA[Versione File]]></item>
+	</category>
+</language>

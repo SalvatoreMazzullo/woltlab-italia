@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it">
+	<category name="wcf.acp">
+		<item name="wcf.acp.userProfileMenu.list"><![CDATA[Lista menu Profilo utente]]></item>
+	</category>
+
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.admin.user.canSortUserProfileMenuItems"><![CDATA[Può ordinare il menu del profilo utente]]></item>
+	</category>
+
+	<category name="wcf.acp.menu">
+		<item name="wcf.acp.menu.link.user.profileMenuItems"><![CDATA[Voci menu profilo utente]]></item>
+	</category>
+</language>

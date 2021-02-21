@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com https://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it">
+	<category name="wcf.acp.calendar">
+		<item name="wcf.acp.calendar.discord"><![CDATA[Discord-Synchronization]]></item>
+		<item name="wcf.acp.calendar.discord.channel"><![CDATA[Canale Discord]]></item>
+		<item name="wcf.acp.calendar.discord.botRight"><![CDATA[Il bot ha bisogno del permesso "MANAGE_WEBHOOKS".]]></item>
+
+		<item name="wcf.acp.calendar.discord.notification"><![CDATA[Come dovrebbe essere notificato in discord?]]></item>
+		<item name="wcf.acp.calendar.discord.nobody"><![CDATA[Normale]]></item>
+		<item name="wcf.acp.calendar.discord.everyone"><![CDATA[@everyone]]></item>
+		<item name="wcf.acp.calendar.discord.here"><![CDATA[@here]]></item>
+	</category>
+
+    <category name="wcf.calendar.discord">
+		<item name="wcf.calendar.discord.new"><![CDATA[Nuova data:]]></item>
+	</category>
+</language>

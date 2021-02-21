@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it">
+	<category name="wbb.ffLiveThreads.notification">
+		<item name="wbb.ffLiveThreads.notification.onenew"><![CDATA[C´è un nuovo messaggio!]]></item>
+		<item name="wbb.ffLiveThreads.notification.multiplenew"><![CDATA[Ci sono #num# nuovi messaggi!]]></item>
+	</category>
+
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.user.ffLiveThreads"><![CDATA[Discussioni live]]></item>
+		<item name="wcf.acp.group.option.user.ffLiveThreads.enabledInThreads"><![CDATA[Abilità nella visualizzazione della discussione]]></item>
+		<item name="wcf.acp.group.option.user.ffLiveThreads.interval"><![CDATA[Intervallo]]></item>
+		<item name="wcf.acp.group.option.user.ffLiveThreads.interval.description"><![CDATA[in secondi]]></item>
+		<item name="wcf.acp.group.option.user.ffLiveThreads.stopAfter"><![CDATA[Ferma dopo X aggiornamenti]]></item>
+		<item name="wcf.acp.group.option.user.ffLiveThreads.stopAfter.description"><![CDATA[0 = nessun limite]]></item>
+	</category>
+</language>

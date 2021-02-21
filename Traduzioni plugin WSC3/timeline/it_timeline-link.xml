@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it" languagename="Italiano" countrycode="it">
+    <!-- timeline -->
+
+    <category name="wcf.acp.group">
+        <item name="wcf.acp.group.option.user.timeline.canUseLinkType"><![CDATA[Può condividire i link]]></item>
+    </category>
+    <category name="timeline.type.title">
+        <item name="timeline.type.title.linkType"><![CDATA[Link]]></item>
+    </category>
+    <category name="timeline.type.notification">
+        <item name="timeline.type.notification.linkType"><![CDATA[
+        {if $authorUser|isset && $timelineUser|isset}
+        Ha condiviso un link {if $authorUser->userID != $timelineUser->userID}nella timeline di {@$timelineUser->getAnchorTag()}{/if}.
+{/if}]]></item>
+    </category>
+</language>

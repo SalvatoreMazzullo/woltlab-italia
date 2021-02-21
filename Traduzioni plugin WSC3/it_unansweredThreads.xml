@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it" languagename="Italiano" countrycode="it">
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.user.board.canViewUnansweredThreads"><![CDATA[Può vedere la lista delle discussioni senza risposta]]></item>
+	</category>
+
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.board.thread.unanswered"><![CDATA[Discussioni senza risposta]]></item>
+		<item name="wcf.acp.option.wbb_board_thread_unanswered_period"><![CDATA[Periodo di tempo]]></item>
+		<item name="wcf.acp.option.wbb_board_thread_unanswered_period.description"><![CDATA[Periodo di tempo per le discussioni senza risposta [periodo in giorni]. Inserisci 0 per visualizzare tutte le discussioni senza risposta.]]></item>
+	</category>
+</language>

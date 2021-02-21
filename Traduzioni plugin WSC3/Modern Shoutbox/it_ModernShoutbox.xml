@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it" languagename="Italiano" countrycode="it">
+    <category name="wcf.shoutbox">
+        <item name="wcf.shoutbox.shoutbox"><![CDATA[Shoutbox]]></item>
+        <item name="wcf.shoutbox.entry.write"><![CDATA[Scrivi un messaggio]]></item>
+        <item name="wcf.shoutbox.entry.delete.sure"><![CDATA[Vuoi eliminare questo messaggio?]]></item>
+        <item name="wcf.shoutbox.entry.error.message.empty"><![CDATA[Inserisci un messaggio.]]></item>
+        <item name="wcf.shoutbox.entry.error.floodControl"><![CDATA[Devi aspettare qualche secondo per scrivere un altro messaggio.]]></item>
+        <item name="wcf.shoutbox.entry.archive"><![CDATA[Archivio Shoutbox]]></item>
+        <item name="wcf.shoutbox.entry.error.message.tooLong"><![CDATA[Il messaggio inserito è troppo lungo.]]></item>
+        <item name="wcf.shoutbox.guest"><![CDATA[Ospite]]></item>
+    </category>
+    <category name="wcf.global.acp">
+        <item name="wcf.global.acp.shoutbox.username"><![CDATA[Utente]]></item>
+        <item name="wcf.global.acp.shoutbox.time"><![CDATA[Ora]]></item>
+        <item name="wcf.global.acp.shoutbox.message"><![CDATA[Messaggio]]></item>
+        <item name="wcf.global.acp.shoutbox.noEntry"><![CDATA[Non ci sono messaggi.]]></item>
+    </category>
+    <category name="wcf.dashboard.box">
+        <item name="wcf.dashboard.box.shoutbox"><![CDATA[Shoutbox]]></item>
+        <item name="wcf.dashboard.box.shoutboxSidebar"><![CDATA[Shoutbox]]></item>
+    </category>
+    <category name="wcf.acp.option">
+        <item name="wcf.acp.option.category.shoutbox"><![CDATA[Modern Shoutbox]]></item>
+        <item name="wcf.acp.option.category.shoutbox.general"><![CDATA[Generale]]></item>
+        <item name="wcf.acp.option.category.shoutbox.entries"><![CDATA[Messaggi]]></item>
+        <item name="wcf.acp.option.category.shoutbox.extend"><![CDATA[Estensioni]]></item>
+        <item name="wcf.acp.option.shoutbox_sync_interval"><![CDATA[Intervallo di sincronizzazione]]></item>
+        <item name="wcf.acp.option.shoutbox_sync_interval.description"><![CDATA[Intervallo di reflash della Shoutbox [Tempo in secondi]]]></item>
+        <item name="wcf.acp.option.shoutbox_idle_limit"><![CDATA[Stand-by]]></item>
+        <item name="wcf.acp.option.shoutbox_idle_limit.description"><![CDATA[Dopo tot secondi, la Shoutbox si blocca.]]></item>
+        <item name="wcf.acp.option.shoutbox_height"><![CDATA[Altezza]]></item>
+        <item name="wcf.acp.option.shoutbox_height.description"><![CDATA[L´altezza della Shoutbox.]]></item>
+        <item name="wcf.acp.option.shoutbox_height_sidebar"><![CDATA[Altezza(Sidebar)]]></item>
+        <item name="wcf.acp.option.shoutbox_height_sidebar.description"><![CDATA[L´altezza della Shoutbox nel pannello laterale.]]></item>
+        <item name="wcf.acp.option.shoutbox_show_header"><![CDATA[Box-Header]]></item>
+        <item name="wcf.acp.option.shoutbox_show_header.description"><![CDATA[Visualizza il titolo della Shoutbox.]]></item>
+        <item name="wcf.acp.option.shoutbox_entry_limit"><![CDATA[Limite]]></item>
+        <item name="wcf.acp.option.shoutbox_entry_sort_order"><![CDATA[Ordine]]></item>
+        <item name="wcf.acp.option.shoutbox_entry_use_user_online_marking"><![CDATA[Usa formato „User online“]]></item>
+        <item name="wcf.acp.option.shoutbox_entry_allow_bbcodes"><![CDATA[Utilizza bbcodes]]></item>
+        <item name="wcf.acp.option.shoutbox_entry_bbcodes"><![CDATA[BBCodes permessi]]></item>
+        <item name="wcf.acp.option.shoutbox_entry_show_avatars"><![CDATA[Mostra avatar]]></item>
+        <item name="wcf.acp.option.shoutbox_entry_delete_time"><![CDATA[Elimina messaggi]]></item>
+        <item name="wcf.acp.option.shoutbox_entry_delete_time.description"><![CDATA[Elimina i messaggi dopo tot giorni.]]></item>
+        <item name="wcf.acp.option.shoutbox_extend_submit"><![CDATA[Mostra pulsante di invio]]></item>
+    </category>
+    <category name="wcf.acp.group">
+        <item name="wcf.acp.group.option.category.user.shoutbox"><![CDATA[Modern Shoutbox]]></item>
+        <item name="wcf.acp.group.option.user.shoutbox.canViewShoutbox"><![CDATA[Può vedere la Shoutbox]]></item>
+        <item name="wcf.acp.group.option.user.shoutbox.canAddEntry"><![CDATA[Può inviare messaggi]]></item>
+        <item name="wcf.acp.group.option.user.shoutbox.maxEntryLength"><![CDATA[Lunghezza massima del messaggio]]></item>
+        <item name="wcf.acp.group.option.user.shoutbox.floodControlTime"><![CDATA[Controllo Flood]]></item>
+        <item name="wcf.acp.group.option.user.shoutbox.floodControlTime.description"><![CDATA[Tempo minimo tra 2 messaggi [Tempo in secondi]]]></item>
+        <item name="wcf.acp.group.option.category.mod.shoutbox"><![CDATA[Modern Shoutbox]]></item>
+        <item name="wcf.acp.group.option.mod.shoutbox.canDeleteEntry"><![CDATA[Può eliminare i messaggi]]></item>
+        <item name="wcf.acp.group.option.category.admin.shoutbox"><![CDATA[Modern Shoutbox]]></item>
+        <item name="wcf.acp.group.option.admin.community.shoutbox.canUse"><![CDATA[Può gestire la shoutbox]]></item>
+    </category>
+    <category name="wcf.acp.menu">
+        <item name="wcf.acp.menu.link.community.shoutbox"><![CDATA[Modern Shoutbox]]></item>
+        <item name="wcf.acp.menu.link.community.shoutbox.list"><![CDATA[Mostra rchivio]]></item>
+    </category>
+    <category name="wcf.user.option">
+        <item name="wcf.user.option.category.settings.general.shoutbox"><![CDATA[Shoutbox]]></item>
+        <item name="wcf.user.option.showShoutbox"><![CDATA[Mostra shoutbox]]></item>
+    </category>
+    <category name="wcf.acp.box">
+        <item name="wcf.acp.box.boxController.de.darkwood-studios.wcf.shoutbox"><![CDATA[Modern Shoutbox]]></item>
+    </category>
+</language>

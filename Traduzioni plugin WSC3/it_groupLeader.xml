@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it" languagename="Italiano" countrycode="it">
+	<category name="wcf.acp.leaderGroup">
+		<item name="wcf.acp.leaderGroup.button"><![CDATA[Seleziona gruppi]]></item>
+		<item name="wcf.acp.leaderGroup.groups"><![CDATA[Leader gruppi]]></item>
+		<item name="wcf.acp.leaderGroup.groups.description"><![CDATA[Seleziona i gruppi, dei quali gli utenti devono essere leader. I leader del gruppo, che sono stati inseriti sopra, verranno eliminati.]]></item>
+		<item name="wcf.acp.leaderGroup.groups.none"><![CDATA[Non ci sono gruppi]]></item>
+		<item name="wcf.acp.leaderGroup.groups.selection"><![CDATA[Selezione]]></item>
+		<item name="wcf.acp.leaderGroup.multiSelect"><![CDATA[Selezionare uno o più gruppi per definire i leader del gruppo.<br>Deselezionare tutti i gruppi per eliminare i leader del gruppo esistenti.]]></item>
+		<item name="wcf.acp.leaderGroup.title"><![CDATA[Selezionare i Leader del gruppo]]></item>
+	</category>
+</language>

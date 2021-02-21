@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it">
+
+	<category name="wcf.acp.dataImport">
+		<item name="wcf.acp.dataImport.exporter.com.viecode.exporter.lexicon4x"><![CDATA[VieCode Lexicon 4.0.x, 4.1.x (WBB 3.x)]]></item>
+		<item name="wcf.acp.dataImport.exporter.com.viecode.exporter.lexicon5x"><![CDATA[VieCode Lexicon 5.0.x, 5.1.x, 5.2.x (WBB 4.x)]]></item>
+		<item name="wcf.acp.dataImport.exporter.com.viecode.exporter.lexicon6x"><![CDATA[VieCode Lexicon 6.0.x, 6.1.x (WSC 3.x)]]></item>
+		<item name="wcf.acp.dataImport.settings.lexicon.category"><![CDATA[Seleziona una categoria per gli articoli senza categoria]]></item>
+		<item name="wcf.acp.dataImport.settings.lexicon.noCategories"><![CDATA[Al momento non ci sono categorie! Creane una.]]></item>
+	</category>
+
+</language>

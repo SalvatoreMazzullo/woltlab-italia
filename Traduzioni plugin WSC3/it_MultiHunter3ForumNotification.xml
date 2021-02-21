@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.multi_notification_boardid"><![CDATA[Forum di notifica]]></item>
+		<item name="wcf.acp.option.multi_notification_boardid.description"><![CDATA[Inserisci l´ID del forum, in cui vuoi che venga creato una discussione di notifica.]]></item>
+		<item name="wcf.acp.option.multi_notification_board_author"><![CDATA[Avviso autore]]></item>
+		<item name="wcf.acp.option.multi_notification_board_author.description"><![CDATA[Inserisci ID dell´utente che vuoi che riceva la notifica.]]></item>
+	</category>
+
+	<category name="wbb.multihunter">
+		<item name="wbb.multihunter.subject"><![CDATA[{@$username} ha loggato con un multiaccount]]></item>
+	</category>
+</language>

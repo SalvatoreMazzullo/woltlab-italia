@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="it">
+
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.message.general.resizeimage"><![CDATA[ResizeImage]]></item>
+		<item name="wcf.acp.option.resizeexternalimages"><![CDATA[Limitare la dimensione visualizzabile delle immagini esterne]]></item>
+		<item name="wcf.acp.option.resizeattachmentimages"><![CDATA[Limitare la dimensione visualizzata delle immagini allegate]]></item>
+		<item name="wcf.acp.option.resizegallerymediaimages"><![CDATA[Limitare la dimensione visualizzata delle immagini dalla gestione dei media e dalla Galleria]]></item>
+		<item name="wcf.acp.option.resizeimages_width"><![CDATA[Larghezza massima "px" (desktop)]]></item>
+		<item name="wcf.acp.option.resizeimages_height"><![CDATA[Altezza massima "px" (desktop)]]></item>
+		<item name="wcf.acp.option.resizeimages_width_mobile"><![CDATA[Larghezza massima "px" (mobile)]]></item>
+		<item name="wcf.acp.option.resizeimages_height_mobile"><![CDATA[Altezza massima "px" (mobile)]]></item>
+	</category>
+
+</language>

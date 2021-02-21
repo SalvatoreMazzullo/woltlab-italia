@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.general.system.nodePush"><![CDATA[Push Server]]></item>
+		<item name="wcf.acp.option.nodepush_host"><![CDATA[Push Server Host (nodePush)]]></item>
+		<item name="wcf.acp.option.nodepush_host.description"><![CDATA[Il push server manda messaggi in tempo reale al broswer collegato. <br />
+<strong>Notizia:</strong> Non inserire nulla se non sai come far funzionare un push server. L´indirizzo deve contenere il percorso completo (“http://”, “https://” o “//”) e senza slash finale (/).]]></item>
+		<item name="wcf.acp.option.nodepush_socket"><![CDATA[Indirizzo messaggi]]></item>
+		<item name="wcf.acp.option.nodepush_socket.description"><![CDATA[Sei pregato di inserire il socket da cui verranno mandati i messaggi. Questa impostazione deve corrispondere alla porta di entrata.]]></item>
+	</category>
+</language>

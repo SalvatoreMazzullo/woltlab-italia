@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it">
+	<category name="wcf.global">
+		<item name="wcf.global.externalLink.title"><![CDATA[Reindirizzamento]]></item>
+		<item name="wcf.global.externalLink.message"><![CDATA[Stai lasciando {PAGE_TITLE|language}.<br/>]]></item>
+		<item name="wcf.global.externalLink.message.forwarding"><![CDATA[<span class="bold">Reindirizzamento a <a href="{$externalLink}">{$externalLink|truncate:35}</a></span>]]></item>
+		<item name="wcf.global.externalLink.message.forwarding.nojs"><![CDATA[<span class="bold">Per continuare, clicca il link qui sotto:<br /> <a href="{$externalLink}">{$externalLink|truncate:35}</a></span>]]></item>
+		<item name="wcf.global.externalLink.message.forwarding.confirm"><![CDATA[<div style="margin-top: 10px"><a href="{$externalLink}" class="button success">Vai al link</a><a href="{$referedURI}" class="button error">Torna al sito</a></div>]]></item>
+	</category>
+
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.general.page.externalLinks"><![CDATA[Link esterni: Reindirizzamento]]></item>
+		<item name="wcf.acp.option.externalLinks_must_confirm_forwarding"><![CDATA[Il rendirizzamento deve essere confermato]]></item>
+		<item name="wcf.acp.option.externalLinks_whitelist"><![CDATA[Lista bianca dei link]]></item>
+		<item name="wcf.acp.option.externalLinks_whitelist.description"><![CDATA[Un dominio per riga. Dichirazioni come "http", "https" e "ftp" possono essere tralasciate.<br /><em>Esempi: "woltlab.com" o "google.de".</em><br /><em>Usa "*", per indentificare delle parti: "woltlab.*" identifica  "woltlab.com" e "woltlab.de"</em>]]></item>
+	</category>
+</language>

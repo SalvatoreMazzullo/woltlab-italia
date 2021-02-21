@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/language.xsd" languagecode="it">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.module_webexpanded_socialbox_active"><![CDATA[WebExpanded SocialBox]]></item>
+		<item name="wcf.acp.option.module_webexpanded_socialbox_active.description"><![CDATA[Attiva WebExpanded SocialBox]]></item>
+		<item name="wcf.acp.option.category.webexpanded_socialbox.general"><![CDATA[WebExpanded SocialBox]]></item>
+		<item name="wcf.acp.option.webexpanded_socialbox_external_target"><![CDATA[Apri i link in una nuova pagina]]></item>
+		<item name="wcf.acp.option.webexpanded_socialbox_facebook"><![CDATA[Link Facebook]]></item>
+		<item name="wcf.acp.option.webexpanded_socialbox_twitter"><![CDATA[Link Twitter]]></item>
+		<item name="wcf.acp.option.webexpanded_socialbox_instagram"><![CDATA[Link Instagram]]></item>
+		<item name="wcf.acp.option.webexpanded_socialbox_youtube"><![CDATA[Link canale Youtube]]></item>
+		<item name="wcf.acp.option.webexpanded_socialbox_steam"><![CDATA[Link Steam]]></item>
+		<item name="wcf.acp.option.webexpanded_socialbox_github"><![CDATA[Link Github]]></item>
+	</category>
+	<category name="wcf.page">
+		<item name="wcf.page.webexpanded.socialbox.copyright"><![CDATA[SocialBox, developed by WebExpanded]]></item>
+		<item name="wcf.page.webexpanded.socialbox.facebook"><![CDATA[Metti mi piace su Facebook]]></item>
+		<item name="wcf.page.webexpanded.socialbox.twitter"><![CDATA[Seguici su Twitter]]></item>
+		<item name="wcf.page.webexpanded.socialbox.instagram"><![CDATA[Iscriviti su Instagram]]></item>
+		<item name="wcf.page.webexpanded.socialbox.youtube"><![CDATA[Iscriviti al canale Youtube]]></item>
+		<item name="wcf.page.webexpanded.socialbox.steam"><![CDATA[Entra nel gruppo Steam]]></item>
+		<item name="wcf.page.webexpanded.socialbox.github"><![CDATA[Guarda le nostre Repositorys]]></item>
+	</category>
+	<category name="wcf.acp.box">
+		<item name="wcf.acp.box.boxController.de.webexpanded.socialbox.box"><![CDATA[WebExpanded Socialbox]]></item>
+	</category>
+</language>

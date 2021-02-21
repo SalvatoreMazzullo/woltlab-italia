@@ -1,4 +1,9 @@
 # Woltlab Italia
+WoltLab Italia contiene tutte le traduzioni dei software principali WoltLab oltre alla traduzione di innumerevoli plugin di terze parti. Una community basata sulla condivisione in attesa del tuo volenteroso aiuto!
+
+
+# Un po' di storia
+
 WoltLab è una azienda tedesca, nata nel 2001 che sviluppa software per la gestione di community.
 
 # Cosa significa in parole povere?
@@ -30,7 +35,3 @@ Oltre a ciò troviamo una predisposizione SEO avanzata in Suite Core già dalla 
 Lo stesso vale per quanto riguarda le notifiche agli utenti per le varie azioni compite all’interno del sito.
 
 Potrei parlarvi per ore di cosa c’è in WoltLab Suite Core che WordPress può compensare solamente con dei plugin aggiunti. Per questo motivo vi lascio al link ufficiale del WoltLab Suite Core.
-
-# Lingua italia
-
-WoltLab Italia come detto in precedenza contiene tutte le traduzioni dei software principali WoltLab oltre alla traduzione di innumerevoli plugin di terze parti. Una community basata sulla condivisione in attesa del tuo volenteroso aiuto!
